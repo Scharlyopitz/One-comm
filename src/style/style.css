@@ -25,7 +25,15 @@ body li {
 }
 
 .bottomPart {
+  position: relative;
   height: 100vh;
+}
+.bottomPart .svg {
+  position: absolute;
+  bottom: 0;
+  height: 50vh;
+  width: 100%;
+  background: #efefef;
 }
 
 .topPart {

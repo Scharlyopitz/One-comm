@@ -1,3 +1,12 @@
 .bottomPart {
+  position: relative;
   height: 100vh;
+
+  .svg {
+    position: absolute;
+    bottom: 0;
+    height: 50vh;
+    width: 100%;
+    background: $White;
+  }
 }
