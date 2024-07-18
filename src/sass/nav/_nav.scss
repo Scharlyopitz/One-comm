@@ -1,20 +1,32 @@
 nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1;
-  background-color: red;
+  background-color: #efefef;
 
   mix-blend-mode: difference;
+  height: 8vh;
 
   ul {
     display: flex;
     justify-content: space-around;
-    padding: 2vh 0;
+    gap: 3vw;
 
     a {
-      color: $White;
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+      font-weight: 300;
+      gap: 15px;
+    }
+
+    svg {
+      font-size: 13px;
     }
   }
 }

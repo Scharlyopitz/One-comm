@@ -5,11 +5,19 @@
 }
 
 body {
-  background-color: $White;
+  //   background-color: $White;
+
   font-family: "Roboto", sans-serif;
+
+  &,
+  a {
+    color: $White;
+  }
+
   a {
     text-decoration: none;
   }
+
   ul,
   li {
     list-style-type: none;
