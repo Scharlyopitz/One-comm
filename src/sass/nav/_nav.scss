@@ -1,0 +1,19 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+
+  mix-blend-mode: difference;
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 2vh 0;
+
+    a {
+      color: $White;
+    }
+  }
+}

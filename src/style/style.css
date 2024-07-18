@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+}
+body a {
+  text-decoration: none;
+}
+body ul,
+body li {
+  list-style-type: none;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  mix-blend-mode: difference;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 2vh 0;
+}
+nav ul a {
+  color: #ffffff;
+}/*# sourceMappingURL=style.css.map */
