@@ -4,6 +4,7 @@
   align-items: center;
   position: relative;
   height: 100vh;
+  justify-content: space-around;
   // background-color: red;
 
   h1 {
@@ -13,10 +14,11 @@
 
   .svg {
     position: absolute;
+    z-index: -1;
     bottom: 0;
     height: 50vh;
     width: 100%;
-    // background: $White;
+    background: $White;
   }
 
   // CARD
@@ -34,6 +36,7 @@
       border-radius: 25px;
       background-color: $CardBackground;
       padding: 40px 30px 30px;
+      box-shadow: 0px 0px 30px -7px $BlackOpct;
 
       .name {
         font-size: 25px;

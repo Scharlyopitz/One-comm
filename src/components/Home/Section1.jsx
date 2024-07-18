@@ -1,6 +1,3 @@
-import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 export default function Section1() {
   return (
     <section className="section1">
@@ -26,7 +23,7 @@ function Buttons() {
         <button>Contactez-nous</button>
         <button>Un devis ?</button>
       </div>
-      <FontAwesomeIcon icon={faChevronDown} />
+      <div className="chevron"></div>
     </div>
   );
 }

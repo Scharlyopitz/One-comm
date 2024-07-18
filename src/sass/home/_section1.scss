@@ -15,17 +15,17 @@
     margin-bottom: 30px;
 
     h1 {
-      font-size: 85px;
-      line-height: 117px;
+      font-size: 75px;
+      line-height: 100px;
     }
 
     p {
       text-align: justify;
       font-family: "Open Sans", sans-serif;
-      font-size: 22px;
-      line-height: 44px;
-      font-weight: normal;
-      width: 825px;
+      font-size: 18px;
+      line-height: 35px;
+      font-weight: 100;
+      width: 730px;
       margin-bottom: 3vh;
     }
   }
@@ -36,8 +36,9 @@
 
   .btnContainer {
     position: absolute;
-    bottom: 5%;
+    bottom: 8%;
     display: flex;
+    align-items: center;
     flex-direction: column;
     gap: 7vh;
 
@@ -78,6 +79,34 @@
           border: 1px solid $White;
           color: $White;
         }
+      }
+    }
+    .chevron {
+      position: relative;
+      width: 40px;
+      height: 15px;
+
+      &::before,
+      &::after {
+        content: "";
+        width: 50%;
+        height: 2px;
+        background-color: $White;
+        position: absolute;
+        bottom: 0;
+      }
+
+      &::before {
+        left: 1px;
+        transform-origin: right;
+        transform: rotate(45deg);
+        border-radius: 5px 0 5px 5px;
+      }
+      &::after {
+        right: 1px;
+        transform-origin: left;
+        transform: rotate(-45deg);
+        border-radius: 0 5px 5px 5px;
       }
     }
   }

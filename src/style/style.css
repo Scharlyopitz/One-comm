@@ -41,16 +41,16 @@ body li {
   margin-bottom: 30px;
 }
 .section1 .txt h1 {
-  font-size: 85px;
-  line-height: 117px;
+  font-size: 75px;
+  line-height: 100px;
 }
 .section1 .txt p {
   text-align: justify;
   font-family: "Open Sans", sans-serif;
-  font-size: 22px;
-  line-height: 44px;
-  font-weight: normal;
-  width: 825px;
+  font-size: 18px;
+  line-height: 35px;
+  font-weight: 100;
+  width: 730px;
   margin-bottom: 3vh;
 }
 .section1 svg {
@@ -58,8 +58,9 @@ body li {
 }
 .section1 .btnContainer {
   position: absolute;
-  bottom: 5%;
+  bottom: 8%;
   display: flex;
+  align-items: center;
   flex-direction: column;
   gap: 7vh;
 }
@@ -97,6 +98,31 @@ body li {
   border: 1px solid #efefef;
   color: #efefef;
 }
+.section1 .btnContainer .chevron {
+  position: relative;
+  width: 40px;
+  height: 15px;
+}
+.section1 .btnContainer .chevron::before, .section1 .btnContainer .chevron::after {
+  content: "";
+  width: 50%;
+  height: 2px;
+  background-color: #efefef;
+  position: absolute;
+  bottom: 0;
+}
+.section1 .btnContainer .chevron::before {
+  left: 1px;
+  transform-origin: right;
+  transform: rotate(45deg);
+  border-radius: 5px 0 5px 5px;
+}
+.section1 .btnContainer .chevron::after {
+  right: 1px;
+  transform-origin: left;
+  transform: rotate(-45deg);
+  border-radius: 0 5px 5px 5px;
+}
 
 .section2 {
   display: flex;
@@ -104,6 +130,7 @@ body li {
   align-items: center;
   position: relative;
   height: 100vh;
+  justify-content: space-around;
 }
 .section2 h1 {
   font-size: 56px;
@@ -111,9 +138,11 @@ body li {
 }
 .section2 .svg {
   position: absolute;
+  z-index: -1;
   bottom: 0;
   height: 50vh;
   width: 100%;
+  background: #efefef;
 }
 .section2 .cardContainer {
   display: flex;
@@ -127,8 +156,9 @@ body li {
   width: 335px;
   height: 499px;
   border-radius: 25px;
-  background-color: rgba(240, 240, 240, 0.5019607843);
+  background-color: rgba(240, 240, 240, 0.3019607843);
   padding: 40px 30px 30px;
+  box-shadow: 0px 0px 30px -7px rgba(0, 0, 0, 0.4509803922);
 }
 .section2 .cardContainer .card .name {
   font-size: 25px;
