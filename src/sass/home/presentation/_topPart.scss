@@ -7,7 +7,65 @@
   height: 100vh;
   text-align: center;
 
-  h1 {
-    font-size: 80px;
+  .txt {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    h1 {
+      font-size: 85px;
+      line-height: 117px;
+    }
+
+    p {
+      text-align: justify;
+      font-family: "Open Sans", sans-serif;
+      font-size: 22px;
+      line-height: 44px;
+      font-weight: normal;
+      width: 825px;
+    }
+  }
+  .btnContainer {
+    position: absolute;
+    bottom: 10%;
+    display: flex;
+    gap: 16px;
+
+    button {
+      position: relative;
+      overflow: hidden;
+      font-size: 16px;
+      font-family: "Roboto", sans-serif;
+      padding: 14px 32px;
+      border-radius: 6px;
+      font-weight: bold;
+      border: none;
+      outline: none;
+
+      background: linear-gradient(90deg, $LinearDarkBlue, $LinearLightBlue);
+
+      -webkit-background-clip: text;
+      color: transparent;
+
+      &:nth-child(1)::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $White;
+      }
+
+      &:nth-child(2) {
+        background: transparent;
+        border: 1px solid $White;
+        color: $White;
+      }
+    }
   }
 }
