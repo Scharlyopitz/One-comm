@@ -99,16 +99,46 @@ body li {
 }
 
 .section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
   height: 100vh;
-  background-color: red;
+}
+.section2 h1 {
+  font-size: 56px;
+  text-align: center;
 }
 .section2 .svg {
   position: absolute;
   bottom: 0;
   height: 50vh;
   width: 100%;
-  background: #efefef;
+}
+.section2 .cardContainer {
+  display: flex;
+  gap: 100px;
+}
+.section2 .cardContainer .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 335px;
+  height: 499px;
+  border-radius: 25px;
+  background-color: rgba(240, 240, 240, 0.5019607843);
+  padding: 40px 30px 30px;
+}
+.section2 .cardContainer .card .name {
+  font-size: 25px;
+  font-weight: 300;
+}
+.section2 .cardContainer .card .paragraphe {
+  color: #0f0f0f;
+  font-family: "Open Sans", sans-serif;
+  text-align: justify;
+  font-size: 17px;
 }
 
 nav {
