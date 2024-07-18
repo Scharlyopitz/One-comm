@@ -8,7 +8,7 @@
   text-align: center;
 
   .txt {
-    height: 60vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -26,45 +26,58 @@
       line-height: 44px;
       font-weight: normal;
       width: 825px;
+      margin-bottom: 3vh;
     }
   }
+
+  svg {
+    font-size: 50px;
+  }
+
   .btnContainer {
     position: absolute;
-    bottom: 10%;
+    bottom: 5%;
     display: flex;
-    gap: 16px;
+    flex-direction: column;
+    gap: 7vh;
 
-    button {
-      position: relative;
-      overflow: hidden;
-      font-size: 16px;
-      font-family: "Roboto", sans-serif;
-      padding: 14px 32px;
-      border-radius: 6px;
-      font-weight: bold;
-      border: none;
-      outline: none;
+    .btn {
+      display: flex;
+      gap: 16px;
 
-      background: linear-gradient(90deg, $LinearDarkBlue, $LinearLightBlue);
+      button {
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        font-size: 16px;
+        font-family: "Roboto", sans-serif;
+        padding: 14px 42px;
+        border-radius: 6px;
+        font-weight: bold;
+        border: none;
+        outline: none;
 
-      -webkit-background-clip: text;
-      color: transparent;
+        background: linear-gradient(90deg, $LinearDarkBlue, $LinearLightBlue);
 
-      &:nth-child(1)::before {
-        content: "";
-        position: absolute;
-        z-index: -1;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: $White;
-      }
+        -webkit-background-clip: text;
+        color: transparent;
 
-      &:nth-child(2) {
-        background: transparent;
-        border: 1px solid $White;
-        color: $White;
+        &:nth-child(1)::before {
+          content: "";
+          position: absolute;
+          z-index: -1;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: $White;
+        }
+
+        &:nth-child(2) {
+          background: transparent;
+          border: 1px solid $White;
+          color: $White;
+        }
       }
     }
   }

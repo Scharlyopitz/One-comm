@@ -34,7 +34,7 @@ body li {
   text-align: center;
 }
 .topPart .txt {
-  height: 60vh;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -51,19 +51,29 @@ body li {
   line-height: 44px;
   font-weight: normal;
   width: 825px;
+  margin-bottom: 3vh;
+}
+.topPart svg {
+  font-size: 50px;
 }
 .topPart .btnContainer {
   position: absolute;
-  bottom: 10%;
+  bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 7vh;
+}
+.topPart .btnContainer .btn {
   display: flex;
   gap: 16px;
 }
-.topPart .btnContainer button {
+.topPart .btnContainer .btn button {
+  cursor: pointer;
   position: relative;
   overflow: hidden;
   font-size: 16px;
   font-family: "Roboto", sans-serif;
-  padding: 14px 32px;
+  padding: 14px 42px;
   border-radius: 6px;
   font-weight: bold;
   border: none;
@@ -72,7 +82,7 @@ body li {
   -webkit-background-clip: text;
   color: transparent;
 }
-.topPart .btnContainer button:nth-child(1)::before {
+.topPart .btnContainer .btn button:nth-child(1)::before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -82,7 +92,7 @@ body li {
   height: 100%;
   background-color: #efefef;
 }
-.topPart .btnContainer button:nth-child(2) {
+.topPart .btnContainer .btn button:nth-child(2) {
   background: transparent;
   border: 1px solid #efefef;
   color: #efefef;

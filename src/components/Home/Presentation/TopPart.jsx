@@ -1,3 +1,5 @@
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 export default function TopPart() {
@@ -21,8 +23,11 @@ export default function TopPart() {
 function Buttons() {
   return (
     <div className="btnContainer">
-      <button>Contactez-nous</button>
-      <button>Un devis ?</button>
+      <div className="btn">
+        <button>Contactez-nous</button>
+        <button>Un devis ?</button>
+      </div>
+      <FontAwesomeIcon icon={faChevronDown} />
     </div>
   );
 }
