@@ -24,19 +24,7 @@ body li {
   list-style-type: none;
 }
 
-.bottomPart {
-  position: relative;
-  height: 100vh;
-}
-.bottomPart .svg {
-  position: absolute;
-  bottom: 0;
-  height: 50vh;
-  width: 100%;
-  background: #efefef;
-}
-
-.topPart {
+.section1 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,18 +33,18 @@ body li {
   height: 100vh;
   text-align: center;
 }
-.topPart .txt {
+.section1 .txt {
   height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: 30px;
 }
-.topPart .txt h1 {
+.section1 .txt h1 {
   font-size: 85px;
   line-height: 117px;
 }
-.topPart .txt p {
+.section1 .txt p {
   text-align: justify;
   font-family: "Open Sans", sans-serif;
   font-size: 22px;
@@ -65,21 +53,21 @@ body li {
   width: 825px;
   margin-bottom: 3vh;
 }
-.topPart svg {
+.section1 svg {
   font-size: 50px;
 }
-.topPart .btnContainer {
+.section1 .btnContainer {
   position: absolute;
   bottom: 5%;
   display: flex;
   flex-direction: column;
   gap: 7vh;
 }
-.topPart .btnContainer .btn {
+.section1 .btnContainer .btn {
   display: flex;
   gap: 16px;
 }
-.topPart .btnContainer .btn button {
+.section1 .btnContainer .btn button {
   cursor: pointer;
   position: relative;
   overflow: hidden;
@@ -94,7 +82,7 @@ body li {
   -webkit-background-clip: text;
   color: transparent;
 }
-.topPart .btnContainer .btn button:nth-child(1)::before {
+.section1 .btnContainer .btn button:nth-child(1)::before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -104,10 +92,23 @@ body li {
   height: 100%;
   background-color: #efefef;
 }
-.topPart .btnContainer .btn button:nth-child(2) {
+.section1 .btnContainer .btn button:nth-child(2) {
   background: transparent;
   border: 1px solid #efefef;
   color: #efefef;
+}
+
+.section2 {
+  position: relative;
+  height: 100vh;
+  background-color: red;
+}
+.section2 .svg {
+  position: absolute;
+  bottom: 0;
+  height: 50vh;
+  width: 100%;
+  background: #efefef;
 }
 
 nav {

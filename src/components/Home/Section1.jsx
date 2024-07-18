@@ -1,10 +1,9 @@
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
 
-export default function TopPart() {
+export default function Section1() {
   return (
-    <div className="topPart">
+    <section className="section1">
       <div className="txt">
         <h1>
           La solution pour <br /> votre communication.
@@ -16,7 +15,7 @@ export default function TopPart() {
         </p>
       </div>
       <Buttons />
-    </div>
+    </section>
   );
 }
 
