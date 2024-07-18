@@ -7,9 +7,9 @@ nav {
   left: 0;
   width: 100%;
   z-index: 1;
-  background-color: #efefef;
+  background: $NavBackground;
+  backdrop-filter: blur(15px);
 
-  mix-blend-mode: difference;
   height: 8vh;
 
   ul {
