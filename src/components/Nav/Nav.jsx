@@ -4,12 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 export default function Nav() {
-  const Links = [
-    "Graphic design",
-    "Objets publicitaires",
-    "Actualités",
-    "Contact",
-  ];
+  const Links = ["Graphic design", "Objets publicitaires", "Actualités"];
 
   return (
     <nav>
@@ -24,6 +19,9 @@ export default function Nav() {
             </li>
           );
         })}
+        <li>
+          <NavLink to={"/"}>Contact</NavLink>
+        </li>
       </ul>
     </nav>
   );
