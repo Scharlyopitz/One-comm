@@ -9,7 +9,7 @@ nav {
   z-index: 1;
   background: $NavBackground;
   backdrop-filter: blur(15px);
-  height: 8vh;
+  height: 7vh;
   box-shadow: 0px 0px 20px 0px $BlackOpct;
 
   ul {
@@ -20,7 +20,7 @@ nav {
     a {
       display: flex;
       align-items: center;
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 300;
       gap: 15px;
     }
