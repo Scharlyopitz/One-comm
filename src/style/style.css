@@ -6,7 +6,10 @@
 }
 
 body {
+  background: linear-gradient(90deg, #11235a 0%, #9bb0c1 100%);
   font-family: "Roboto", sans-serif;
+  width: 100%;
+  height: 100%;
 }
 body,
 body a {

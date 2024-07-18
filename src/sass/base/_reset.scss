@@ -5,9 +5,11 @@
 }
 
 body {
-  //   background-color: $White;
+  background: linear-gradient(90deg, $LinearDarkBlue 0%, $LinearLightBlue 100%);
 
   font-family: "Roboto", sans-serif;
+  width: 100%;
+  height: 100%;
 
   &,
   a {
