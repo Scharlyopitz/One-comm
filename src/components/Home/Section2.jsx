@@ -1,10 +1,14 @@
+import { useRef, useState, useEffect } from "react";
+
 export default function Section2() {
   return (
     <section className="section2">
       <h1>
         Une communication en toute <br /> simplicité.
       </h1>
-      <div className="svg"></div>
+
+      <Svg />
+
       <div className="cardContainer">
         <Card
           name="Réactivité"
@@ -20,6 +24,43 @@ export default function Section2() {
         />
       </div>
     </section>
+  );
+}
+
+function Svg() {
+  const ref = useRef(null);
+
+  const [dimension, setDimension] = useState({
+    width: 0,
+    height: 0,
+  });
+
+  const initialPath = `M0 0 Q ${dimension.width / 2} ${dimension.height / 2} ${
+    dimension.width
+  } 0`;
+
+  useEffect(() => {
+    function resize() {
+      setDimension({
+        width: ref.current.clientWidth,
+        height: ref.current.clientHeight,
+      });
+    }
+    resize();
+    window.addEventListener("resize", resize);
+    return () => window.removeEventListener("resize", resize);
+  }, []);
+
+  return (
+    <div ref={ref} className="svg">
+      <svg>
+        <linearGradient id="grad1" x1="0%" x2="100%" y1="0%" y2="0%">
+          <stop offset="0%" stop-color="#11235a" />
+          <stop offset="100%" stop-color="#9bb0c1" />
+        </linearGradient>
+        <path d={initialPath} fill="url(#grad1)" />
+      </svg>
+    </div>
   );
 }
 
