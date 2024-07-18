@@ -24,6 +24,10 @@ body li {
   list-style-type: none;
 }
 
+.bottomPart {
+  height: 100vh;
+}
+
 .topPart {
   display: flex;
   flex-direction: column;
