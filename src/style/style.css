@@ -193,7 +193,7 @@ body li {
   color: #11235a;
   font-size: 22px;
   text-align: justify;
-  margin: 40px 0 100px;
+  margin-top: 40px;
   max-width: 900px;
   line-height: 4vh;
 }
@@ -202,6 +202,7 @@ body li {
   display: flex;
   flex-direction: column;
   gap: 70px;
+  padding: 160px 0;
 }
 .cardsSection .sectionCardContainer {
   display: flex;
