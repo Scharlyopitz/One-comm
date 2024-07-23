@@ -183,16 +183,90 @@ body li {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 180px;
 }
 .section3 h1 {
   text-align: center;
   font-size: 56px;
 }
-.section3 p {
+.section3 .description {
   color: #11235a;
   font-size: 22px;
-  width: 68vw;
   text-align: justify;
+  margin: 40px 0 100px;
+  max-width: 900px;
+  line-height: 4vh;
+}
+
+.cardsSection {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+.cardsSection .sectionCardContainer {
+  display: flex;
+  width: 100vw;
+  max-width: 1100px;
+  justify-content: center;
+}
+.cardsSection .sectionCardContainer:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.cardsSection .sectionCardContainer:nth-child(even) .informationsContainer {
+  padding-left: 5%;
+}
+.cardsSection .sectionCardContainer:nth-child(odd) .card {
+  margin-right: 12%;
+}
+.cardsSection .sectionCardContainer:nth-child(odd) .informationsContainer {
+  padding-right: 15%;
+}
+.cardsSection .sectionCardContainer .card {
+  width: 500px;
+  height: 500px;
+  border-radius: 24px;
+  background: linear-gradient(350deg, rgba(17, 35, 90, 0.5019607843), rgba(155, 176, 193, 0.5019607843));
+  box-shadow: 0px 19px 30px 9px rgba(0, 0, 0, 0.4509803922);
+}
+.cardsSection .sectionCardContainer .informationsContainer {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+.cardsSection .sectionCardContainer .informationsContainer p {
+  font-size: 27px;
+  font-weight: bolder;
+  color: #11235a;
+}
+.cardsSection .sectionCardContainer .informationsContainer h2 {
+  font-size: 30px;
+}
+.cardsSection .sectionCardContainer .informationsContainer ul {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.cardsSection .sectionCardContainer .informationsContainer ul svg {
+  margin-right: 20px;
+}
+.cardsSection .sectionCardContainer .informationsContainer ul li {
+  font-family: "Open Sans";
+  font-size: 16px;
+  white-space: nowrap;
+}
+.cardsSection .sectionCardContainer .informationsContainer button {
+  cursor: pointer;
+  padding: 15px 30px;
+  border-radius: 6px;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: 38px;
+  border: 2px solid #11235a;
+  font-size: 14px;
+  font-weight: 600;
+  color: #11235a;
 }
 
 nav {
