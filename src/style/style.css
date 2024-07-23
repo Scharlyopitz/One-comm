@@ -270,20 +270,39 @@ body li {
   color: #11235a;
 }
 
-.section4 .lineContainer {
-  width: 100%;
-  height: 130px;
-  background: red;
+.section4 {
+  background: #efefef;
+  color: #0f0f0f;
+  text-align: center;
 }
-.section4 .lineContainer .imgContainer {
+.section4 h1 {
+  font-size: 60px;
+  padding: 140px 0;
+}
+.section4 .linesContainer {
   display: flex;
+  flex-direction: column;
+}
+.section4 .linesContainer,
+.section4 .linesContainer .lineContainer,
+.section4 .linesContainer .imgContainer {
   gap: 24px;
 }
-.section4 .lineContainer .imgContainer .img {
+.section4 .linesContainer .lineContainer {
+  width: 100%;
+  height: 130px;
+  overflow: hidden;
+  display: flex;
+}
+.section4 .linesContainer .lineContainer .imgContainer {
+  display: flex;
+  height: 100%;
+}
+.section4 .linesContainer .lineContainer .imgContainer .img {
   width: 240px;
   height: 100%;
-  background: black;
-  border-radius: 3px;
+  background: linear-gradient(350deg, rgba(17, 35, 90, 0.5019607843), rgba(155, 176, 193, 0.5019607843));
+  border-radius: 5px;
 }
 
 nav {

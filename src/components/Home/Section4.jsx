@@ -2,7 +2,11 @@ export default function Section4() {
   return (
     <section className="section4">
       <h1>Nos réalisations</h1>
-      <Line />
+      <div className="linesContainer">
+        <Line />
+        <Line />
+        <Line />
+      </div>
     </section>
   );
 }

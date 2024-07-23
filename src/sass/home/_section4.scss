@@ -1,20 +1,45 @@
 .section4 {
+  background: $White;
+  color: $Black;
+  text-align: center;
+
+  h1 {
+    font-size: 60px;
+    padding: 140px 0;
+  }
+
   // LINE
 
-  .lineContainer {
-    width: 100%;
-    height: 130px;
-    background: red;
+  .linesContainer {
+    display: flex;
+    flex-direction: column;
 
+    &,
+    .lineContainer,
     .imgContainer {
-      display: flex;
       gap: 24px;
+    }
 
-      .img {
-        width: 240px;
+    .lineContainer {
+      width: 100%;
+      height: 130px;
+      overflow: hidden;
+      display: flex;
+
+      .imgContainer {
+        display: flex;
         height: 100%;
-        background: black;
-        border-radius: 3px;
+
+        .img {
+          width: 240px;
+          height: 100%;
+          background: linear-gradient(
+            350deg,
+            $LinearLightBlueOpct,
+            $LinearDarkBlueOpct
+          );
+          border-radius: 5px;
+        }
       }
     }
   }
