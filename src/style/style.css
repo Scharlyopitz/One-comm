@@ -276,6 +276,7 @@ body li {
   background: #efefef;
   color: #0f0f0f;
   text-align: center;
+  z-index: -1;
 }
 .section4 h1 {
   font-size: 60px;
