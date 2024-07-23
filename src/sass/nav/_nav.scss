@@ -6,7 +6,7 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 5;
   background: $NavBackground;
   backdrop-filter: blur(5px);
   height: 7vh;
@@ -23,6 +23,8 @@ nav {
       font-size: 16px;
       font-weight: 300;
       gap: 15px;
+      mix-blend-mode: color-dodge;
+      color: $White;
     }
 
     svg {
