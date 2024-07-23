@@ -132,6 +132,7 @@ body li {
   align-items: center;
   position: relative;
   justify-content: space-around;
+  padding-top: 5vh;
 }
 .section2 h1 {
   font-size: 56px;
