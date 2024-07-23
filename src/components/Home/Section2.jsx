@@ -55,8 +55,8 @@ function Svg() {
     <div ref={ref} className="svg">
       <svg>
         <linearGradient id="grad1" x1="0%" x2="100%" y1="0%" y2="0%">
-          <stop offset="0%" stop-color="#11235a" />
-          <stop offset="100%" stop-color="#9bb0c1" />
+          <stop offset="0%" stopColor="#11235a" />
+          <stop offset="100%" stopColor="#9bb0c1" />
         </linearGradient>
         <path d={initialPath} fill="url(#grad1)" />
       </svg>

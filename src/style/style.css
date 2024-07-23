@@ -177,6 +177,24 @@ body li {
   font-size: 17px;
 }
 
+.section3 {
+  color: #0f0f0f;
+  background-color: #efefef;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section3 h1 {
+  text-align: center;
+  font-size: 56px;
+}
+.section3 p {
+  color: #11235a;
+  font-size: 22px;
+  width: 68vw;
+  text-align: justify;
+}
+
 nav {
   display: flex;
   align-items: center;

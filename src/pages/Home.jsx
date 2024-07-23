@@ -2,6 +2,7 @@ import React from "react";
 import Nav from "../components/Nav/Nav";
 import Section1 from "../components/Home/Section1";
 import Section2 from "../components/Home/Section2";
+import Section3 from "../components/Home/Section3";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <main>
         <Section1 />
         <Section2 />
+        <Section3 />
       </main>
     </>
   );

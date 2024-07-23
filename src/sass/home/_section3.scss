@@ -1,0 +1,19 @@
+.section3 {
+  color: $Black;
+  background-color: $White;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    text-align: center;
+    font-size: 56px;
+  }
+
+  p {
+    color: $LinearDarkBlue;
+    font-size: 22px;
+    width: 68vw;
+    text-align: justify;
+  }
+}
