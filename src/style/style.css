@@ -271,6 +271,7 @@ body li {
 }
 
 .section4 {
+  position: relative;
   background: #efefef;
   color: #0f0f0f;
   text-align: center;
