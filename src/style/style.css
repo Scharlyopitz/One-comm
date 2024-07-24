@@ -362,6 +362,11 @@ body li {
   margin: 60px auto 0;
 }
 
+.section5 {
+  background: #efefef;
+  color: #0f0f0f;
+}
+
 nav {
   display: flex;
   align-items: center;
