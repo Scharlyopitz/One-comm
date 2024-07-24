@@ -277,10 +277,11 @@ body li {
   background: #efefef;
   color: #0f0f0f;
   text-align: center;
+  padding: 20vh 0;
 }
 .section4 h1 {
   font-size: 60px;
-  padding: 140px 0;
+  padding-bottom: 140px;
 }
 .section4 .linesContainer {
   display: flex;
