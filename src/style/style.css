@@ -346,6 +346,7 @@ body li {
 .section4 .formulaire form input[type=text], .section4 .formulaire form input[type=email] {
   border: none;
   border-bottom: 1px solid #11235a;
+  margin-top: 7px;
 }
 .section4 .formulaire form input[type=text] {
   margin-bottom: 60px;
