@@ -3,7 +3,6 @@
   background: $White;
   color: $Black;
   text-align: center;
-  z-index: -1;
 
   h1 {
     font-size: 60px;
@@ -42,6 +41,75 @@
           );
           border-radius: 5px;
         }
+      }
+    }
+  }
+
+  // FORMULAIRE
+
+  .formulaire {
+    margin: 20vh auto 0;
+    width: 95vw;
+    padding: 60px 15%;
+    background: linear-gradient(
+      350deg,
+      $LinearLightBlueOpct,
+      $LinearDarkBlueOpct
+    );
+    box-shadow: 0px 19px 30px 9px $BlackOpct;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    &,
+    input {
+      color: $LinearDarkBlue;
+      font-family: "Open Sans", sans-serif;
+    }
+
+    p,
+    span {
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: 30px;
+      margin-bottom: 1vh;
+    }
+
+    span {
+      font-size: 17px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      text-align: start;
+
+      input {
+        background-color: transparent;
+        outline: none;
+
+        &[type="text"],
+        &[type="email"] {
+          border: none;
+          border-bottom: 1px solid $LinearDarkBlue;
+        }
+
+        &[type="text"] {
+          margin-bottom: 60px;
+        }
+      }
+
+      .btn {
+        font-size: 20px;
+        padding: 15px 60px;
+        border-radius: 10px;
+        width: fit-content;
+        border: 1px solid $LinearDarkBlue;
+        letter-spacing: 2px;
+        margin: 60px auto 0;
       }
     }
   }

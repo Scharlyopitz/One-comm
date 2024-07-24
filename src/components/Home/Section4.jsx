@@ -31,19 +31,21 @@ function Line() {
 
 function Formulaire() {
   return (
-    <>
-      <p>Ne ratez aucun bon plan !</p>
-      <span>
-        Avec notre newsletter restez au courant des bons plans et suivez
-        l'évolution de one comm'
-      </span>
+    <div className="formulaire">
+      <div className="txt">
+        <p>Ne ratez aucun bon plan !</p>
+        <span>
+          Avec notre newsletter restez au courant des bons plans et suivez
+          l'évolution de one comm'
+        </span>
+      </div>
       <form action="">
         <label htmlFor="name">Prénom</label>
-        <input type="text" name="name" id="name" />
+        <input autoComplete="off" type="text" name="name" id="name" />
         <label htmlFor="email">Email</label>
-        <input type="email" name="email" id="email" />
-        <input type="submit" value="JE M'INSCRIS !" />
+        <input autoComplete="off" type="email" name="email" id="email" />
+        <input type="submit" value="JE M'INSCRIS !" className="btn" />
       </form>
-    </>
+    </div>
   );
 }
