@@ -15,17 +15,21 @@ body {
   a {
     color: $White;
   }
+}
 
-  a {
-    text-decoration: none;
-  }
+h1 {
+  font-size: 70px;
+}
 
-  section {
-    min-height: 100vh;
-  }
+a {
+  text-decoration: none;
+}
 
-  ul,
-  li {
-    list-style-type: none;
-  }
+section {
+  min-height: 100vh;
+}
+
+ul,
+li {
+  list-style-type: none;
 }
