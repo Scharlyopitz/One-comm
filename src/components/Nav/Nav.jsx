@@ -28,22 +28,36 @@ function Logo() {
 }
 
 function Links() {
-  const Links = ["Graphic design", "Objets publicitaires", "Actualités"];
+  const Links = [
+    {
+      name: "Graphic design",
+      href: "/graphicDesign",
+    },
+    {
+      name: "Objets publicitaires",
+      href: "/objetspublicitaires",
+    },
+    {
+      name: "Actualités",
+      href: "/actualités",
+    },
+    {
+      name: "Contact",
+      href: "/contact",
+    },
+  ];
 
   return (
     <ul>
       {Links.map((link, i) => {
         return (
           <li key={i}>
-            <NavLink to={"/"}>
-              {link} <FontAwesomeIcon icon={faChevronDown} />
+            <NavLink to={link.href}>
+              {link.name} <FontAwesomeIcon icon={faChevronDown} />
             </NavLink>
           </li>
         );
       })}
-      <li>
-        <NavLink to="/contact">Contact</NavLink>
-      </li>
     </ul>
   );
 }
