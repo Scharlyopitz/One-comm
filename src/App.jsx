@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Footer from "./components/Footer/Footer";
 import Nav from "./components/Nav/Nav";
 import Contact from "./pages/Contact";
+import GraphicDesign from "./pages/GraphicDesign";
 
 function App() {
   const adress = "7 rue de la création";
@@ -18,6 +19,7 @@ function App() {
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/graphicDesign" element={<GraphicDesign />} />
         <Route
           path="/contact"
           element={

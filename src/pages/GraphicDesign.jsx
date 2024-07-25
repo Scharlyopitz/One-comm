@@ -1,3 +1,9 @@
+import Section1 from "../components/GraphicDesign/Section1";
+
 export default function GraphicDesign() {
-  return <main></main>;
+  return (
+    <main>
+      <Section1 />
+    </main>
+  );
 }
