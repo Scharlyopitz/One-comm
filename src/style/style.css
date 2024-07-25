@@ -27,6 +27,12 @@ body li {
   list-style-type: none;
 }
 
+.contactezNous {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 footer {
   position: relative;
   font-family: "Open Sans";
