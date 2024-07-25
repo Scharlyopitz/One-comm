@@ -338,7 +338,7 @@ footer .copyright p {
 }
 .section4 h1 {
   font-size: 60px;
-  padding-bottom: 140px;
+  padding-bottom: 15vh;
 }
 .section4 .linesContainer {
   display: flex;
@@ -368,13 +368,13 @@ footer .copyright p {
 .section4 .formulaire {
   margin: 20vh auto 0;
   width: 95vw;
-  padding: 60px 15%;
+  padding: 7vh 15%;
   background: linear-gradient(350deg, rgba(17, 35, 90, 0.5019607843), rgba(155, 176, 193, 0.5019607843));
   box-shadow: 0px 19px 20px 0px rgba(0, 0, 0, 0.4509803922);
   border-radius: 24px;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 5vh;
 }
 .section4 .formulaire,
 .section4 .formulaire input {
@@ -404,10 +404,10 @@ footer .copyright p {
 .section4 .formulaire form input[type=text], .section4 .formulaire form input[type=email] {
   border: none;
   border-bottom: 1px solid #11235a;
-  margin-top: 7px;
+  margin-top: 0.8vh;
 }
 .section4 .formulaire form input[type=text] {
-  margin-bottom: 60px;
+  margin-bottom: 7vh;
 }
 .section4 .formulaire form .btn {
   cursor: pointer;
@@ -418,7 +418,7 @@ footer .copyright p {
   width: fit-content;
   border: 1px solid #11235a;
   letter-spacing: 2px;
-  margin: 60px auto 0;
+  margin: 7vh auto 0;
 }
 
 .section5 {

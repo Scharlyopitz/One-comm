@@ -7,7 +7,7 @@
 
   h1 {
     font-size: 60px;
-    padding-bottom: 140px;
+    padding-bottom: 15vh;
   }
 
   // LINE
@@ -51,7 +51,7 @@
   .formulaire {
     margin: 20vh auto 0;
     width: 95vw;
-    padding: 60px 15%;
+    padding: 7vh 15%;
     background: linear-gradient(
       350deg,
       $LinearLightBlueOpct,
@@ -61,7 +61,7 @@
     border-radius: 24px;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 5vh;
 
     &,
     input {
@@ -96,11 +96,11 @@
         &[type="email"] {
           border: none;
           border-bottom: 1px solid $LinearDarkBlue;
-          margin-top: 7px;
+          margin-top: 0.8vh;
         }
 
         &[type="text"] {
-          margin-bottom: 60px;
+          margin-bottom: 7vh;
         }
       }
 
@@ -112,7 +112,7 @@
         width: fit-content;
         border: 1px solid $LinearDarkBlue;
         letter-spacing: 2px;
-        margin: 60px auto 0;
+        margin: 7vh auto 0;
       }
     }
   }
