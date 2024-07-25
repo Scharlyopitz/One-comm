@@ -5,10 +5,17 @@ import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 export default function Footer({ adress, commune, mail, tel }) {
   return (
     <footer>
-      <LogoSection />
-      <Links />
-      <ContactSection adress={adress} commune={commune} mail={mail} tel={tel} />
-      <SocialSection />
+      <div className="mainInfo">
+        <LogoSection />
+        <Links />
+        <ContactSection
+          adress={adress}
+          commune={commune}
+          mail={mail}
+          tel={tel}
+        />
+        <SocialSection />
+      </div>
       <Copyright />
     </footer>
   );

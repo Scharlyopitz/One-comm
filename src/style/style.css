@@ -103,56 +103,55 @@ li {
 footer {
   position: relative;
   font-family: "Open Sans";
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 9vh 0 6vh;
+  padding: 4vh 0 1vh;
 }
 footer .link a,
 footer .contactContainer .contacts {
   font-size: 15px;
   font-weight: 100;
 }
-footer .linksContainer .link h2 {
-  margin-bottom: 3vh;
+footer .mainInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+footer .mainInfo .linksContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+footer .mainInfo .linksContainer .link h2 {
+  margin-bottom: 2vh;
   text-decoration: underline;
   font-weight: 400;
+  font-size: 17px;
 }
-footer .linksContainer .link a {
+footer .mainInfo .linksContainer .link a {
   display: flex;
   flex-direction: column;
   line-height: 2.5vh;
   width: -moz-fit-content;
   width: fit-content;
 }
-footer .linksContainer .link a:last-child {
-  margin-bottom: 3vh;
-}
-footer .linksContainer .link a:hover {
+footer .mainInfo .linksContainer .link a:hover {
   text-decoration: underline;
 }
-footer .contactContainer {
-  display: flex;
-  gap: 20px;
-}
-footer .contactContainer .contacts {
+footer .mainInfo .contactContainer .contacts {
   display: flex;
   flex-direction: column;
-  gap: 3vh;
+  gap: 2vh;
 }
-footer .socialsContainer .social {
+footer .mainInfo .socialsContainer .social {
   display: flex;
   align-items: center;
   gap: 3vw;
 }
-footer .socialsContainer .social svg {
+footer .mainInfo .socialsContainer .social svg {
   font-size: 90px;
 }
 footer .copyright {
-  position: absolute;
-  bottom: 2vh;
-  left: 50%;
-  transform: translateX(-50%);
+  margin: 2vh 0;
+  text-align: center;
 }
 footer .copyright p {
   font-size: 14px;
