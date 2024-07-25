@@ -3,25 +3,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 export default function Nav() {
-  const Links = ["Graphic design", "Objets publicitaires", "Actualités"];
-
   return (
     <nav>
       <Logo />
-      <ul>
-        {Links.map((link, i) => {
-          return (
-            <li key={i}>
-              <NavLink to={"/"}>
-                {link} <FontAwesomeIcon icon={faChevronDown} />
-              </NavLink>
-            </li>
-          );
-        })}
-        <li>
-          <NavLink to={"/"}>Contact</NavLink>
-        </li>
-      </ul>
+      <Links />
     </nav>
   );
 }
@@ -39,5 +24,26 @@ function Logo() {
     >
       LOGO
     </div>
+  );
+}
+
+function Links() {
+  const Links = ["Graphic design", "Objets publicitaires", "Actualités"];
+
+  return (
+    <ul>
+      {Links.map((link, i) => {
+        return (
+          <li key={i}>
+            <NavLink to={"/"}>
+              {link} <FontAwesomeIcon icon={faChevronDown} />
+            </NavLink>
+          </li>
+        );
+      })}
+      <li>
+        <NavLink to={"/"}>Contact</NavLink>
+      </li>
+    </ul>
   );
 }
