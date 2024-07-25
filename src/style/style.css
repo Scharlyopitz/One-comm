@@ -90,6 +90,16 @@ li {
   margin: 7vh auto 0;
 }
 
+.rdvSection {
+  background-color: #efefef;
+  color: #0e2244;
+  padding: 20vh 0;
+}
+.rdvSection h1 {
+  color: #0f0f0f;
+  text-align: center;
+}
+
 footer {
   position: relative;
   font-family: "Open Sans";
