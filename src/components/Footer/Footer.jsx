@@ -2,12 +2,12 @@ import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
-export default function Footer() {
+export default function Footer({ adress, commune, mail, tel }) {
   return (
     <footer>
       <LogoSection />
       <Links />
-      <ContactSection />
+      <ContactSection adress={adress} commune={commune} mail={mail} tel={tel} />
       <SocialSection />
       <Copyright />
     </footer>
@@ -64,23 +64,17 @@ function Links() {
   );
 }
 
-function ContactSection() {
-  const adress = ["7 rue de la création", "92100 Boulogne-Billancourt"];
-
-  const contacts = ["contact@one-comm.com", "06.74.52.72.00"];
-
+function ContactSection({ adress, commune, mail, tel }) {
   return (
     <div className="contactContainer">
       <div className="contacts">
         <div className="adress">
-          {adress.map((a, i) => {
-            return <p key={i}>{a}</p>;
-          })}
+          <p>{adress}</p>
+          <p>{commune}</p>
         </div>
         <div className="contact">
-          {contacts.map((c, i) => {
-            return <p key={i}>{c}</p>;
-          })}
+          <p>{mail}</p>
+          <p>{tel}</p>
         </div>
       </div>
     </div>
