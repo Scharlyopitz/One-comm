@@ -28,11 +28,17 @@ body li {
 }
 
 footer {
+  position: relative;
   font-family: "Open Sans";
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   padding: 9vh 0 6vh;
+}
+footer .link a,
+footer .contactContainer .contacts {
+  font-size: 15px;
+  font-weight: 100;
 }
 footer .linksContainer .link h2 {
   margin-bottom: 3vh;
@@ -52,11 +58,6 @@ footer .linksContainer .link a:last-child {
 footer .linksContainer .link a:hover {
   text-decoration: underline;
 }
-footer .link a,
-footer .contactContainer .contacts {
-  font-size: 15px;
-  font-weight: 100;
-}
 footer .contactContainer {
   display: flex;
   gap: 20px;
@@ -73,6 +74,15 @@ footer .socialsContainer .social {
 }
 footer .socialsContainer .social svg {
   font-size: 90px;
+}
+footer .copyright {
+  position: absolute;
+  bottom: 2vh;
+  left: 50%;
+  transform: translateX(-50%);
+}
+footer .copyright p {
+  font-size: 14px;
 }
 
 .section1 {

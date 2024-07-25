@@ -9,6 +9,7 @@ export default function Footer() {
       <Links />
       <ContactSection />
       <SocialSection />
+      <Copyright />
     </footer>
   );
 }
@@ -109,6 +110,14 @@ function SocialSection() {
           );
         })}
       </div>
+    </div>
+  );
+}
+
+function Copyright() {
+  return (
+    <div className="copyright">
+      <p>© Copyright 2024 One comm'. Tous droits réservés.</p>
     </div>
   );
 }
