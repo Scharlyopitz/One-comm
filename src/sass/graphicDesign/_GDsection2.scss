@@ -1,0 +1,33 @@
+.GDSection2 {
+  background-color: $White;
+  color: $LinearDarkBlue;
+  padding: 20vh 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    color: $Black;
+  }
+
+  p {
+    font-family: "Open Sans";
+    width: 60%;
+    text-align: justify;
+    font-size: 20px;
+    line-height: 4vh;
+    margin: 10vh 0;
+  }
+
+  //   CARDS
+
+  .cardsContainer {
+    display: flex;
+    .Card {
+      background: red;
+      border-radius: 24px;
+      width: 200px;
+      height: 200px;
+    }
+  }
+}
