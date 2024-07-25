@@ -23,14 +23,16 @@ function TexteSection() {
 
   return (
     <div className="texteSection">
-      {txts.map((txt, i) => {
-        return (
-          <span key={i}>
-            <FontAwesomeIcon icon={faCheck} style={{ color: "#9BB0C1" }} />
-            {txt}
-          </span>
-        );
-      })}
+      <div className="textsContainer">
+        {txts.map((txt, i) => {
+          return (
+            <span key={i}>
+              <FontAwesomeIcon icon={faCheck} style={{ color: "#9BB0C1" }} />
+              {txt}
+            </span>
+          );
+        })}
+      </div>
       <p>
         BLABLABLA graphisme / support de comm’ Explorer de nouveaux canaux de
         communication à l’aide de nos différents services. De la conception

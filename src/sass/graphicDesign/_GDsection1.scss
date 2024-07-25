@@ -2,4 +2,26 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 20vh 20vh 0;
+  text-align: center;
+
+  .texteSection {
+    .textsContainer {
+      display: flex;
+      justify-content: space-around;
+      margin: 10vh 0;
+
+      svg {
+        margin-right: 20px;
+      }
+    }
+
+    p {
+      font-family: "Open Sans";
+      line-height: 4vh;
+      font-size: 20px;
+      font-weight: 300;
+      text-align: justify;
+    }
+  }
 }
