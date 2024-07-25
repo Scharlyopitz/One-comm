@@ -56,15 +56,9 @@ li {
   color: #11235a;
   font-family: "Open Sans", sans-serif;
 }
-.contactezNous .formulaire p,
 .contactezNous .formulaire span {
+  text-align: justify;
   text-transform: uppercase;
-}
-.contactezNous .formulaire p {
-  font-size: 30px;
-  margin-bottom: 1vh;
-}
-.contactezNous .formulaire span {
   font-size: 17px;
 }
 .contactezNous .formulaire form {
