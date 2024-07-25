@@ -1,3 +1,5 @@
+import Buttons from "../Buttons";
+
 export default function Section1() {
   return (
     <section className="section1">
@@ -11,19 +13,7 @@ export default function Section1() {
           vous accompagne dans vos projets.
         </p>
       </div>
-      <Buttons />
+      <Buttons firstBtn="Contactez-nous" secondBtn="Un devis ?" />
     </section>
-  );
-}
-
-function Buttons() {
-  return (
-    <div className="btnContainer">
-      <div className="btn">
-        <button>Contactez-nous</button>
-        <button>Un devis ?</button>
-      </div>
-      <div className="chevron"></div>
-    </div>
   );
 }
