@@ -38,6 +38,62 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 20vh 0;
+}
+.contactezNous .formulaire {
+  margin: 20vh auto 0;
+  width: 80vw;
+  padding: 7vh 15%;
+  background-color: rgba(239, 239, 239, 0.5176470588);
+  box-shadow: 0px 19px 20px 0px rgba(0, 0, 0, 0.4509803922);
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+}
+.contactezNous .formulaire,
+.contactezNous .formulaire input {
+  color: #11235a;
+  font-family: "Open Sans", sans-serif;
+}
+.contactezNous .formulaire p,
+.contactezNous .formulaire span {
+  text-transform: uppercase;
+}
+.contactezNous .formulaire p {
+  font-size: 30px;
+  margin-bottom: 1vh;
+}
+.contactezNous .formulaire span {
+  font-size: 17px;
+}
+.contactezNous .formulaire form {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+.contactezNous .formulaire form input {
+  background-color: transparent;
+  outline: none;
+}
+.contactezNous .formulaire form input {
+  border: none;
+  border-bottom: 1px solid #11235a;
+  margin-top: 0.8vh;
+}
+.contactezNous .formulaire form input[type=text], .contactezNous .formulaire form input[type=tel], .contactezNous .formulaire form input[type=email] {
+  margin-bottom: 7vh;
+}
+.contactezNous .formulaire form .btn {
+  cursor: pointer;
+  font-size: 20px;
+  padding: 15px 60px;
+  border-radius: 10px;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 1px solid #11235a;
+  letter-spacing: 2px;
+  margin: 7vh auto 0;
 }
 
 footer {
@@ -377,7 +433,7 @@ footer .copyright p {
 }
 .section4 .formulaire {
   margin: 20vh auto 0;
-  width: 95vw;
+  width: 80vw;
   padding: 7vh 15%;
   background: linear-gradient(350deg, rgba(17, 35, 90, 0.5019607843), rgba(155, 176, 193, 0.5019607843));
   box-shadow: 0px 19px 20px 0px rgba(0, 0, 0, 0.4509803922);
