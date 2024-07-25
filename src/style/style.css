@@ -215,10 +215,8 @@ footer .copyright p {
 .section2 .cardContainer .card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   width: 335px;
-  height: 460px;
   border-radius: 25px;
   background-color: rgba(240, 240, 240, 0.3019607843);
   padding: 40px 30px 30px;
@@ -227,6 +225,9 @@ footer .copyright p {
 .section2 .cardContainer .card .name {
   font-size: 25px;
   font-weight: 300;
+}
+.section2 .cardContainer .card .img {
+  margin: 7vh 0;
 }
 .section2 .cardContainer .card .paragraphe {
   color: #0f0f0f;

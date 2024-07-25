@@ -68,7 +68,7 @@ function Card({ name, image, paragraphe }) {
   return (
     <div className="card">
       <p className="name">{name}</p>
-      <p>img</p>
+      <p className="img">img</p>
       {/* <img src={image} alt={`image ${name}`} /> */}
       <p className="paragraphe">{paragraphe}</p>
     </div>

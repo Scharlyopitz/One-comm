@@ -12,6 +12,7 @@
     text-align: center;
   }
 
+  // SVG BACKGROUND
   .svg {
     position: absolute;
     z-index: -1;
@@ -27,7 +28,6 @@
   }
 
   // CARD
-
   .cardContainer {
     display: flex;
     gap: 100px;
@@ -35,10 +35,8 @@
     .card {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
       align-items: center;
       width: 335px;
-      height: 460px;
       border-radius: 25px;
       background-color: $CardBackground;
       padding: 40px 30px 30px;
@@ -47,6 +45,10 @@
       .name {
         font-size: 25px;
         font-weight: 300;
+      }
+
+      .img {
+        margin: 7vh 0;
       }
 
       .paragraphe {
