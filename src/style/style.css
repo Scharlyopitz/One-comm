@@ -98,17 +98,17 @@ footer .copyright p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 3vh;
 }
 .section1 .txt h1 {
   font-size: 75px;
-  line-height: 100px;
+  line-height: 10vh;
 }
 .section1 .txt p {
   text-align: justify;
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
-  line-height: 35px;
+  line-height: 3.5vh;
   font-weight: 100;
   width: 730px;
   margin-bottom: 3vh;
@@ -161,7 +161,6 @@ footer .copyright p {
 .section1 .btnContainer .chevron {
   position: relative;
   width: 40px;
-  height: 15px;
 }
 .section1 .btnContainer .chevron::before, .section1 .btnContainer .chevron::after {
   content: "";
