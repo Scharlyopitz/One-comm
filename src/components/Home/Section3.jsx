@@ -4,15 +4,7 @@ import { faCheck } from "@fortawesome/free-solid-svg-icons";
 export default function Section3() {
   return (
     <section className="section3">
-      <h1>
-        Explorez vos différents canaux de <br />
-        communication.
-      </h1>
-      <p className="description">
-        Explorer de nouveaux canaux de communication à l’aide de nos différents
-        services. De la conception graphique à la personnalisation de vos objets
-        publicitaires, nous accompagnons et vous conseillons dans vos projets.
-      </p>
+      <Texte />
       <div className="cardsSection">
         <SectionCard
           category="Graphisme"
@@ -34,6 +26,22 @@ export default function Section3() {
         />
       </div>
     </section>
+  );
+}
+
+function Texte() {
+  return (
+    <>
+      <h1>
+        Explorez vos différents canaux de <br />
+        communication.
+      </h1>
+      <p className="description">
+        Explorer de nouveaux canaux de communication à l’aide de nos différents
+        services. De la conception graphique à la personnalisation de vos objets
+        publicitaires, nous accompagnons et vous conseillons dans vos projets.
+      </p>
+    </>
   );
 }
 
