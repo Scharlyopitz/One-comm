@@ -20,10 +20,21 @@ function LeftPart({ adress, commune, mail, tel }) {
       </p>
       <p>{mail}</p>
       <p>{tel}</p>
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-QMNGdmr5AqT2LP4ZYRrzx-66t2wHI-BXUbCqhtZtJKxcR3nvOu-6G5yg5gOjsIAcmw8&usqp=CAU"
+        alt="image map tag"
+      />
     </div>
   );
 }
 
 function RightPart() {
-  return <div className="rigthPart">map</div>;
+  return (
+    <div className="rigthPart">
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-QMNGdmr5AqT2LP4ZYRrzx-66t2wHI-BXUbCqhtZtJKxcR3nvOu-6G5yg5gOjsIAcmw8&usqp=CAU"
+        alt="MAP"
+      />
+    </div>
+  );
 }
