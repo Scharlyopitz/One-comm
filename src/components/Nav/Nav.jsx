@@ -42,7 +42,7 @@ function Links() {
         );
       })}
       <li>
-        <NavLink to={"/"}>Contact</NavLink>
+        <NavLink to="/contact">Contact</NavLink>
       </li>
     </ul>
   );
