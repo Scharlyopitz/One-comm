@@ -12,7 +12,11 @@ function Logos() {
     <>
       <div className="logosContainer">
         {[...Array(5)].map((_, i) => {
-          return <div key={i} className="logo"></div>;
+          return (
+            <div key={i} className="logo">
+              logo
+            </div>
+          );
         })}
       </div>
     </>

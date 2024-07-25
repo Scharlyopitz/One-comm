@@ -430,11 +430,6 @@ footer .socialsContainer .social svg {
   width: 70%;
   justify-content: space-between;
 }
-.section5 .logosContainer .logo {
-  width: 40px;
-  height: 40px;
-  background-color: #0f0f0f;
-}
 
 nav {
   display: flex;
