@@ -27,6 +27,54 @@ body li {
   list-style-type: none;
 }
 
+footer {
+  font-family: "Open Sans";
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 9vh 0 6vh;
+}
+footer .linksContainer .link h2 {
+  margin-bottom: 3vh;
+  text-decoration: underline;
+  font-weight: 400;
+}
+footer .linksContainer .link a {
+  display: flex;
+  flex-direction: column;
+  line-height: 2.5vh;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+footer .linksContainer .link a:last-child {
+  margin-bottom: 3vh;
+}
+footer .linksContainer .link a:hover {
+  text-decoration: underline;
+}
+footer .link a,
+footer .contactContainer .contacts {
+  font-size: 15px;
+  font-weight: 100;
+}
+footer .contactContainer {
+  display: flex;
+  gap: 20px;
+}
+footer .contactContainer .contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+footer .socialsContainer .social {
+  display: flex;
+  align-items: center;
+  gap: 3vw;
+}
+footer .socialsContainer .social svg {
+  font-size: 90px;
+}
+
 .section1 {
   display: flex;
   flex-direction: column;
