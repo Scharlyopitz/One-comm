@@ -34,6 +34,73 @@ li {
   list-style-type: none;
 }
 
+.btnContainer {
+  position: absolute;
+  bottom: 5%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 7vh;
+}
+.btnContainer .btn {
+  display: flex;
+  gap: 16px;
+}
+.btnContainer .btn button {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  padding: 14px 42px;
+  border-radius: 6px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  background: linear-gradient(90deg, #11235a, #9bb0c1);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.btnContainer .btn button:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #efefef;
+}
+.btnContainer .btn button:nth-child(2) {
+  background: transparent;
+  border: 1px solid #efefef;
+  color: #efefef;
+}
+.btnContainer .chevron {
+  position: relative;
+  width: 40px;
+}
+.btnContainer .chevron::before, .btnContainer .chevron::after {
+  content: "";
+  width: 50%;
+  height: 2px;
+  background-color: #efefef;
+  position: absolute;
+  bottom: 0;
+}
+.btnContainer .chevron::before {
+  left: 1px;
+  transform-origin: right;
+  transform: rotate(45deg);
+  border-radius: 5px 0 5px 5px;
+}
+.btnContainer .chevron::after {
+  right: 1px;
+  transform-origin: left;
+  transform: rotate(-45deg);
+  border-radius: 0 5px 5px 5px;
+}
+
 .contactezNous {
   display: flex;
   flex-direction: column;
@@ -188,6 +255,12 @@ footer .copyright p {
   font-size: 14px;
 }
 
+.GDsection1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .section1 {
   display: flex;
   flex-direction: column;
@@ -217,72 +290,6 @@ footer .copyright p {
 }
 .section1 svg {
   font-size: 50px;
-}
-.section1 .btnContainer {
-  position: absolute;
-  bottom: 8%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 7vh;
-}
-.section1 .btnContainer .btn {
-  display: flex;
-  gap: 16px;
-}
-.section1 .btnContainer .btn button {
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  font-size: 16px;
-  font-family: "Roboto", sans-serif;
-  padding: 14px 42px;
-  border-radius: 6px;
-  font-weight: bold;
-  border: none;
-  outline: none;
-  background: linear-gradient(90deg, #11235a, #9bb0c1);
-  -webkit-background-clip: text;
-  color: transparent;
-}
-.section1 .btnContainer .btn button:nth-child(1)::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #efefef;
-}
-.section1 .btnContainer .btn button:nth-child(2) {
-  background: transparent;
-  border: 1px solid #efefef;
-  color: #efefef;
-}
-.section1 .btnContainer .chevron {
-  position: relative;
-  width: 40px;
-}
-.section1 .btnContainer .chevron::before, .section1 .btnContainer .chevron::after {
-  content: "";
-  width: 50%;
-  height: 2px;
-  background-color: #efefef;
-  position: absolute;
-  bottom: 0;
-}
-.section1 .btnContainer .chevron::before {
-  left: 1px;
-  transform-origin: right;
-  transform: rotate(45deg);
-  border-radius: 5px 0 5px 5px;
-}
-.section1 .btnContainer .chevron::after {
-  right: 1px;
-  transform-origin: left;
-  transform: rotate(-45deg);
-  border-radius: 0 5px 5px 5px;
 }
 
 .section2 {

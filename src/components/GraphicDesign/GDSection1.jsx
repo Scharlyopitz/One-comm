@@ -1,10 +1,10 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons/faCheck";
-import Buttons from "../Buttons";
+import Buttons from "../Buttons/Buttons";
 
-export default function Section1() {
+export default function GDSection1() {
   return (
-    <section className="section1">
+    <section className="GDsection1">
       <h1>
         Explorez de nouveaux supports <br /> de communication.
       </h1>

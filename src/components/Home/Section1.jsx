@@ -1,4 +1,4 @@
-import Buttons from "../Buttons";
+import Buttons from "../Buttons/Buttons";
 
 export default function Section1() {
   return (

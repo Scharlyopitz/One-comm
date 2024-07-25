@@ -1,0 +1,75 @@
+.btnContainer {
+  position: absolute;
+  bottom: 5%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 7vh;
+
+  .btn {
+    display: flex;
+    gap: 16px;
+
+    button {
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      font-size: 16px;
+      font-family: "Roboto", sans-serif;
+      padding: 14px 42px;
+      border-radius: 6px;
+      font-weight: bold;
+      border: none;
+      outline: none;
+
+      background: linear-gradient(90deg, $LinearDarkBlue, $LinearLightBlue);
+
+      -webkit-background-clip: text;
+      color: transparent;
+
+      &:nth-child(1)::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $White;
+      }
+
+      &:nth-child(2) {
+        background: transparent;
+        border: 1px solid $White;
+        color: $White;
+      }
+    }
+  }
+  .chevron {
+    position: relative;
+    width: 40px;
+
+    &::before,
+    &::after {
+      content: "";
+      width: 50%;
+      height: 2px;
+      background-color: $White;
+      position: absolute;
+      bottom: 0;
+    }
+
+    &::before {
+      left: 1px;
+      transform-origin: right;
+      transform: rotate(45deg);
+      border-radius: 5px 0 5px 5px;
+    }
+    &::after {
+      right: 1px;
+      transform-origin: left;
+      transform: rotate(-45deg);
+      border-radius: 0 5px 5px 5px;
+    }
+  }
+}
