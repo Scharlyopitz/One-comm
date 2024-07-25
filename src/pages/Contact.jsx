@@ -1,3 +1,9 @@
+import ContactezNous from "../components/Contact/ContactezNous";
+
 export default function Contact() {
-  return <main></main>;
+  return (
+    <main>
+      <ContactezNous />
+    </main>
+  );
 }
