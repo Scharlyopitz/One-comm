@@ -1,13 +1,14 @@
 .GDSection2 {
   background-color: $White;
   color: $LinearDarkBlue;
-  padding: 20vh 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   h1 {
     color: $Black;
+
+    margin-top: 20vh;
   }
 
   p {
@@ -23,11 +24,20 @@
 
   .cardsContainer {
     display: flex;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
     .Card {
-      background: red;
+      background: linear-gradient(
+        350deg,
+        $LinearLightBlueOpct,
+        $LinearDarkBlueOpct
+      );
       border-radius: 24px;
-      width: 200px;
-      height: 200px;
+      width: 300px;
+      height: 300px;
     }
   }
 }

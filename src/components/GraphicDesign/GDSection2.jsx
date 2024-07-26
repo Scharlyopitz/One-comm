@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+
 export default function GDSection2() {
   return (
     <section className="GDSection2">
@@ -26,6 +29,7 @@ function Cards() {
   return (
     <div className="cardsContainer">
       <Card />
+      <FontAwesomeIcon icon={faChevronRight} style={{ color: "#11235A" }} />
       <Card />
     </div>
   );
