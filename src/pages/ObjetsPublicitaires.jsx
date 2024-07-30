@@ -1,11 +1,11 @@
+import OPSection2 from "../components/ObjetsPublicitaires/OPSection2";
 import Section1Duplicate from "../components/Section1Duplicate/Section1Duplicate";
 
 export default function ObjetsPublicitaires() {
   return (
     <main>
       <Section1Duplicate
-        titre1="Découvrez la communication
-"
+        titre1="Découvrez la communication"
         titre2="par l’objet."
         txts={[
           "Une sélection de produits originaux et innovants.",
@@ -16,6 +16,7 @@ export default function ObjetsPublicitaires() {
         firstBtn="Nos objets publicitaires"
         secondBtn="Une demande ?"
       />
+      <OPSection2 />
     </main>
   );
 }
