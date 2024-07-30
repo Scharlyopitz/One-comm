@@ -11,7 +11,7 @@ export default function GDSection2() {
         graphique à la personnalisation de vos objets publicitaires, nous
         accompagnons et vous conseillons dans vos projets."
       />
-      <Cards />
+      <Logos />
       <Texte
         h1="Création de votre identité visuelle."
         p="Identité visuelle c’est quoi ? a quoi ça sert pour une marque ? ce que ça comprend ? Explorer de nouveaux canaux de communication à l’aide de nos différents services. De la conception graphique à la personnalisation de vos objets publicitaires, nous accompagnons et vous conseillons dans vos projets."
@@ -29,16 +29,16 @@ function Texte({ h1, p }) {
   );
 }
 
-function Cards() {
+function Logos() {
   return (
-    <div className="cardsContainer">
-      <Card />
+    <div className="logosContainer">
+      <Logo />
       <FontAwesomeIcon icon={faChevronRight} style={{ color: "#11235A" }} />
-      <Card />
+      <Logo />
     </div>
   );
 }
 
-function Card() {
-  return <div className="Card"></div>;
+function Logo() {
+  return <div className="Card">Logo</div>;
 }
