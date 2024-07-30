@@ -4,6 +4,7 @@ import Footer from "./components/Footer/Footer";
 import Nav from "./components/Nav/Nav";
 import Contact from "./pages/Contact";
 import GraphicDesign from "./pages/GraphicDesign";
+import ObjetsPublicitaires from "./pages/ObjetsPublicitaires";
 
 function App() {
   const adress = "7 rue de la création";
@@ -20,6 +21,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/graphicDesign" element={<GraphicDesign />} />
+        <Route path="/objetsPublicitaires" element={<ObjetsPublicitaires />} />
         <Route
           path="/contact"
           element={
