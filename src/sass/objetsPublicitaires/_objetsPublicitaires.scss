@@ -17,6 +17,11 @@
     width: 100%;
     display: flex;
     justify-content: space-around;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: "Open Sans";
+    background-color: $WhiteOpct;
+    border-bottom: 1px solid $Black;
 
     .left {
       display: flex;
@@ -24,6 +29,31 @@
 
       .Menu {
         cursor: pointer;
+      }
+    }
+
+    .right {
+      display: flex;
+      gap: 1vw;
+
+      input,
+      button {
+        padding: 0.5vh 1.5vw;
+      }
+
+      input {
+        border-radius: 20px;
+        background: $Grey;
+        border: none;
+        outline: none;
+      }
+
+      button {
+        cursor: pointer;
+        color: $LinearDarkBlue;
+        border-radius: 20px;
+        background: $White;
+        border: 1px solid $LinearDarkBlue;
       }
     }
   }

@@ -35,7 +35,7 @@ function NavOP() {
   function Right() {
     return (
       <div className="right">
-        <input type="text" />
+        <input type="text" placeholder="Que recherchez-vous ?" />
         <button>Mon devis</button>
       </div>
     );

@@ -644,6 +644,11 @@ nav ul svg {
   width: 100%;
   display: flex;
   justify-content: space-around;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: "Open Sans";
+  background-color: rgba(239, 239, 239, 0.5176470588);
+  border-bottom: 1px solid #0f0f0f;
 }
 .OPSection2 .nav .left {
   display: flex;
@@ -651,6 +656,27 @@ nav ul svg {
 }
 .OPSection2 .nav .left .Menu {
   cursor: pointer;
+}
+.OPSection2 .nav .right {
+  display: flex;
+  gap: 1vw;
+}
+.OPSection2 .nav .right input,
+.OPSection2 .nav .right button {
+  padding: 0.5vh 1.5vw;
+}
+.OPSection2 .nav .right input {
+  border-radius: 20px;
+  background: #e8e8e8;
+  border: none;
+  outline: none;
+}
+.OPSection2 .nav .right button {
+  cursor: pointer;
+  color: #11235a;
+  border-radius: 20px;
+  background: #efefef;
+  border: 1px solid #11235a;
 }
 .OPSection2 .img {
   position: absolute;
