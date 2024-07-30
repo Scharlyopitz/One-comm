@@ -2,25 +2,28 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons/faCheck";
 import Buttons from "../Buttons/Buttons";
 
-export default function Section1Duplicate() {
+export default function Section1Duplicate({
+  titre1,
+  titre2,
+  txts,
+  spitch,
+  firstBtn,
+  secondBtn,
+}) {
   return (
     <section className="Section1Duplicate">
       <h1>
-        Explorez de nouveaux supports <br /> de communication.
+        {titre1}
+        <br />
+        {titre2}
       </h1>
-      <TexteSection />
-      <Buttons firstBtn="Contactez-nous" secondBtn="Une demande ?" />
+      <TexteSection txts={txts} spitch={spitch} />
+      <Buttons firstBtn={firstBtn} secondBtn={secondBtn} />
     </section>
   );
 }
 
-function TexteSection() {
-  const txts = [
-    "Vectorisation de votre logo",
-    "Création de votre identité visuelle",
-    "Création de support Print et Digital",
-  ];
-
+function TexteSection({ txts, spitch }) {
   return (
     <div className="texteSection">
       <div className="textsContainer">
@@ -33,12 +36,7 @@ function TexteSection() {
           );
         })}
       </div>
-      <p>
-        BLABLABLA graphisme / support de comm’ Explorer de nouveaux canaux de
-        communication à l’aide de nos différents services. De la conception
-        graphique à la personnalisation de vos objets publicitaires, nous
-        accompagnons et vous conseillons dans vos projets.
-      </p>
+      <p>{spitch}</p>
     </div>
   );
 }
