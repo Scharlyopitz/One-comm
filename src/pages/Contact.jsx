@@ -1,11 +1,11 @@
 import ContactezNous from "../components/Contact/ContactezNous";
 import RdvSection from "../components/Contact/RdvSection";
 
-export default function Contact({ adress, commune, mail, tel }) {
+export default function Contact({ Contacts }) {
   return (
     <main>
       <ContactezNous />
-      <RdvSection adress={adress} commune={commune} mail={mail} tel={tel} />
+      <RdvSection Contacts={Contacts} />
     </main>
   );
 }

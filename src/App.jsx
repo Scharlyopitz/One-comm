@@ -7,13 +7,12 @@ import GraphicDesign from "./pages/GraphicDesign";
 import ObjetsPublicitaires from "./pages/ObjetsPublicitaires";
 
 function App() {
-  const adress = "7 rue de la création";
-
-  const commune = "92100 Boulogne-Billancourt";
-
-  const mail = "contact@one-comm.com";
-
-  const tel = "06.74.52.72.00";
+  const Contacts = {
+    adress: "7 rue de la création",
+    commune: "92100 Boulogne-Billancourt",
+    mail: "contact@one-comm.com",
+    tel: "06.74.52.72.00",
+  };
 
   return (
     <>
@@ -22,14 +21,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/graphicDesign" element={<GraphicDesign />} />
         <Route path="/objetsPublicitaires" element={<ObjetsPublicitaires />} />
-        <Route
-          path="/contact"
-          element={
-            <Contact adress={adress} commune={commune} mail={mail} tel={tel} />
-          }
-        />
+        <Route path="/contact" element={<Contact Contacts={Contacts} />} />
       </Routes>
-      <Footer adress={adress} commune={commune} mail={mail} tel={tel} />
+      <Footer Contacts={Contacts} />
     </>
   );
 }

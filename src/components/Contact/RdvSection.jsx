@@ -1,25 +1,25 @@
-export default function RdvSection({ adress, commune, mail, tel }) {
+export default function RdvSection({ Contacts }) {
   return (
     <section className="rdvSection">
       <h1>
         Programmons un rendez-vous <br /> dans nos locaux !
       </h1>
       <div className="partsContainer">
-        <LeftPart adress={adress} commune={commune} mail={mail} tel={tel} />
+        <LeftPart Contacts={Contacts} />
         <RightPart />
       </div>
     </section>
   );
 }
 
-function LeftPart({ adress, commune, mail, tel }) {
+function LeftPart({ Contacts }) {
   return (
     <div className="leftPart">
       <p>
-        {adress},{commune}
+        {Contacts.adress},{Contacts.commune}
       </p>
-      <p>{mail}</p>
-      <p>{tel}</p>
+      <p>{Contacts.mail}</p>
+      <p>{Contacts.tel}</p>
       <img
         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-QMNGdmr5AqT2LP4ZYRrzx-66t2wHI-BXUbCqhtZtJKxcR3nvOu-6G5yg5gOjsIAcmw8&usqp=CAU"
         alt="image map tag"

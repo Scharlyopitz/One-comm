@@ -2,18 +2,13 @@ import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
-export default function Footer({ adress, commune, mail, tel }) {
+export default function Footer({ Contacts }) {
   return (
     <footer>
       <div className="mainInfo">
         <LogoSection />
         <Links />
-        <ContactSection
-          adress={adress}
-          commune={commune}
-          mail={mail}
-          tel={tel}
-        />
+        <ContactSection Contacts={Contacts} />
         <SocialSection />
       </div>
       <Copyright />
@@ -71,17 +66,17 @@ function Links() {
   );
 }
 
-function ContactSection({ adress, commune, mail, tel }) {
+function ContactSection({ Contacts }) {
   return (
     <div className="contactContainer">
       <div className="contacts">
         <div className="adress">
-          <p>{adress}</p>
-          <p>{commune}</p>
+          <p>{Contacts.adress}</p>
+          <p>{Contacts.commune}</p>
         </div>
         <div className="contact">
-          <p>{mail}</p>
-          <p>{tel}</p>
+          <p>{Contacts.mail}</p>
+          <p>{Contacts.tel}</p>
         </div>
       </div>
     </div>
