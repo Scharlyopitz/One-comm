@@ -654,8 +654,46 @@ nav ul svg {
   display: flex;
   gap: 1vw;
 }
+.OPSection2 .nav .left a {
+  display: flex;
+  align-items: center;
+}
 .OPSection2 .nav .left .Menu {
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  color: #11235a;
+  background-color: #efefef;
+  padding: 0.5vh 1.5vw;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+.OPSection2 .nav .left .Menu .burgerContainer {
+  position: relative;
+  width: 15px;
+  height: 9px;
+  display: flex;
+  align-items: center;
+}
+.OPSection2 .nav .left .Menu .burgerContainer .burger {
+  width: 100%;
+  height: 0.5px;
+  background-color: #11235a;
+}
+.OPSection2 .nav .left .Menu .burgerContainer .burger::after, .OPSection2 .nav .left .Menu .burgerContainer .burger::before {
+  content: "";
+  width: 100%;
+  height: 0.5px;
+  background: #11235a;
+  position: absolute;
+  left: 0;
+}
+.OPSection2 .nav .left .Menu .burgerContainer .burger::after {
+  top: 0;
+}
+.OPSection2 .nav .left .Menu .burgerContainer .burger::before {
+  bottom: 0;
 }
 .OPSection2 .nav .right {
   display: flex;

@@ -27,8 +27,53 @@
       display: flex;
       gap: 1vw;
 
+      a {
+        display: flex;
+        align-items: center;
+      }
+
       .Menu {
         cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 1vw;
+        color: $LinearDarkBlue;
+        background-color: $White;
+        padding: 0.5vh 1.5vw;
+        border-radius: 20px;
+        text-transform: uppercase;
+
+        .burgerContainer {
+          position: relative;
+          width: 15px;
+          height: 9px;
+          display: flex;
+          align-items: center;
+
+          .burger {
+            width: 100%;
+            height: 0.5px;
+            background-color: $LinearDarkBlue;
+
+            &::after,
+            &::before {
+              content: "";
+              width: 100%;
+              height: 0.5px;
+              background: $LinearDarkBlue;
+              position: absolute;
+              left: 0;
+            }
+
+            &::after {
+              top: 0;
+            }
+
+            &::before {
+              bottom: 0;
+            }
+          }
+        }
       }
     }
 

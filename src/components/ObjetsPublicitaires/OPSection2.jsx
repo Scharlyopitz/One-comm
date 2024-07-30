@@ -20,7 +20,12 @@ function NavOP() {
 
     return (
       <div className="left">
-        <div className="Menu">Menu</div>
+        <div className="Menu">
+          <div className="burgerContainer">
+            <div className="burger" />
+          </div>
+          <p>Menu</p>
+        </div>
         {Links.map((link, i) => {
           return (
             <NavLink key={i} to={link.href}>
