@@ -3,6 +3,11 @@
   background: $White;
   z-index: 1;
 
+  h1 {
+    padding: 20vh 0;
+    text-align: center;
+  }
+
   &,
   a {
     color: $Black;
@@ -105,7 +110,7 @@
 
   //   IMG
   .img {
-    position: absolute;
+    // position: absolute;
     left: 0;
     top: 0;
     background-color: rgb(25, 228, 25);
@@ -114,5 +119,83 @@
     justify-content: center;
     width: 100%;
     height: 50vh;
+  }
+
+  //   CATEGORIES SECTION
+
+  .categoriesSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .categoriesContainer {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      gap: 20px;
+      text-align: center;
+
+      .categorie {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 240px;
+        height: 240px;
+        color: white;
+        background-color: $Black;
+        margin: auto;
+        border-radius: 20px;
+      }
+    }
+  }
+
+  //   TENDANCE
+
+  .tendance {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20vh;
+
+    .image {
+      color: $White;
+      background: $Black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: calc(20px - 10px);
+      height: 60%;
+    }
+
+    .bestSellerContainer {
+      display: flex;
+      gap: 40px;
+
+      .bestSeller {
+        display: flex;
+        flex-direction: column;
+        background: red;
+        height: 428px;
+        width: 286px;
+        padding: 15px;
+        border-radius: calc(20px);
+
+        .infos {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          flex-grow: 1;
+
+          .footContainer {
+            display: flex;
+            justify-content: space-between;
+
+            .price {
+              text-align: end;
+            }
+          }
+        }
+      }
+    }
   }
 }
