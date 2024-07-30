@@ -311,8 +311,21 @@ footer .copyright p {
   height: 200px;
 }
 .GDSection2 .sliderContainer .slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #efefef;
   width: 200px;
   height: 100%;
+  background-color: black;
+}
+.GDSection2 .img {
+  color: #efefef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 400px;
   background-color: black;
 }
 

@@ -39,9 +39,25 @@
     height: 200px;
 
     .slider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $White;
       width: 200px;
       height: 100%;
       background-color: black;
     }
+  }
+
+  // IMG
+
+  .img {
+    color: $White;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    background-color: black;
   }
 }
