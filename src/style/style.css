@@ -256,11 +256,13 @@ footer .copyright p {
 }
 
 .GDSection2 {
+  position: relative;
   background-color: #efefef;
   color: #11235a;
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 1;
 }
 .GDSection2 h1 {
   color: #0f0f0f;
@@ -627,16 +629,28 @@ nav ul svg {
 .OPSection2 {
   position: relative;
   background: #efefef;
+  z-index: 1;
 }
 .OPSection2,
 .OPSection2 a {
   color: #0f0f0f;
 }
 .OPSection2 .nav {
+  padding: 5vh 0;
   position: sticky;
   z-index: 1;
   top: 7vh;
   left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.OPSection2 .nav .left {
+  display: flex;
+  gap: 1vw;
+}
+.OPSection2 .nav .left .Menu {
+  cursor: pointer;
 }
 .OPSection2 .img {
   position: absolute;
@@ -653,7 +667,6 @@ nav ul svg {
 .Section1Duplicate {
   position: sticky;
   top: 0;
-  z-index: -1;
   display: flex;
   flex-direction: column;
   align-items: center;

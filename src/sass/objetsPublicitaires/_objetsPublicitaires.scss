@@ -1,19 +1,34 @@
 .OPSection2 {
   position: relative;
   background: $White;
+  z-index: 1;
 
   &,
   a {
     color: $Black;
   }
-
+  //   NAV
   .nav {
+    padding: 5vh 0;
     position: sticky;
     z-index: 1;
     top: 7vh;
     left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    .left {
+      display: flex;
+      gap: 1vw;
+
+      .Menu {
+        cursor: pointer;
+      }
+    }
   }
 
+  //   IMG
   .img {
     position: absolute;
     left: 0;

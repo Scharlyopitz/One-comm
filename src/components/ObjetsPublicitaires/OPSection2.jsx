@@ -3,13 +3,13 @@ import { NavLink } from "react-router-dom";
 export default function OPSection2() {
   return (
     <section className="OPSection2">
-      <Nav />
+      <NavOP />
       <div className="img">IMAGE</div>
     </section>
   );
 }
 
-function Nav() {
+function NavOP() {
   function Left() {
     const Links = [
       { name: "Express 24 / 48h", href: "/" },
