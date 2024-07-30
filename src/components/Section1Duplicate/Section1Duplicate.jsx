@@ -2,9 +2,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons/faCheck";
 import Buttons from "../Buttons/Buttons";
 
-export default function GDSection1() {
+export default function Section1Duplicate() {
   return (
-    <section className="GDsection1">
+    <section className="Section1Duplicate">
       <h1>
         Explorez de nouveaux supports <br /> de communication.
       </h1>
