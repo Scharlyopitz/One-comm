@@ -297,6 +297,12 @@ footer .copyright p {
   line-height: 4vh;
   margin: 10vh 0;
 }
+.GDSection2 .logosContainer {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .section1 {
   display: flex;
