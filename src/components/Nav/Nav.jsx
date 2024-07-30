@@ -35,7 +35,7 @@ function Links() {
     },
     {
       name: "Objets publicitaires",
-      href: "/objetspublicitaires",
+      href: "/objetsPublicitaires",
     },
     {
       name: "Actualités",
