@@ -775,7 +775,7 @@ nav ul svg {
 .OPSection2 .tendance .bestSellerContainer .bestSeller {
   display: flex;
   flex-direction: column;
-  background: red;
+  background: #ffffff;
   height: 428px;
   width: 286px;
   padding: 15px;
