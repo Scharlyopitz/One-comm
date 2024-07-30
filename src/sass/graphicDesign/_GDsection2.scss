@@ -19,25 +19,4 @@
     line-height: 4vh;
     margin: 10vh 0;
   }
-
-  //   CARDS
-
-  .cardsContainer {
-    display: flex;
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    .Card {
-      background: linear-gradient(
-        350deg,
-        $LinearLightBlueOpct,
-        $LinearDarkBlueOpct
-      );
-      border-radius: 24px;
-      width: 300px;
-      height: 300px;
-    }
-  }
 }

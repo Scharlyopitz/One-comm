@@ -297,19 +297,6 @@ footer .copyright p {
   line-height: 4vh;
   margin: 10vh 0;
 }
-.GDSection2 .cardsContainer {
-  display: flex;
-  width: 60%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.GDSection2 .cardsContainer .Card {
-  background: linear-gradient(350deg, rgba(17, 35, 90, 0.5019607843), rgba(155, 176, 193, 0.5019607843));
-  border-radius: 24px;
-  width: 300px;
-  height: 300px;
-}
 
 .section1 {
   display: flex;
