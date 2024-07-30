@@ -12,6 +12,10 @@ export default function GDSection2() {
         accompagnons et vous conseillons dans vos projets."
       />
       <Cards />
+      <Texte
+        h1="Création de votre identité visuelle."
+        p="Identité visuelle c’est quoi ? a quoi ça sert pour une marque ? ce que ça comprend ? Explorer de nouveaux canaux de communication à l’aide de nos différents services. De la conception graphique à la personnalisation de vos objets publicitaires, nous accompagnons et vous conseillons dans vos projets."
+      />
     </section>
   );
 }
