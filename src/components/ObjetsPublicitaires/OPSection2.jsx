@@ -4,6 +4,7 @@ export default function OPSection2() {
   return (
     <section className="OPSection2">
       <Nav />
+      <div className="img">IMAGE</div>
     </section>
   );
 }
@@ -21,7 +22,11 @@ function Nav() {
       <div className="left">
         <div className="Menu">Menu</div>
         {Links.map((link, i) => {
-          return <NavLink to={link.href}>{link.name}</NavLink>;
+          return (
+            <NavLink key={i} to={link.href}>
+              {link.name}
+            </NavLink>
+          );
         })}
       </div>
     );

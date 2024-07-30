@@ -625,11 +625,35 @@ nav ul svg {
 }
 
 .OPSection2 {
-  background: green;
+  position: relative;
+  background: #efefef;
+}
+.OPSection2,
+.OPSection2 a {
   color: #0f0f0f;
+}
+.OPSection2 .nav {
+  position: sticky;
+  z-index: 1;
+  top: 7vh;
+  left: 0;
+}
+.OPSection2 .img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgb(25, 228, 25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50vh;
 }
 
 .Section1Duplicate {
+  position: sticky;
+  top: 0;
+  z-index: -1;
   display: flex;
   flex-direction: column;
   align-items: center;
