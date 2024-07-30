@@ -16,6 +16,7 @@ export default function GDSection2() {
         h1="Création de votre identité visuelle."
         p="Identité visuelle c’est quoi ? a quoi ça sert pour une marque ? ce que ça comprend ? Explorer de nouveaux canaux de communication à l’aide de nos différents services. De la conception graphique à la personnalisation de vos objets publicitaires, nous accompagnons et vous conseillons dans vos projets."
       />
+      <Slider />
     </section>
   );
 }
@@ -41,4 +42,14 @@ function Logos() {
 
 function Logo() {
   return <div className="Card">Logo</div>;
+}
+
+function Slider() {
+  return (
+    <div className="sliderContainer">
+      {[...Array(5)].map((_, i) => {
+        return <div key={i} className="slider"></div>;
+      })}
+    </div>
+  );
 }
