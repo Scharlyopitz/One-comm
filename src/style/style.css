@@ -738,6 +738,7 @@ nav ul svg {
   align-items: center;
 }
 .OPSection2 .navContainer .nav .left .Menu {
+  position: relative;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -773,6 +774,25 @@ nav ul svg {
 }
 .OPSection2 .navContainer .nav .left .Menu .burgerContainer .burger::before {
   bottom: 0;
+}
+.OPSection2 .navContainer .nav .left .Menu .modalMenu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #efefef;
+  padding: 4vh 2vw 2vh;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+.OPSection2 .navContainer .nav .left .Menu .modalMenu a {
+  white-space: nowrap;
+  text-transform: capitalize;
+}
+.OPSection2 .navContainer .nav .left .Menu .modalMenu a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
 }
 .OPSection2 .navContainer .nav .right {
   display: flex;

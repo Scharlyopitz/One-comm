@@ -36,6 +36,7 @@
       background-color: $WhiteOpct;
       border-bottom: 1px solid $Black;
 
+      // LEFT
       .left {
         display: flex;
         gap: 1vw;
@@ -45,7 +46,9 @@
           align-items: center;
         }
 
+        // MENU
         .Menu {
+          position: relative;
           cursor: pointer;
           display: flex;
           align-items: center;
@@ -87,9 +90,33 @@
               }
             }
           }
+
+          // MODAL MENU
+          .modalMenu {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: $White;
+            padding: 4vh 2vw 2vh;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 1vh;
+
+            a {
+              white-space: nowrap;
+              text-transform: capitalize;
+
+              &:hover {
+                text-decoration: underline;
+                text-decoration-thickness: 1px;
+              }
+            }
+          }
         }
       }
 
+      // RIGHT
       .right {
         display: flex;
         gap: 1vw;

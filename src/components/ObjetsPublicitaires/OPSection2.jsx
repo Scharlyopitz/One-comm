@@ -26,9 +26,45 @@ function NavOP() {
       { name: "Tous nos goodies", href: "/" },
     ];
 
+    function ModalMenu() {
+      const Links = [
+        { name: "Express 24 / 48h", href: "/" },
+        { name: "Hight-Tech", href: "/" },
+        { name: "Drinkwear", href: "/" },
+        { name: "écriture", href: "/" },
+        { name: "Tote Bag", href: "/" },
+        { name: "Goodies écologiques", href: "/" },
+        { name: "Textiles et accessoires", href: "/" },
+        { name: "Gastronomie / Maison", href: "/" },
+        { name: "Accessoires smartphone", href: "/" },
+        { name: "Outils / Bricolage", href: "/" },
+        { name: "Sacs et bagagerie", href: "/" },
+        { name: "Signalétique et packaging", href: "/" },
+        { name: "Articles de poche", href: "/" },
+        { name: "Sport et loisirs", href: "/" },
+        { name: "Hygiène beauté et santé", href: "/" },
+        { name: "Parapluies", href: "/" },
+      ];
+
+      return (
+        <div className="modalMenu">
+          {Links.map((link, i) => {
+            return (
+              <NavLink key={i} to={link.href}>
+                {link.name}
+              </NavLink>
+            );
+          })}
+        </div>
+      );
+    }
+
+    const [openModal, setOpenModal] = useState(false);
+
     return (
       <div className="left">
-        <div className="Menu">
+        <div onClick={() => setOpenModal(!openModal)} className="Menu">
+          {openModal && <ModalMenu />}
           <div className="burgerContainer">
             <div className="burger" />
           </div>
