@@ -800,6 +800,9 @@ nav ul svg {
   padding: 15px;
   border-radius: 20px;
 }
+.OPSection2 .tendance .carroussel .bestSellerContainer .bestSeller:nth-child(odd) {
+  background-color: red;
+}
 .OPSection2 .tendance .carroussel .bestSellerContainer .bestSeller .infos {
   display: flex;
   flex-direction: column;

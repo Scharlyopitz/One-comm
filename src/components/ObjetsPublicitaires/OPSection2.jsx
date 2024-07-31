@@ -4,6 +4,7 @@ import {
   faChevronLeft,
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
+import { useEffect, useState } from "react";
 
 export default function OPSection2() {
   return (
@@ -111,35 +112,65 @@ function Tendance() {
 
   const cardNumber = [0, 1, 2, 3, 4, 5, 6, 7];
 
+  const [currentItems, setCurrentItems] = useState(0);
+
+  useEffect(() => {
+    if (currentItems < 0) {
+      setCurrentItems(cardNumber.length - 1);
+    } else if (currentItems - 1 == cardNumber.length - 1) {
+      setCurrentItems(0);
+    }
+  }, [currentItems]);
+
+  function Card({ currentItems }) {
+    return (
+      <div className="bestSellerContainer">
+        {[...Array(cardNumber.length)].map((_, i) => {
+          return (
+            <div
+              style={{
+                transform: `translateX(calc(${-100 * currentItems}% - ${
+                  20 * currentItems
+                }px))`,
+              }}
+              key={i}
+              className="bestSeller"
+            >
+              <div className="image">IMAGE</div>
+              <div className="infos">
+                <div className="categorie">{bestSeller.categorie}</div>
+                <div className="ref">{bestSeller.ref}</div>
+                <div className="footContainer">
+                  <div className="nameContainer">
+                    <p>{bestSeller.name}</p>
+                    <p>{bestSeller.weight}</p>
+                  </div>
+                  <div className="price">
+                    <p>dès</p>
+                    <p>{bestSeller.price}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    );
+  }
+
   return (
     <div className="tendance">
       <h1>Tendances du moment</h1>
       <div className="carroussel">
-        <FontAwesomeIcon icon={faChevronLeft} />
-        <div className="bestSellerContainer">
-          {[...Array(cardNumber.length)].map((_, i) => {
-            return (
-              <div key={i} className="bestSeller">
-                <div className="image">IMAGE</div>
-                <div className="infos">
-                  <div className="categorie">{bestSeller.categorie}</div>
-                  <div className="ref">{bestSeller.ref}</div>
-                  <div className="footContainer">
-                    <div className="nameContainer">
-                      <p>{bestSeller.name}</p>
-                      <p>{bestSeller.weight}</p>
-                    </div>
-                    <div className="price">
-                      <p>dès</p>
-                      <p>{bestSeller.price}</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-        <FontAwesomeIcon icon={faChevronRight} />
+        <FontAwesomeIcon
+          onClick={() => setCurrentItems(currentItems - 1)}
+          icon={faChevronLeft}
+        />
+        <Card currentItems={currentItems} />
+        <FontAwesomeIcon
+          onClick={() => setCurrentItems(currentItems + 1)}
+          icon={faChevronRight}
+        />
       </div>
     </div>
   );
