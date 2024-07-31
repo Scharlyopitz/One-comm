@@ -603,6 +603,9 @@ footer .copyright p {
 .miniSection {
   padding: 20vh 0;
 }
+.miniSection h1 {
+  text-align: center;
+}
 
 nav {
   display: flex;
