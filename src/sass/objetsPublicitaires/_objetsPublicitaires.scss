@@ -12,98 +12,106 @@
   a {
     color: $Black;
   }
+
   //   NAV
-  .nav {
-    padding: 5vh 0;
-    position: sticky;
-    z-index: 1;
-    top: 7vh;
+  .navContainer {
+    position: absolute;
+    top: 0;
     left: 0;
     width: 100%;
-    display: flex;
-    justify-content: space-around;
-    font-size: 16px;
-    font-weight: 300;
-    font-family: "Open Sans";
-    background-color: $WhiteOpct;
-    border-bottom: 1px solid $Black;
+    height: 100%;
 
-    .left {
+    .nav {
+      padding: 5vh 0;
+      position: sticky;
+      top: 7vh;
+      left: 0;
+      width: 100%;
       display: flex;
-      gap: 1vw;
+      justify-content: space-around;
+      font-size: 16px;
+      font-weight: 300;
+      font-family: "Open Sans";
+      background-color: $WhiteOpct;
+      border-bottom: 1px solid $Black;
 
-      a {
+      .left {
         display: flex;
-        align-items: center;
-      }
-
-      .Menu {
-        cursor: pointer;
-        display: flex;
-        align-items: center;
         gap: 1vw;
-        color: $LinearDarkBlue;
-        background-color: $White;
-        padding: 0.5vh 1.5vw;
-        border-radius: 20px;
-        text-transform: uppercase;
 
-        .burgerContainer {
-          position: relative;
-          width: 15px;
-          height: 9px;
+        a {
           display: flex;
           align-items: center;
+        }
 
-          .burger {
-            width: 100%;
-            height: 0.5px;
-            background-color: $LinearDarkBlue;
+        .Menu {
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          gap: 1vw;
+          color: $LinearDarkBlue;
+          background-color: $White;
+          padding: 0.5vh 1.5vw;
+          border-radius: 20px;
+          text-transform: uppercase;
 
-            &::after,
-            &::before {
-              content: "";
+          .burgerContainer {
+            position: relative;
+            width: 15px;
+            height: 9px;
+            display: flex;
+            align-items: center;
+
+            .burger {
               width: 100%;
               height: 0.5px;
-              background: $LinearDarkBlue;
-              position: absolute;
-              left: 0;
-            }
+              background-color: $LinearDarkBlue;
 
-            &::after {
-              top: 0;
-            }
+              &::after,
+              &::before {
+                content: "";
+                width: 100%;
+                height: 0.5px;
+                background: $LinearDarkBlue;
+                position: absolute;
+                left: 0;
+              }
 
-            &::before {
-              bottom: 0;
+              &::after {
+                top: 0;
+              }
+
+              &::before {
+                bottom: 0;
+              }
             }
           }
         }
       }
-    }
 
-    .right {
-      display: flex;
-      gap: 1vw;
+      .right {
+        display: flex;
+        gap: 1vw;
 
-      input,
-      button {
-        padding: 0.5vh 1.5vw;
-      }
+        input,
+        button {
+          padding: 0.5vh 1.5vw;
+        }
 
-      input {
-        border-radius: 20px;
-        background: $Grey;
-        border: none;
-        outline: none;
-      }
+        input {
+          border-radius: 20px;
+          background: $Grey;
+          border: none;
+          outline: none;
+        }
 
-      button {
-        cursor: pointer;
-        color: $LinearDarkBlue;
-        border-radius: 20px;
-        background: $White;
-        border: 1px solid $LinearDarkBlue;
+        button {
+          cursor: pointer;
+          color: $LinearDarkBlue;
+          border-radius: 20px;
+          background: $White;
+          border: 1px solid $LinearDarkBlue;
+        }
       }
     }
   }
@@ -119,7 +127,6 @@
   }
 
   //   CATEGORIES SECTION
-
   .categoriesSection {
     display: flex;
     flex-direction: column;
@@ -147,7 +154,6 @@
   }
 
   //   TENDANCE
-
   .tendance {
     display: flex;
     flex-direction: column;

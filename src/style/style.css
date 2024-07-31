@@ -639,10 +639,16 @@ nav ul svg {
 .OPSection2 a {
   color: #0f0f0f;
 }
-.OPSection2 .nav {
+.OPSection2 .navContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.OPSection2 .navContainer .nav {
   padding: 5vh 0;
   position: sticky;
-  z-index: 1;
   top: 7vh;
   left: 0;
   width: 100%;
@@ -654,15 +660,15 @@ nav ul svg {
   background-color: rgba(239, 239, 239, 0.5176470588);
   border-bottom: 1px solid #0f0f0f;
 }
-.OPSection2 .nav .left {
+.OPSection2 .navContainer .nav .left {
   display: flex;
   gap: 1vw;
 }
-.OPSection2 .nav .left a {
+.OPSection2 .navContainer .nav .left a {
   display: flex;
   align-items: center;
 }
-.OPSection2 .nav .left .Menu {
+.OPSection2 .navContainer .nav .left .Menu {
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -673,19 +679,19 @@ nav ul svg {
   border-radius: 20px;
   text-transform: uppercase;
 }
-.OPSection2 .nav .left .Menu .burgerContainer {
+.OPSection2 .navContainer .nav .left .Menu .burgerContainer {
   position: relative;
   width: 15px;
   height: 9px;
   display: flex;
   align-items: center;
 }
-.OPSection2 .nav .left .Menu .burgerContainer .burger {
+.OPSection2 .navContainer .nav .left .Menu .burgerContainer .burger {
   width: 100%;
   height: 0.5px;
   background-color: #11235a;
 }
-.OPSection2 .nav .left .Menu .burgerContainer .burger::after, .OPSection2 .nav .left .Menu .burgerContainer .burger::before {
+.OPSection2 .navContainer .nav .left .Menu .burgerContainer .burger::after, .OPSection2 .navContainer .nav .left .Menu .burgerContainer .burger::before {
   content: "";
   width: 100%;
   height: 0.5px;
@@ -693,27 +699,27 @@ nav ul svg {
   position: absolute;
   left: 0;
 }
-.OPSection2 .nav .left .Menu .burgerContainer .burger::after {
+.OPSection2 .navContainer .nav .left .Menu .burgerContainer .burger::after {
   top: 0;
 }
-.OPSection2 .nav .left .Menu .burgerContainer .burger::before {
+.OPSection2 .navContainer .nav .left .Menu .burgerContainer .burger::before {
   bottom: 0;
 }
-.OPSection2 .nav .right {
+.OPSection2 .navContainer .nav .right {
   display: flex;
   gap: 1vw;
 }
-.OPSection2 .nav .right input,
-.OPSection2 .nav .right button {
+.OPSection2 .navContainer .nav .right input,
+.OPSection2 .navContainer .nav .right button {
   padding: 0.5vh 1.5vw;
 }
-.OPSection2 .nav .right input {
+.OPSection2 .navContainer .nav .right input {
   border-radius: 20px;
   background: #e8e8e8;
   border: none;
   outline: none;
 }
-.OPSection2 .nav .right button {
+.OPSection2 .navContainer .nav .right button {
   cursor: pointer;
   color: #11235a;
   border-radius: 20px;

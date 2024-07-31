@@ -49,9 +49,11 @@ function NavOP() {
   }
 
   return (
-    <div className="nav">
-      <Left />
-      <Right />
+    <div className="navContainer">
+      <div className="nav">
+        <Left />
+        <Right />
+      </div>
     </div>
   );
 }
