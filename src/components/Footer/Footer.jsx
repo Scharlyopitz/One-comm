@@ -26,12 +26,12 @@ function LogoSection() {
 
 function Links() {
   const offerLinks = [
-    "Accueil",
-    "Graphisme",
-    "Objets publicitaires",
-    "Actualités",
-    "Blog",
-    "Contact",
+    { name: "Accueil", href: "/" },
+    { name: "Graphisme", href: "/" },
+    { name: "Objets publicitaires", href: "/objetsPublicitaires" },
+    { name: "Actualités", href: "/actualités" },
+    { name: "Blog", href: "/blog" },
+    { name: "Contact", href: "contact" },
   ];
 
   const agenceLinks = [
@@ -46,8 +46,8 @@ function Links() {
         <h2>Notre offre</h2>
         {offerLinks.map((link, i) => {
           return (
-            <NavLink key={i} to={"/"}>
-              {link}
+            <NavLink key={i} to={link.href}>
+              {link.name}
             </NavLink>
           );
         })}
