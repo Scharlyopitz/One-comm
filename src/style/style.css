@@ -788,7 +788,7 @@ nav ul svg {
 }
 .OPSection2 .navContainer .nav .left .Menu .modalMenu a {
   white-space: nowrap;
-  text-transform: capitalize;
+  text-transform: initial;
 }
 .OPSection2 .navContainer .nav .left .Menu .modalMenu a:hover {
   text-decoration: underline;
