@@ -593,6 +593,10 @@ footer .copyright p {
   justify-content: space-between;
 }
 
+.miniSection {
+  padding: 20vh 0;
+}
+
 nav {
   display: flex;
   align-items: center;
