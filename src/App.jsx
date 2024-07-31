@@ -5,6 +5,7 @@ import Nav from "./components/Nav/Nav";
 import Contact from "./pages/Contact";
 import GraphicDesign from "./pages/GraphicDesign";
 import ObjetsPublicitaires from "./pages/ObjetsPublicitaires";
+import Blog from "./pages/Blog";
 
 function App() {
   const Contacts = {
@@ -22,6 +23,7 @@ function App() {
         <Route path="/graphicDesign" element={<GraphicDesign />} />
         <Route path="/objetsPublicitaires" element={<ObjetsPublicitaires />} />
         <Route path="/contact" element={<Contact Contacts={Contacts} />} />
+        <Route path="/blog" element={<Blog />} />
       </Routes>
       <Footer Contacts={Contacts} />
     </>
