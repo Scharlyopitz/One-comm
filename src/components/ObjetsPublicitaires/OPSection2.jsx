@@ -1,4 +1,9 @@
 import { NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faChevronLeft,
+  faChevronRight,
+} from "@fortawesome/free-solid-svg-icons";
 
 export default function OPSection2() {
   return (
@@ -104,31 +109,37 @@ function Tendance() {
     price: "7,56€",
   };
 
+  const cardNumber = [0, 1, 2, 3, 4, 5, 6, 7];
+
   return (
     <div className="tendance">
       <h1>Tendances du moment</h1>
-      <div className="bestSellerContainer">
-        {[...Array(4)].map((_, i) => {
-          return (
-            <div key={i} className="bestSeller">
-              <div className="image">IMAGE</div>
-              <div className="infos">
-                <div className="categorie">{bestSeller.categorie}</div>
-                <div className="ref">{bestSeller.ref}</div>
-                <div className="footContainer">
-                  <div className="nameContainer">
-                    <p>{bestSeller.name}</p>
-                    <p>{bestSeller.weight}</p>
-                  </div>
-                  <div className="price">
-                    <p>dès</p>
-                    <p>{bestSeller.price}</p>
+      <div className="carroussel">
+        <FontAwesomeIcon icon={faChevronLeft} />
+        <div className="bestSellerContainer">
+          {[...Array(cardNumber.length)].map((_, i) => {
+            return (
+              <div key={i} className="bestSeller">
+                <div className="image">IMAGE</div>
+                <div className="infos">
+                  <div className="categorie">{bestSeller.categorie}</div>
+                  <div className="ref">{bestSeller.ref}</div>
+                  <div className="footContainer">
+                    <div className="nameContainer">
+                      <p>{bestSeller.name}</p>
+                      <p>{bestSeller.weight}</p>
+                    </div>
+                    <div className="price">
+                      <p>dès</p>
+                      <p>{bestSeller.price}</p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
+        <FontAwesomeIcon icon={faChevronRight} />
       </div>
     </div>
   );
