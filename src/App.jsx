@@ -6,6 +6,7 @@ import Contact from "./pages/Contact";
 import GraphicDesign from "./pages/GraphicDesign";
 import ObjetsPublicitaires from "./pages/ObjetsPublicitaires";
 import Blog from "./pages/Blog";
+import Actualites from "./pages/Actualites";
 
 function App() {
   const Contacts = {
@@ -24,6 +25,7 @@ function App() {
         <Route path="/objetsPublicitaires" element={<ObjetsPublicitaires />} />
         <Route path="/contact" element={<Contact Contacts={Contacts} />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/actualites" element={<Actualites />} />
       </Routes>
       <Footer Contacts={Contacts} />
     </>
