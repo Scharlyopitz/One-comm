@@ -1,9 +1,12 @@
 .listesContainer {
   background-color: $White;
   padding: 4vh 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3vh;
 
   .liste {
-    margin: 0 auto;
     display: flex;
     background-color: $LinearLightBlue;
     width: 80vw;

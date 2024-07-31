@@ -596,9 +596,12 @@ footer .copyright p {
 .listesContainer {
   background-color: #efefef;
   padding: 4vh 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3vh;
 }
 .listesContainer .liste {
-  margin: 0 auto;
   display: flex;
   background-color: #9bb0c1;
   width: 80vw;
