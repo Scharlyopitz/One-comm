@@ -721,8 +721,6 @@ nav ul svg {
   border: 1px solid #11235a;
 }
 .OPSection2 .img {
-  left: 0;
-  top: 0;
   background-color: rgb(25, 228, 25);
   display: flex;
   align-items: center;
