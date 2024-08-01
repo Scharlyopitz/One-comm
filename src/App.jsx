@@ -8,6 +8,7 @@ import ObjetsPublicitaires from "./pages/ObjetsPublicitaires";
 import Blog from "./pages/Blog";
 import Actualites from "./pages/Actualites";
 import { useEffect } from "react";
+import TitlePage from "./components/TitlePage/TitlePage";
 
 function App() {
   const Contacts = {
@@ -26,6 +27,7 @@ function App() {
   return (
     <>
       <Nav />
+      <TitlePage />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/graphicDesign" element={<GraphicDesign />} />
