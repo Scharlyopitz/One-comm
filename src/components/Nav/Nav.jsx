@@ -40,6 +40,10 @@ function Links() {
     {
       name: "Actualités",
       href: "/actualités",
+      link: [
+        { name: "Express", href: "/express" },
+        { name: "Super", href: "/super" },
+      ],
     },
     {
       name: "Contact",
@@ -53,7 +57,8 @@ function Links() {
         return (
           <li key={i}>
             <NavLink to={link.href}>
-              {link.name} <FontAwesomeIcon icon={faChevronDown} />
+              {link.name}{" "}
+              {link?.link && <FontAwesomeIcon icon={faChevronDown} />}
             </NavLink>
           </li>
         );
