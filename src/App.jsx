@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Home from "./pages/Home";
 import Footer from "./components/Footer/Footer";
 import Nav from "./components/Nav/Nav";
@@ -7,6 +7,7 @@ import GraphicDesign from "./pages/GraphicDesign";
 import ObjetsPublicitaires from "./pages/ObjetsPublicitaires";
 import Blog from "./pages/Blog";
 import Actualites from "./pages/Actualites";
+import { useEffect } from "react";
 
 function App() {
   const Contacts = {
@@ -15,6 +16,12 @@ function App() {
     mail: "contact@one-comm.com",
     tel: "06.74.52.72.00",
   };
+
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   return (
     <>
