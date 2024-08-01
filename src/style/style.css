@@ -105,13 +105,13 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 15vh 0 0;
+  padding: 12vh 0 0;
   height: 100vh;
   position: sticky;
   top: 0;
 }
 .contactezNous .formulaire {
-  margin: 5vh auto;
+  margin: 3vh auto;
   width: 70vw;
   padding: 7vh 10%;
   background-color: rgba(239, 239, 239, 0.5176470588);
