@@ -119,6 +119,7 @@
       // RIGHT
       .right {
         display: flex;
+        align-items: center;
         gap: 1vw;
 
         input,
@@ -138,7 +139,7 @@
           color: $LinearDarkBlue;
           border-radius: 20px;
           background: $White;
-          border: 1px solid $LinearDarkBlue;
+          border: none;
         }
 
         // DEVIS BUTTON
@@ -148,38 +149,62 @@
           .modalDevis {
             display: flex;
             flex-direction: column;
+            align-items: center;
             position: absolute;
-            top: 0;
+            top: 4vh;
             right: 0;
             gap: 10px;
             border-radius: 20px;
-            background: red;
+            background: $White;
             white-space: nowrap;
-            width: 350px;
+            width: 550px;
+            padding: 2vh 2vw;
 
             .header {
               display: grid;
+              width: 100%;
               grid-template-columns: repeat(3, 1fr);
-              text-align: center;
               border-bottom: 1px solid $Black;
+            }
+
+            p {
+              overflow: hidden;
+              text-overflow: ellipsis;
+              &:nth-child(2) {
+                text-align: end;
+              }
             }
 
             .itemsContainer {
               display: flex;
               flex-direction: column;
-              gap: 10px;
+              gap: 1vh;
+              width: 100%;
+              overflow-y: scroll;
 
               .item {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
                 align-items: center;
-                text-align: center;
+
+                .deleteBtn {
+                  background: transparent;
+                  border: none;
+                  margin-left: auto;
+                }
               }
+            }
+
+            .devisBtn {
+              margin: 4vh 0 2vh;
+              border-radius: 8px;
+              padding: 1vh 3vw;
             }
           }
 
           button {
             padding: 0.5vh 1.5vw;
+            width: fit-content;
           }
         }
       }

@@ -4,7 +4,7 @@ import {
   faChevronLeft,
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function OPSection2() {
   return (
@@ -90,34 +90,52 @@ function NavOP() {
     ];
 
     function ModalDevis() {
+      const ref = useRef(null);
+
+      const [height, setHeigh] = useState();
+      const numberOfItems = 4;
+
+      useEffect(() => {
+        setHeigh(ref.current.clientHeight);
+      });
+
       return (
         <div className="modalDevis">
           <div className="header">
             <p>Nombre du produit</p>
             <p>Qte</p>
           </div>
-          <div className="itemsContainer">
+          <div
+            style={{
+              maxHeight: `calc(${height * numberOfItems}px + ${
+                1 * numberOfItems
+              }vh)`,
+            }}
+            className="itemsContainer"
+          >
             {items.map((item, i) => {
               return (
-                <div key={i} className="item">
+                <div ref={ref} key={i} className="item">
                   <p>{item.name}</p>
                   <p>{item.qte}</p>
-                  <button>x</button>
+                  <button className="deleteBtn">x</button>
                 </div>
               );
             })}
           </div>
-          <button>Demander mon devis</button>
+          <button className="devisBtn">Demander mon devis</button>
         </div>
       );
     }
+
+    const [open, setOpen] = useState(false);
 
     return (
       <div className="right">
         <input type="text" placeholder="Que recherchez-vous ?" />
         <div className="devis">
-          <ModalDevis />
-          <button>Mon devis</button>
+          {open && <ModalDevis />}
+          <button onClick={() => setOpen(!open)}>Mon devis</button>
         </div>
       </div>
     );
