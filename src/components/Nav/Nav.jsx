@@ -39,7 +39,7 @@ function Links() {
     },
     {
       name: "Actualités",
-      href: "/actualités",
+      href: "/actualites",
       link: [
         { name: "Express", href: "/express" },
         { name: "Super", href: "/super" },
