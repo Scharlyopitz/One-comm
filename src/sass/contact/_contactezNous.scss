@@ -2,11 +2,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20vh 0;
+  padding: 15vh 0 0;
+  height: 100vh;
+  position: sticky;
+  top: 0;
 
   //   FORMULAIRE
   .formulaire {
-    margin: 10vh auto 0;
+    margin: 5vh auto;
     width: 70vw;
     padding: 7vh 10%;
     background-color: $WhiteOpct;
@@ -15,6 +18,26 @@
     display: flex;
     flex-direction: column;
     gap: 5vh;
+
+    .fullNameContainer,
+    .contactContainer {
+      gap: 2vw;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+      }
+    }
+    .fullNameContainer {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .contactContainer {
+      display: flex;
+      justify-content: space-between;
+    }
 
     &,
     input {
@@ -32,16 +55,16 @@
       flex-direction: column;
       text-align: start;
 
-      input {
+      input,
+      textarea {
+        border: none;
+        border-bottom: 1px solid $LinearDarkBlue;
+        margin-top: 0.8vh;
         background-color: transparent;
         outline: none;
+      }
 
-        & {
-          border: none;
-          border-bottom: 1px solid $LinearDarkBlue;
-          margin-top: 0.8vh;
-        }
-
+      input {
         &[type="text"],
         &[type="tel"],
         &[type="email"] {
@@ -51,13 +74,15 @@
 
       .btn {
         cursor: pointer;
-        font-size: 20px;
+        font-size: 15px;
+        font-weight: 500;
         padding: 15px 60px;
         border-radius: 10px;
         width: fit-content;
         border: 1px solid $LinearDarkBlue;
         letter-spacing: 2px;
-        margin: 7vh auto 0;
+        margin: 5vh auto 0;
+        letter-spacing: 0.4vw;
       }
     }
   }

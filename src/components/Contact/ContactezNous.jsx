@@ -18,26 +18,42 @@ function Formulaire() {
         </span>
       </div>
       <form action="">
-        <label htmlFor="name">Nom</label>
-        <input autoComplete="off" type="text" name="name" id="name" />
+        <div className="fullNameContainer">
+          <div>
+            <label htmlFor="name">Nom</label>
+            <input autoComplete="off" type="text" name="name" id="name" />
+          </div>
 
-        <label htmlFor="firstName">Prénom</label>
-        <input autoComplete="off" type="text" name="firstName" id="firstName" />
+          <div>
+            <label htmlFor="firstName">Prénom</label>
+            <input
+              autoComplete="off"
+              type="text"
+              name="firstName"
+              id="firstName"
+            />
+          </div>
+        </div>
 
-        <label htmlFor="email">Email</label>
-        <input autoComplete="off" type="email" name="email" id="email" />
-
-        <label htmlFor="phone">Téléphone</label>
-        <input
-          autoComplete="off"
-          type="tel"
-          name="phone"
-          id="phone"
-          maxLength="10"
-        />
+        <div className="contactContainer">
+          <div>
+            <label htmlFor="email">Email</label>
+            <input autoComplete="off" type="email" name="email" id="email" />
+          </div>
+          <div>
+            <label htmlFor="phone">Téléphone</label>
+            <input
+              autoComplete="off"
+              type="tel"
+              name="phone"
+              id="phone"
+              maxLength="10"
+            />
+          </div>
+        </div>
 
         <label htmlFor="demande">Votre demande</label>
-        <input autoComplete="off" type="text" name="demande" id="demande" />
+        <textarea autoComplete="off" name="demande" id="demande"></textarea>
 
         <input type="submit" value="ENVOYER" className="btn" />
       </form>

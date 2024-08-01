@@ -105,10 +105,13 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20vh 0;
+  padding: 15vh 0 0;
+  height: 100vh;
+  position: sticky;
+  top: 0;
 }
 .contactezNous .formulaire {
-  margin: 10vh auto 0;
+  margin: 5vh auto;
   width: 70vw;
   padding: 7vh 10%;
   background-color: rgba(239, 239, 239, 0.5176470588);
@@ -117,6 +120,24 @@ li {
   display: flex;
   flex-direction: column;
   gap: 5vh;
+}
+.contactezNous .formulaire .fullNameContainer,
+.contactezNous .formulaire .contactContainer {
+  gap: 2vw;
+}
+.contactezNous .formulaire .fullNameContainer div,
+.contactezNous .formulaire .contactContainer div {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.contactezNous .formulaire .fullNameContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.contactezNous .formulaire .contactContainer {
+  display: flex;
+  justify-content: space-between;
 }
 .contactezNous .formulaire,
 .contactezNous .formulaire input {
@@ -132,31 +153,33 @@ li {
   flex-direction: column;
   text-align: start;
 }
-.contactezNous .formulaire form input {
-  background-color: transparent;
-  outline: none;
-}
-.contactezNous .formulaire form input {
+.contactezNous .formulaire form input,
+.contactezNous .formulaire form textarea {
   border: none;
   border-bottom: 1px solid #11235a;
   margin-top: 0.8vh;
+  background-color: transparent;
+  outline: none;
 }
 .contactezNous .formulaire form input[type=text], .contactezNous .formulaire form input[type=tel], .contactezNous .formulaire form input[type=email] {
   margin-bottom: 7vh;
 }
 .contactezNous .formulaire form .btn {
   cursor: pointer;
-  font-size: 20px;
+  font-size: 15px;
+  font-weight: 500;
   padding: 15px 60px;
   border-radius: 10px;
   width: -moz-fit-content;
   width: fit-content;
   border: 1px solid #11235a;
   letter-spacing: 2px;
-  margin: 7vh auto 0;
+  margin: 5vh auto 0;
+  letter-spacing: 0.4vw;
 }
 
 .rdvSection {
+  position: relative;
   background-color: #efefef;
   color: #0e2244;
   padding: 20vh 0;
