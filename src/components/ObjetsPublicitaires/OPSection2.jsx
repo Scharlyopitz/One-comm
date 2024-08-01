@@ -89,10 +89,11 @@ function NavOP() {
       { name: "Support de téléphone", qte: "55" },
     ];
 
-    function ModalDevis() {
+    function ModalDevis({ items }) {
       const ref = useRef(null);
 
       const [height, setHeigh] = useState();
+
       const numberOfItems = 4;
 
       useEffect(() => {
@@ -110,6 +111,7 @@ function NavOP() {
               maxHeight: `calc(${height * numberOfItems}px + ${
                 1 * numberOfItems
               }vh)`,
+              overflowY: items.length > numberOfItems && "scroll",
             }}
             className="itemsContainer"
           >
@@ -130,12 +132,35 @@ function NavOP() {
 
     const [open, setOpen] = useState(false);
 
+    const [width, setWidth] = useState();
+
+    const button = useRef(null);
+
+    useEffect(() => {
+      function Resize() {
+        setWidth(button.current.clientWidth);
+      }
+      Resize();
+      window.addEventListener("resize", Resize);
+      return () => window.removeEventListener("resize", Resize);
+    });
+
     return (
       <div className="right">
         <input type="text" placeholder="Que recherchez-vous ?" />
         <div className="devis">
-          {open && <ModalDevis />}
-          <button onClick={() => setOpen(!open)}>Mon devis</button>
+          {open && (
+            <>
+              <div style={{ width }} className="lien">
+                <div></div>
+              </div>
+              <ModalDevis items={items} />
+            </>
+          )}
+
+          <button className="btn" ref={button} onClick={() => setOpen(!open)}>
+            Mon devis
+          </button>
         </div>
       </div>
     );

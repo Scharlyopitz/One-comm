@@ -139,12 +139,25 @@
           color: $LinearDarkBlue;
           border-radius: 20px;
           background: $White;
+        }
+
+        .btn {
           border: none;
         }
 
         // DEVIS BUTTON
         .devis {
           position: relative;
+
+          .lien {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 8vh;
+            border-radius: 15px 15px 0 0;
+            z-index: -1;
+            background-color: $White;
+          }
 
           .modalDevis {
             display: flex;
@@ -158,11 +171,12 @@
             background: $White;
             white-space: nowrap;
             width: 550px;
-            padding: 2vh 2vw;
+            padding: 2vh 1.5vw;
 
             .header {
               display: grid;
               width: 100%;
+              padding: 1vh 0;
               grid-template-columns: repeat(3, 1fr);
               border-bottom: 1px solid $Black;
             }
@@ -180,7 +194,6 @@
               flex-direction: column;
               gap: 1vh;
               width: 100%;
-              overflow-y: scroll;
 
               .item {
                 display: grid;
@@ -199,6 +212,7 @@
               margin: 4vh 0 2vh;
               border-radius: 8px;
               padding: 1vh 3vw;
+              border: 1px solid $LinearDarkBlue;
             }
           }
 

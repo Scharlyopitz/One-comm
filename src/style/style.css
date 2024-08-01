@@ -840,10 +840,21 @@ nav ul svg {
   color: #11235a;
   border-radius: 20px;
   background: #efefef;
+}
+.OPSection2 .navContainer .nav .right .btn {
   border: none;
 }
 .OPSection2 .navContainer .nav .right .devis {
   position: relative;
+}
+.OPSection2 .navContainer .nav .right .devis .lien {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 8vh;
+  border-radius: 15px 15px 0 0;
+  z-index: -1;
+  background-color: #efefef;
 }
 .OPSection2 .navContainer .nav .right .devis .modalDevis {
   display: flex;
@@ -857,11 +868,12 @@ nav ul svg {
   background: #efefef;
   white-space: nowrap;
   width: 550px;
-  padding: 2vh 2vw;
+  padding: 2vh 1.5vw;
 }
 .OPSection2 .navContainer .nav .right .devis .modalDevis .header {
   display: grid;
   width: 100%;
+  padding: 1vh 0;
   grid-template-columns: repeat(3, 1fr);
   border-bottom: 1px solid #0f0f0f;
 }
@@ -877,7 +889,6 @@ nav ul svg {
   flex-direction: column;
   gap: 1vh;
   width: 100%;
-  overflow-y: scroll;
 }
 .OPSection2 .navContainer .nav .right .devis .modalDevis .itemsContainer .item {
   display: grid;
@@ -893,6 +904,7 @@ nav ul svg {
   margin: 4vh 0 2vh;
   border-radius: 8px;
   padding: 1vh 3vw;
+  border: 1px solid #11235a;
 }
 .OPSection2 .navContainer .nav .right .devis button {
   padding: 0.5vh 1.5vw;
