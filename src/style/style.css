@@ -891,6 +891,9 @@ nav ul svg {
 .OPSection2 .tendance .carroussel .bestSellerContainer .bestSeller:nth-child(odd) {
   background-color: red;
 }
+.OPSection2 .tendance .carroussel .bestSellerContainer .bestSeller:last-child {
+  background-color: yellow;
+}
 .OPSection2 .tendance .carroussel .bestSellerContainer .bestSeller .infos {
   display: flex;
   flex-direction: column;

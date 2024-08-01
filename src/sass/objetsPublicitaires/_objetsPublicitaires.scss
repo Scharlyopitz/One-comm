@@ -231,6 +231,10 @@
             background-color: red;
           }
 
+          &:last-child {
+            background-color: yellow;
+          }
+
           .infos {
             display: flex;
             flex-direction: column;

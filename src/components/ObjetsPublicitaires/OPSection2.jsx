@@ -152,8 +152,8 @@ function Tendance() {
 
   useEffect(() => {
     if (currentItems < 0) {
-      setCurrentItems(cardNumber.length - 1);
-    } else if (currentItems - 1 == cardNumber.length - 1) {
+      setCurrentItems(cardNumber.length - 4);
+    } else if (currentItems - 1 == cardNumber.length - 4) {
       setCurrentItems(0);
     }
   }, [currentItems]);
