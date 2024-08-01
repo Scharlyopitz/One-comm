@@ -29,7 +29,7 @@ function Links() {
     { name: "Accueil", href: "/" },
     { name: "Graphisme", href: "/" },
     { name: "Objets publicitaires", href: "/objetsPublicitaires" },
-    { name: "Actualités", href: "/actualités" },
+    { name: "Actualités", href: "/actualites" },
     { name: "Blog", href: "/blog" },
     { name: "Contact", href: "contact" },
   ];
