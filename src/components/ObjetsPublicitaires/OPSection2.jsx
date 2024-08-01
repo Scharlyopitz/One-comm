@@ -82,10 +82,43 @@ function NavOP() {
   }
 
   function Right() {
+    const items = [
+      { name: "Tote Bag", qte: "115" },
+      { name: "Set de table", qte: "30" },
+      { name: "Carnet en liège", qte: "80" },
+      { name: "Support de téléphone", qte: "55" },
+    ];
+
+    function ModalDevis() {
+      return (
+        <div className="modalDevis">
+          <div className="header">
+            <p>Nombre du produit</p>
+            <p>Qte</p>
+          </div>
+          <div className="itemsContainer">
+            {items.map((item, i) => {
+              return (
+                <div key={i} className="item">
+                  <p>{item.name}</p>
+                  <p>{item.qte}</p>
+                  <button>x</button>
+                </div>
+              );
+            })}
+          </div>
+          <button>Demander mon devis</button>
+        </div>
+      );
+    }
+
     return (
       <div className="right">
         <input type="text" placeholder="Que recherchez-vous ?" />
-        <button>Mon devis</button>
+        <div className="devis">
+          <ModalDevis />
+          <button>Mon devis</button>
+        </div>
       </div>
     );
   }
