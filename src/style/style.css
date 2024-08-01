@@ -656,6 +656,9 @@ footer .copyright p {
 
 .miniSection {
   padding: 20vh 0;
+  position: sticky;
+  top: 0;
+  z-index: -1;
 }
 .miniSection h1 {
   text-align: center;
