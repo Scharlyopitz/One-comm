@@ -208,6 +208,8 @@
 
       svg {
         cursor: pointer;
+        width: 10vw;
+        height: 5vh;
       }
 
       .bestSellerContainer {
@@ -216,7 +218,6 @@
         overflow: hidden;
         white-space: nowrap;
         width: 966px;
-        margin: 0 40px;
 
         .bestSeller {
           display: flex;
@@ -227,7 +228,7 @@
           padding: 15px;
           border-radius: calc(20px);
 
-          &:nth-child(odd) {
+          &:first-child {
             background-color: red;
           }
 

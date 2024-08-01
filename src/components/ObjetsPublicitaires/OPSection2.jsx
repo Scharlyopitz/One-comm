@@ -158,37 +158,40 @@ function Tendance() {
     }
   }, [currentItems]);
 
-  function Card({ currentItems }) {
+  function Cards({ currentItems }) {
+    function Card({ currentItems }) {
+      return (
+        <div
+          style={{
+            transform: `translateX(calc(${-100 * currentItems}% - ${
+              20 * currentItems
+            }px))`,
+          }}
+          className="bestSeller"
+        >
+          <div className="image">IMAGE</div>
+          <div className="infos">
+            <div className="categorie">{bestSeller.categorie}</div>
+            <div className="ref">{bestSeller.ref}</div>
+            <div className="footContainer">
+              <div className="nameContainer">
+                <p>{bestSeller.name}</p>
+                <p>{bestSeller.weight}</p>
+              </div>
+              <div className="price">
+                <p>dès</p>
+                <p>{bestSeller.price}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      );
+    }
+
     return (
       <div className="bestSellerContainer">
         {[...Array(cardNumber.length)].map((_, i) => {
-          return (
-            <div
-              style={{
-                transform: `translateX(calc(${-100 * currentItems}% - ${
-                  20 * currentItems
-                }px))`,
-              }}
-              key={i}
-              className="bestSeller"
-            >
-              <div className="image">IMAGE</div>
-              <div className="infos">
-                <div className="categorie">{bestSeller.categorie}</div>
-                <div className="ref">{bestSeller.ref}</div>
-                <div className="footContainer">
-                  <div className="nameContainer">
-                    <p>{bestSeller.name}</p>
-                    <p>{bestSeller.weight}</p>
-                  </div>
-                  <div className="price">
-                    <p>dès</p>
-                    <p>{bestSeller.price}</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          );
+          return <Card key={i} currentItems={currentItems} />;
         })}
       </div>
     );
@@ -202,7 +205,7 @@ function Tendance() {
           onClick={() => setCurrentItems(currentItems - 1)}
           icon={faChevronLeft}
         />
-        <Card currentItems={currentItems} />
+        <Cards currentItems={currentItems} />
         <FontAwesomeIcon
           onClick={() => setCurrentItems(currentItems + 1)}
           icon={faChevronRight}

@@ -870,6 +870,8 @@ nav ul svg {
 }
 .OPSection2 .tendance .carroussel svg {
   cursor: pointer;
+  width: 10vw;
+  height: 5vh;
 }
 .OPSection2 .tendance .carroussel .bestSellerContainer {
   display: flex;
@@ -877,7 +879,6 @@ nav ul svg {
   overflow: hidden;
   white-space: nowrap;
   width: 966px;
-  margin: 0 40px;
 }
 .OPSection2 .tendance .carroussel .bestSellerContainer .bestSeller {
   display: flex;
@@ -888,7 +889,7 @@ nav ul svg {
   padding: 15px;
   border-radius: 20px;
 }
-.OPSection2 .tendance .carroussel .bestSellerContainer .bestSeller:nth-child(odd) {
+.OPSection2 .tendance .carroussel .bestSellerContainer .bestSeller:first-child {
   background-color: red;
 }
 .OPSection2 .tendance .carroussel .bestSellerContainer .bestSeller:last-child {
