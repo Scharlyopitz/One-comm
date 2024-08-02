@@ -1022,6 +1022,18 @@ nav ul svg {
   text-align: end;
 }
 
+.txtPolitique {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+.txtPolitique .italic {
+  font-style: italic;
+}
+.txtPolitique .underline {
+  text-decoration: underline;
+}
+
 .Section1Duplicate {
   position: sticky;
   top: 0;
