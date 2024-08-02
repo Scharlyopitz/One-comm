@@ -35,7 +35,10 @@ function Links() {
   ];
 
   const agenceLinks = [
-    { name: "Politique de confidentialité", href: "/" },
+    {
+      name: "Politique de confidentialité",
+      href: "/politiqueDeConfidentialite",
+    },
     { name: "Conditions générales de vente", href: "/" },
     { name: "Mentions légales", href: "/mentionsLegales" },
   ];
