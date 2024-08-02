@@ -12,6 +12,7 @@ export default function TitlePage() {
     "/actualites": "Actualités",
     "/blog": "Blog",
     "/mentionsLegales": "Mentions Légales",
+    "/politiqueDeConfidentialite": "Politique De Confidentialité",
   };
 
   useEffect(() => {
