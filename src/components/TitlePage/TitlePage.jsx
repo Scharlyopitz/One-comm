@@ -11,6 +11,7 @@ export default function TitlePage() {
     "/objetsPublicitaires": "Objets Publicitaires",
     "/actualites": "Actualités",
     "/blog": "Blog",
+    "/mentionsLegales": "Mentions Legales",
   };
 
   useEffect(() => {

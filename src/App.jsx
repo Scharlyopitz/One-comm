@@ -9,6 +9,7 @@ import Blog from "./pages/Blog";
 import Actualites from "./pages/Actualites";
 import { useEffect } from "react";
 import TitlePage from "./components/TitlePage/TitlePage";
+import MentionsLegales from "./pages/MentionsLegales";
 
 function App() {
   const Contacts = {
@@ -35,6 +36,7 @@ function App() {
         <Route path="/contact" element={<Contact Contacts={Contacts} />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/actualites" element={<Actualites />} />
+        <Route path="/mentionsLegales" element={<MentionsLegales />} />
       </Routes>
       <Footer Contacts={Contacts} />
     </>
