@@ -13,6 +13,7 @@ export default function TitlePage() {
     "/blog": "Blog",
     "/mentionsLegales": "Mentions Légales",
     "/politiqueDeConfidentialite": "Politique De Confidentialité",
+    "/conditionsGenerales": "Conditions générales",
   };
 
   useEffect(() => {
