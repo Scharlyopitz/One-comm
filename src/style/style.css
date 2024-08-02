@@ -1090,4 +1090,5 @@ nav ul svg {
 }
 .texteContainer .underline {
   text-decoration: underline;
+  text-decoration-thickness: 1px;
 }/*# sourceMappingURL=style.css.map */
