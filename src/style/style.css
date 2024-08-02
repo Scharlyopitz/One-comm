@@ -677,6 +677,12 @@ footer .copyright p {
   font-size: 15px;
 }
 
+.texteSecion {
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+}
+
 .miniSection {
   padding: 20vh 0;
   position: sticky;
@@ -1039,4 +1045,21 @@ nav ul svg {
   font-size: 20px;
   font-weight: 300;
   text-align: justify;
+}
+
+.texteContainer {
+  background: #efefef;
+  padding: 10vh 10vw;
+  color: #000000;
+  font-family: "Open Sans";
+}
+.texteContainer h2 {
+  font-size: 25px;
+}
+.texteContainer h3 {
+  font-size: 18px;
+}
+.texteContainer p {
+  text-align: justify;
+  font-size: 15px;
 }/*# sourceMappingURL=style.css.map */
