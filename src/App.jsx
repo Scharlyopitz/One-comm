@@ -11,6 +11,7 @@ import { useEffect } from "react";
 import TitlePage from "./components/TitlePage/TitlePage";
 import MentionsLegales from "./pages/MentionsLegales";
 import PolitiqueDeConfidentialité from "./pages/PolitiqueDeConfidentialité";
+import ConditionsGenerales from "./pages/ConditionsGenerales";
 
 function App() {
   const Contacts = {
@@ -38,6 +39,7 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/actualites" element={<Actualites />} />
         <Route path="/mentionsLegales" element={<MentionsLegales />} />
+        <Route path="/conditionsGenerales" element={<ConditionsGenerales />} />
         <Route
           path="/politiqueDeConfidentialite"
           element={<PolitiqueDeConfidentialité />}
