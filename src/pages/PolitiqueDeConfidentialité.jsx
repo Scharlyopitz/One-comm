@@ -20,7 +20,9 @@ function Texte() {
         <p>www.one-comm.com</p>
         <p>One comm' SAS</p>
       </div>
-      <p>Type de site : Vente de services et d'objets publicitaires</p>
+      <p className="underline">
+        Type de site : Vente de services et d'objets publicitaires
+      </p>
       <p>Le but de cette politique de confidentialité</p>
       <p>
         Le but de cette politique de confidentialité est d'informer les
@@ -46,10 +48,10 @@ function Texte() {
           suivants.
         </p>
       </div>
-      <p>Les données à caractère personnel doivent être :</p>
+      <p className="italic">Les données à caractère personnel doivent être :</p>
       <p>
         a. Traitées de manière licite, loyale et transparente au regard de la
-        personne concernée (licéité, loyauté, transparence);
+        personne concernée (licéité, loyauté, transparence) ;
       </p>
       <p>
         b. Collectées pour des finalités déterminées, explicites et légitimes,
@@ -92,7 +94,7 @@ function Texte() {
         d'origine accidentelle, à l'aide de mesures techniques ou
         organisationnelles appropriées (intégrité et confidentialité).
       </p>
-      <p className="underline">
+      <p className="underline italic">
         Le traitement n'est licite que si, et dans la mesure où, au moins une
         des conditions suivantes est remplie :
       </p>

@@ -1027,12 +1027,6 @@ nav ul svg {
   flex-direction: column;
   gap: 3vh;
 }
-.txtPolitique .italic {
-  font-style: italic;
-}
-.txtPolitique .underline {
-  text-decoration: underline;
-}
 
 .Section1Duplicate {
   position: sticky;
@@ -1074,4 +1068,10 @@ nav ul svg {
 .texteContainer p {
   text-align: justify;
   font-size: 15px;
+}
+.texteContainer .italic {
+  font-style: italic;
+}
+.texteContainer .underline {
+  text-decoration: underline;
 }/*# sourceMappingURL=style.css.map */
