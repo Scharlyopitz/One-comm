@@ -39,7 +39,7 @@ function Links() {
       name: "Politique de confidentialité",
       href: "/politiqueDeConfidentialite",
     },
-    { name: "Conditions générales de vente", href: "/" },
+    { name: "Conditions générales de vente", href: "/conditionsGenerales" },
     { name: "Mentions légales", href: "/mentionsLegales" },
   ];
 
