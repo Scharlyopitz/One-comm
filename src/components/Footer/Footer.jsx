@@ -35,9 +35,9 @@ function Links() {
   ];
 
   const agenceLinks = [
-    "Politique de confidentialité",
-    "Conditions générales de vente",
-    "Mentions légales",
+    { name: "Politique de confidentialité", href: "/" },
+    { name: "Conditions générales de vente", href: "/" },
+    { name: "Mentions légales", href: "/mentionsLegales" },
   ];
 
   return (
@@ -56,8 +56,8 @@ function Links() {
         <h2>L'agence</h2>
         {agenceLinks.map((link, i) => {
           return (
-            <NavLink key={i} to={"/"}>
-              {link}
+            <NavLink key={i} to={link.href}>
+              {link.name}
             </NavLink>
           );
         })}
