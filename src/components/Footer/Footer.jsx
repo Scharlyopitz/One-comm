@@ -27,7 +27,7 @@ function LogoSection() {
 function Links() {
   const offerLinks = [
     { name: "Accueil", href: "/" },
-    { name: "Graphisme", href: "/" },
+    { name: "Graphisme", href: "/graphicDesign" },
     { name: "Objets publicitaires", href: "/objetsPublicitaires" },
     { name: "Actualités", href: "/actualites" },
     { name: "Blog", href: "/blog" },
