@@ -101,6 +101,22 @@ li {
   border-radius: 0 5px 5px 5px;
 }
 
+.txtConditionGenerales {
+  gap: 10vh;
+}
+.txtConditionGenerales,
+.txtConditionGenerales div {
+  display: flex;
+  flex-direction: column;
+}
+.txtConditionGenerales a {
+  color: #000000;
+  text-decoration: underline;
+}
+.txtConditionGenerales div {
+  gap: 4vh;
+}
+
 .contactezNous {
   display: flex;
   flex-direction: column;

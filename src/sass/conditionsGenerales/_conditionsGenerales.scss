@@ -1,0 +1,18 @@
+.txtConditionGenerales {
+  gap: 10vh;
+
+  &,
+  div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  a {
+    color: $RealBlack;
+    text-decoration: underline;
+  }
+
+  div {
+    gap: 4vh;
+  }
+}
