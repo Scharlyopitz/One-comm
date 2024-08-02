@@ -64,7 +64,15 @@ function NavOP() {
     return (
       <div className="left">
         <div onClick={() => setOpenModal(!openModal)} className="Menu">
-          {openModal && <ModalMenu />}
+          {openModal && (
+            <>
+              <div
+                onClick={() => setOpenModal(!openModal)}
+                className="background"
+              />{" "}
+              <ModalMenu />
+            </>
+          )}
           <div className="burgerContainer">
             <div className="burger" />
           </div>
@@ -154,6 +162,7 @@ function NavOP() {
               <div style={{ width }} className="lien">
                 <div></div>
               </div>
+              <div onClick={() => setOpen(!open)} className="background" />
               <ModalDevis items={items} />
             </>
           )}
