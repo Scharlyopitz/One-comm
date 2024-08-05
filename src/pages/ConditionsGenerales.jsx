@@ -21,7 +21,7 @@ function Texte() {
         <p>En vigueur au 04/07/2024</p>
       </div>
       <div>
-        <h3 className="underline">ARTICLE 1 - CHAMP D'APPLICATION</h3>
+        <h3>ARTICLE 1 - CHAMP D'APPLICATION</h3>
         <p>
           Les présentes Conditions Générales de Vente (dites « CGV »)
           s'appliquent, sans restriction ni réserve à l'ensemble des ventes
@@ -61,7 +61,7 @@ function Texte() {
         <p>Téléphone: 0674527200</p>
       </div>
       <div>
-        <h3 className="underline">ARTICLE 2 - PRIX</h3>
+        <h3>ARTICLE 2 - PRIX</h3>
         <p>
           Les Produits sont fournis aux tarifs en vigueur figurant sur le
           sitewww.one-comm.com, lors de l'enregistrement de la commande par le
@@ -90,7 +90,7 @@ function Texte() {
         </p>
       </div>
       <div>
-        <h3 className="underline">ARTICLE 3 - COMMANDES</h3>
+        <h3>ARTICLE 3 - COMMANDES</h3>
         <p>
             Il appartient au Client de sélectionner sur le site www.one-comm.com
           les Produits qu'il désire commander, selon les modalités suivantes :{" "}
@@ -117,7 +117,7 @@ function Texte() {
         </p>
       </div>
       <div>
-        <h3 className="underline">ARTICLE 4 - CONDITIONS DE PAIEMENT</h3>
+        <h3>ARTICLE 4 - CONDITIONS DE PAIEMENT</h3>
         <p>
           Le prix est payé par voie de paiement sécurisé, selon les modalités
           suivantes : <br />
@@ -152,7 +152,7 @@ function Texte() {
         </p>
       </div>
       <div>
-        <h3 className="underline">ARTICLE 5 - LIVRAISONS</h3>
+        <h3>ARTICLE 5 - LIVRAISONS</h3>
         <p>
           Les Produits commandés par le Client seront livrés en France
           métropolitaine.
@@ -207,7 +207,7 @@ function Texte() {
         </p>
       </div>
       <div>
-        <h3 className="underline">ARTICLE 6 - TRANSFERT DE PROPRIÉTÉ</h3>
+        <h3>ARTICLE 6 - TRANSFERT DE PROPRIÉTÉ</h3>
         <p>
           Le transfert de propriété des Produits du Vendeur au Client sera
           réalisé dès acceptation de la commande par le Vendeur, matérialisant
@@ -216,7 +216,7 @@ function Texte() {
         </p>
       </div>
       <div>
-        <h3 className="underline">ARTICLE 7 - DROIT DE RÉTRACTATION</h3>
+        <h3>ARTICLE 7 - DROIT DE RÉTRACTATION</h3>
         <p>
           Selon les modalités de l'article L221-18 du Code de la Consommation«
           Pour les contrats prévoyant la livraison régulière de biens pendant
@@ -243,9 +243,7 @@ function Texte() {
         </p>
       </div>
       <div>
-        <h3 className="underline">
-          ARTICLE 8 - RESPONSABILITÉ DU VENDEUR - GARANTIES
-        </h3>
+        <h3>ARTICLE 8 - RESPONSABILITÉ DU VENDEUR - GARANTIES</h3>
         <p>
           Les Produits fournis par le Vendeur bénéficient : <br />
           •     de la garantie légale de conformité, pour lesProduits
@@ -336,7 +334,7 @@ function Texte() {
         </p>
       </div>
       <div>
-        <h3 className="underline">ARTICLE 9 - DONNÉES PERSONNELLES</h3>
+        <h3>ARTICLE 9 - DONNÉES PERSONNELLES</h3>
         <p>
           LeClient est informé que la collecte de ses données à caractère
           personnel est nécessaire à la vente des Produits parle Vendeur ainsi
@@ -450,7 +448,7 @@ function Texte() {
         </p>
       </div>
       <div>
-        <h3 className="underline">ARTICLE 10 - PROPRIÉTÉ INTELLECTUELLE</h3>
+        <h3>ARTICLE 10 - PROPRIÉTÉ INTELLECTUELLE</h3>
         <p>
           Le contenu du site <NavLink to="/">www.one-comm.com</NavLink> est la
           propriété du Vendeur et de ses partenaires et est protégé par les lois
@@ -461,7 +459,7 @@ function Texte() {
         </p>
       </div>
       <div>
-        <h3 className="underline">ARTICLE 11 - DROIT APPLICABLE - LANGUE</h3>
+        <h3>ARTICLE 11 - DROIT APPLICABLE - LANGUE</h3>
         <p>
           Les présentes CGV et les opérations qui en découlent sont régies et
           soumises au droit français. <br />
@@ -471,7 +469,7 @@ function Texte() {
         </p>
       </div>
       <div>
-        <h3 className="underline">ARTICLE 12 - LITIGES</h3>
+        <h3>ARTICLE 12 - LITIGES</h3>
         <p>
           Pour toute réclamation merci de contacter le service clientèle à
           l'adresse postale ou mail du Vendeur indiquée à l'ARTICLE 1 des
@@ -497,7 +495,7 @@ function Texte() {
         </p>
       </div>
       <div>
-        <h3 className="underline">ANNEXE :</h3>
+        <h3>ANNEXE :</h3>
         <p>Formulaire de rétractation</p>
       </div>
       <div>
