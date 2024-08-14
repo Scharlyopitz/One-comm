@@ -61,6 +61,12 @@ function NavOP() {
 
     const [openModal, setOpenModal] = useState(false);
 
+    useEffect(() => {
+      const body = document.querySelector("body");
+
+      openModal ? body.classList.add("b") : body.classList.remove("b");
+    }, [openModal]);
+
     return (
       <div className="left">
         <div onClick={() => setOpenModal(!openModal)} className="Menu">
@@ -145,6 +151,10 @@ function NavOP() {
     const button = useRef(null);
 
     useEffect(() => {
+      const body = document.querySelector("body");
+
+      open ? body.classList.add("b") : body.classList.remove("b");
+
       function Resize() {
         setWidth(button.current.clientWidth);
       }
