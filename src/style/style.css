@@ -34,6 +34,10 @@ li {
   list-style-type: none;
 }
 
+.b {
+  overflow: hidden;
+}
+
 .btnContainer {
   position: absolute;
   bottom: 5%;
