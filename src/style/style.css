@@ -1003,22 +1003,23 @@ nav ul svg {
 }
 .OPSection2 .tendance .carroussel svg {
   cursor: pointer;
-  width: 10vw;
-  height: 5vh;
+  width: 8vw;
+  height: 3vh;
 }
 .OPSection2 .tendance .carroussel .bestSellerContainer {
-  display: flex;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc(25% - 15px);
   gap: 20px;
   overflow: hidden;
-  white-space: nowrap;
-  width: 966px;
+  width: 80vw;
+  max-width: 966px;
 }
 .OPSection2 .tendance .carroussel .bestSellerContainer .bestSeller {
   display: flex;
   flex-direction: column;
   background: #ffffff;
   height: 400px;
-  width: 250px;
   padding: 15px;
   border-radius: 20px;
 }

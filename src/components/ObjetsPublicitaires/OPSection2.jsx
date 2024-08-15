@@ -232,61 +232,118 @@ function Categories() {
 }
 
 function Tendance() {
-  const bestSeller = {
-    image: "/",
-    categorie: "super",
-    ref: "ref.1304",
-    name: "Tote bag en polycoton",
-    weight: "150gr",
-    price: "7,56€",
-  };
-
-  const cardNumber = [0, 1, 2, 3, 4, 5, 6, 7];
+  const bestSellers = [
+    {
+      image: "/",
+      categorie: "super",
+      ref: "ref.1304",
+      name: "Tote bag en polycoton",
+      weight: "150gr",
+      price: "7,56€",
+    },
+    {
+      image: "/",
+      categorie: "Courbevoie",
+      ref: "ref.009",
+      name: "Marteau rouge",
+      weight: "2kg",
+      price: "4€",
+    },
+    {
+      image: "/",
+      categorie: "super",
+      ref: "ref.1304",
+      name: "Tote bag en polycoton",
+      weight: "150gr",
+      price: "7,56€",
+    },
+    {
+      image: "/",
+      categorie: "Courbevoie",
+      ref: "ref.009",
+      name: "Marteau rouge",
+      weight: "2kg",
+      price: "4€",
+    },
+    {
+      image: "/",
+      categorie: "super",
+      ref: "ref.1304",
+      name: "Tote bag en polycoton",
+      weight: "150gr",
+      price: "7,56€",
+    },
+    {
+      image: "/",
+      categorie: "Courbevoie",
+      ref: "ref.009",
+      name: "Marteau rouge",
+      weight: "2kg",
+      price: "4€",
+    },
+    {
+      image: "/",
+      categorie: "super",
+      ref: "ref.1304",
+      name: "Tote bag en polycoton",
+      weight: "150gr",
+      price: "7,56€",
+    },
+    {
+      image: "/",
+      categorie: "Courbevoie",
+      ref: "ref.009",
+      name: "Marteau rouge",
+      weight: "2kg",
+      price: "4€",
+    },
+  ];
 
   const [currentItems, setCurrentItems] = useState(0);
 
+  // setInterval(() => {
+  //   setCurrentItems(currentItems + 1);
+  // }, 3000);
+
   useEffect(() => {
     if (currentItems < 0) {
-      setCurrentItems(cardNumber.length - 4);
-    } else if (currentItems - 1 == cardNumber.length - 4) {
+      setCurrentItems(bestSellers.length - 4);
+    } else if (currentItems - 1 == bestSellers.length - 4) {
       setCurrentItems(0);
     }
   }, [currentItems]);
 
-  function Cards({ currentItems }) {
-    function Card({ currentItems }) {
-      return (
-        <div
-          style={{
-            transform: `translateX(calc(${-100 * currentItems}% - ${
-              20 * currentItems
-            }px))`,
-          }}
-          className="bestSeller"
-        >
-          <div className="image">IMAGE</div>
-          <div className="infos">
-            <div className="categorie">{bestSeller.categorie}</div>
-            <div className="ref">{bestSeller.ref}</div>
-            <div className="footContainer">
-              <div className="nameContainer">
-                <p>{bestSeller.name}</p>
-                <p>{bestSeller.weight}</p>
-              </div>
-              <div className="price">
-                <p>dès</p>
-                <p>{bestSeller.price}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      );
-    }
-
+  function Cards({ currentItems, bestSellers }) {
     return (
       <div className="bestSellerContainer">
-        {[...Array(cardNumber.length)].map((_, i) => {
-          return <Card key={i} currentItems={currentItems} />;
+        {bestSellers.map((bestSeller, i) => {
+          return (
+            <div
+              key={i}
+              style={{
+                transform: `translateX(calc(${-100 * currentItems}% - ${
+                  20 * currentItems
+                }px))`,
+              }}
+              className="bestSeller"
+            >
+              <div className="image">IMAGE</div>
+              <div className="infos">
+                <div className="categorie">{bestSeller.categorie}</div>
+                <div className="ref">{bestSeller.ref}</div>
+                <div className="footContainer">
+                  <div className="nameContainer">
+                    <p>{bestSeller.name}</p>
+                    <p>{bestSeller.weight}</p>
+                  </div>
+                  <div className="price">
+                    <p>dès</p>
+                    <p>{bestSeller.price}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          );
         })}
       </div>
     );
@@ -300,7 +357,7 @@ function Tendance() {
           onClick={() => setCurrentItems(currentItems - 1)}
           icon={faChevronLeft}
         />
-        <Cards currentItems={currentItems} />
+        <Cards currentItems={currentItems} bestSellers={bestSellers} />
         <FontAwesomeIcon
           onClick={() => setCurrentItems(currentItems + 1)}
           icon={faChevronRight}
