@@ -1011,7 +1011,6 @@ nav ul svg {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 20vh;
 }
 .OPSection2 .tendance .image {
   color: #efefef;

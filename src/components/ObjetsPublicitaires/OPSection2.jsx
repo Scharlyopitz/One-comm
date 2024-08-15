@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faChevronLeft,
   faChevronRight,
+  faStar,
 } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useRef, useState } from "react";
 
@@ -13,6 +14,7 @@ export default function OPSection2() {
       <div className="img">IMAGES</div>
       <Categories />
       <Tendance />
+      <AvisClients />
     </section>
   );
 }
@@ -362,6 +364,63 @@ function Tendance() {
           onClick={() => setCurrentItems(currentItems + 1)}
           icon={faChevronRight}
         />
+      </div>
+    </div>
+  );
+}
+
+function AvisClients() {
+  function AvisCards() {
+    function StarRating({ rating }) {
+      const maxRating = [1, 2, 3, 4, 5];
+
+      return (
+        <div className="starRating-container">
+          {maxRating.map((value, index) =>
+            rating >= value ? (
+              <span key={index}>
+                <FontAwesomeIcon icon={faStar} style={{ color: "#63E6BE" }} />
+              </span>
+            ) : (
+              <span key={index}>
+                <FontAwesomeIcon icon={faStar} style={{ color: "#000000" }} />
+              </span>
+            )
+          )}
+        </div>
+      );
+    }
+
+    const Avis = [
+      {
+        photo: "Photo",
+        name: "Joe Dalton",
+        avis: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae ea delectus tenetur modi obcaecati sapiente et, vel vitae cupiditate maxime commodi rem aliquid quidem libero placeat incidunt ratione perspiciatis! Delectus.",
+        note: 3,
+      },
+    ];
+
+    return (
+      <>
+        {Avis.map((a, i) => {
+          return (
+            <div key={i} className="avisCard">
+              <div>{a.photo}</div>
+              <p>{a.name}</p>
+              <span>{a.avis}</span>
+              <StarRating rating={a.note} />
+            </div>
+          );
+        })}
+      </>
+    );
+  }
+
+  return (
+    <div className="AvisClients">
+      <h1>Nos avis clients</h1>
+      <div className="containerAvis">
+        <AvisCards />
       </div>
     </div>
   );
