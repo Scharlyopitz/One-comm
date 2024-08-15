@@ -38,6 +38,10 @@
     &:nth-child(even) {
       flex-direction: row-reverse;
 
+      .card {
+        flex-direction: row-reverse;
+      }
+
       .informationsContainer {
         padding-left: 5%;
       }
@@ -54,6 +58,11 @@
     }
 
     .card {
+      overflow: hidden;
+      gap: 5%;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 1%;
       width: 500px;
       height: 500px;
       border-radius: 24px;
@@ -63,6 +72,25 @@
         $LinearDarkBlueOpct
       );
       box-shadow: 0px 19px 30px 9px $BlackOpct;
+
+      .left {
+        width: 50%;
+        div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 200px;
+        }
+      }
+      .right {
+        width: 50%;
+        div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+        }
+      }
     }
 
     .informationsContainer {

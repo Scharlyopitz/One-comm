@@ -69,5 +69,16 @@ function SectionCard({ category, title, options }) {
 }
 
 function Card() {
-  return <div className="card"></div>;
+  return (
+    <div className="card">
+      <div className="left">
+        {[...Array(6)].map((_, i) => {
+          return <div key={i}>IMAGE</div>;
+        })}
+      </div>
+      <div className="right">
+        <div>IMAGE</div>
+      </div>
+    </div>
+  );
 }

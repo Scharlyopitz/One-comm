@@ -470,6 +470,9 @@ footer .copyright p {
 .cardsSection .sectionCardContainer:nth-child(even) {
   flex-direction: row-reverse;
 }
+.cardsSection .sectionCardContainer:nth-child(even) .card {
+  flex-direction: row-reverse;
+}
 .cardsSection .sectionCardContainer:nth-child(even) .informationsContainer {
   padding-left: 5%;
 }
@@ -480,11 +483,34 @@ footer .copyright p {
   padding-right: 15%;
 }
 .cardsSection .sectionCardContainer .card {
+  overflow: hidden;
+  gap: 5%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1%;
   width: 500px;
   height: 500px;
   border-radius: 24px;
   background: linear-gradient(350deg, rgba(17, 35, 90, 0.5019607843), rgba(155, 176, 193, 0.5019607843));
   box-shadow: 0px 19px 30px 9px rgba(0, 0, 0, 0.4509803922);
+}
+.cardsSection .sectionCardContainer .card .left {
+  width: 50%;
+}
+.cardsSection .sectionCardContainer .card .left div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+.cardsSection .sectionCardContainer .card .right {
+  width: 50%;
+}
+.cardsSection .sectionCardContainer .card .right div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 .cardsSection .sectionCardContainer .informationsContainer {
   width: 50%;
