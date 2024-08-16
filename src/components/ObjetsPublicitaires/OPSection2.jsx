@@ -11,7 +11,11 @@ export default function OPSection2() {
   return (
     <section className="OPSection2">
       <NavOP />
-      <div className="img">IMAGES</div>
+      <img
+        className="img"
+        src="https://st2.depositphotos.com/3651191/50798/i/450/depositphotos_507989186-stock-photo-colorful-summer-view-fusine-lake.jpg"
+        alt=""
+      />
       <Categories />
       <Tendance />
       <AvisClients />
