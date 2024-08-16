@@ -379,11 +379,11 @@ function AvisClients() {
           {maxRating.map((value, index) =>
             rating >= value ? (
               <span key={index}>
-                <FontAwesomeIcon icon={faStar} style={{ color: "#63E6BE" }} />
+                <FontAwesomeIcon icon={faStar} style={{ color: "#11235a" }} />
               </span>
             ) : (
               <span key={index}>
-                <FontAwesomeIcon icon={faStar} style={{ color: "#000000" }} />
+                <FontAwesomeIcon icon={faStar} style={{ color: "#9bb0c1" }} />
               </span>
             )
           )}
@@ -393,10 +393,34 @@ function AvisClients() {
 
     const Avis = [
       {
-        photo: "Photo",
+        photo: "/vite.svg",
         name: "Joe Dalton",
         avis: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae ea delectus tenetur modi obcaecati sapiente et, vel vitae cupiditate maxime commodi rem aliquid quidem libero placeat incidunt ratione perspiciatis! Delectus.",
         note: 3,
+      },
+      {
+        photo: "/vite.svg",
+        name: "Wilhelm",
+        avis: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae ea delectus tenetur modi obcaecati sapiente et, vel vitae cupiditate maxime commodi rem aliquid quidem libero placeat incidunt ratione perspiciatis! Delectus.",
+        note: 5,
+      },
+      {
+        photo: "/vite.svg",
+        name: "Joe Dalton",
+        avis: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae ea delectus tenetur modi obcaecati sapiente et, vel vitae cupiditate maxime commodi rem aliquid quidem libero placeat incidunt ratione perspiciatis! Delectus.",
+        note: 3,
+      },
+      {
+        photo: "/vite.svg",
+        name: "Aldween",
+        avis: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae ea delectus tenetur modi obcaecati sapiente et, vel vitae cupiditate maxime commodi rem aliquid quidem libero placeat incidunt ratione perspiciatis! Delectus.",
+        note: 3,
+      },
+      {
+        photo: "/vite.svg",
+        name: "Joe Dalton",
+        avis: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae ea delectus tenetur modi obcaecati sapiente et, vel vitae cupiditate maxime commodi rem aliquid quidem libero placeat incidunt ratione perspiciatis! Delectus.",
+        note: 2,
       },
     ];
 
@@ -405,10 +429,16 @@ function AvisClients() {
         {Avis.map((a, i) => {
           return (
             <div key={i} className="avisCard">
-              <div>{a.photo}</div>
-              <p>{a.name}</p>
-              <span>{a.avis}</span>
-              <StarRating rating={a.note} />
+              <div>
+                <img src={a.photo} alt="photo du client" />
+                <p>{a.name}</p>
+              </div>
+
+              <div>
+                <StarRating rating={a.note} />
+
+                <span className="txt">{a.avis}</span>
+              </div>
             </div>
           );
         })}
