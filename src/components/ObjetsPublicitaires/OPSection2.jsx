@@ -387,7 +387,7 @@ function AvisClients() {
               </span>
             ) : (
               <span key={index}>
-                <FontAwesomeIcon icon={faStar} style={{ color: "#9bb0c1" }} />
+                <FontAwesomeIcon icon={faStar} style={{ color: "#9bb0c180" }} />
               </span>
             )
           )}
