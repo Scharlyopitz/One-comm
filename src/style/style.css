@@ -595,6 +595,7 @@ li {
 .OPSection2 .navContainer .nav .left a {
   display: flex;
   align-items: center;
+  color: #efefef;
 }
 .OPSection2 .navContainer .nav .left .Menu {
   position: relative;
