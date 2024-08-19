@@ -11,11 +11,7 @@ export default function OPSection2() {
   return (
     <section className="OPSection2">
       <NavOP />
-      <img
-        className="img"
-        src="https://st2.depositphotos.com/3651191/50798/i/450/depositphotos_507989186-stock-photo-colorful-summer-view-fusine-lake.jpg"
-        alt=""
-      />
+      <Carrousel />
       <Categories />
       <Tendance />
       <AvisClients />
@@ -196,6 +192,65 @@ function NavOP() {
       <div className="nav">
         <Left />
         <Right />
+      </div>
+    </div>
+  );
+}
+
+function Carrousel() {
+  const images = [
+    "https://images.pexels.com/photos/842711/pexels-photo-842711.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "https://images.pexels.com/photos/1525041/pexels-photo-1525041.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "https://images.pexels.com/photos/1643409/pexels-photo-1643409.jpeg?auto=compress&cs=tinysrgb&w=600",
+  ];
+
+  const [currentImage, setCurrentImage] = useState(0);
+
+  const [position, setPosition] = useState("-4");
+
+  function Image({ setCurrentImage, i, setPosition }) {
+    function handleClick(e) {
+      setCurrentImage(parseInt(e.target.dataset.id));
+      setPosition(ref.current.offsetLeft - 4);
+    }
+
+    const ref = useRef(null);
+
+    return (
+      <div
+        ref={ref}
+        className="dot"
+        data-id={i}
+        onClick={(e) => handleClick(e)}
+      ></div>
+    );
+  }
+
+  return (
+    <div className="CarrouselContainer">
+      <div className="filter" />
+      {images.map((img, i) => {
+        return (
+          <img
+            key={i}
+            src={img}
+            alt={`image ${i + 1}`}
+            style={{ transform: `translateX(${-100 * currentImage}%)` }}
+          />
+        );
+      })}
+      <div className="dotContainer">
+        <div className="border" style={{ left: `${position}px` }} />
+        {images.map((_, i) => {
+          return (
+            <Image
+              key={i}
+              setCurrentImage={setCurrentImage}
+              i={i}
+              setPosition={setPosition}
+            />
+          );
+        })}
       </div>
     </div>
   );

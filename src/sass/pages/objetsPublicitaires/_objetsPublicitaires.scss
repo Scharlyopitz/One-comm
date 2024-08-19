@@ -237,14 +237,69 @@
     }
   }
 
-  //   IMG
-  .img {
-    background-color: rgb(25, 228, 25);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 50vh;
+  //   CARROUSEL
+  .CarrouselContainer {
+    position: relative;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 100vw;
+    overflow: hidden;
+
+    .filter {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      background: linear-gradient(
+        0deg,
+        rgb(0 0 0 / 67%) 10%,
+        rgb(252 70 107 / 0%) 50%
+      );
+    }
+
+    img {
+      object-fit: cover;
+      object-position: center;
+      width: 100vw;
+      height: 70vh;
+      transition: 0.5s;
+    }
+
+    // DOT
+    .dotContainer {
+      position: absolute;
+      z-index: 2;
+      bottom: 5vh;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 6vw;
+
+      .dot {
+        width: 15px;
+        height: 15px;
+        background: $DotInactive;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+
+      .border {
+        pointer-events: none;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        border: 2px solid $DotInactive;
+        width: calc(15px + 8px);
+        height: calc(15px + 8px);
+        transition: 0.5s;
+      }
+    }
   }
 
   //   CATEGORIES SECTION
