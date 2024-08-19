@@ -41,8 +41,10 @@
       font-size: 16px;
       font-weight: 300;
       font-family: "Open Sans";
-      background-color: $WhiteOpct;
+      // background-color: $WhiteOpct;
       border-bottom: 1px solid $Black;
+      background: rgba(239, 239, 239, 0.1019607843);
+      backdrop-filter: blur(5px);
 
       // LEFT
       .left {

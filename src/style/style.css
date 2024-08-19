@@ -583,8 +583,10 @@ li {
   font-size: 16px;
   font-weight: 300;
   font-family: "Open Sans";
-  background-color: rgba(239, 239, 239, 0.5176470588);
   border-bottom: 1px solid #0f0f0f;
+  background: rgba(239, 239, 239, 0.1019607843);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
 }
 .OPSection2 .navContainer .nav .left {
   display: flex;
