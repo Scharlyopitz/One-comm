@@ -572,7 +572,7 @@ li {
   left: 0;
 }
 .OPSection2 .navContainer .nav {
-  padding: 5vh 0;
+  padding: 3vh 0;
   position: sticky;
   z-index: 3;
   top: 7vh;
@@ -595,7 +595,6 @@ li {
 .OPSection2 .navContainer .nav .left a {
   display: flex;
   align-items: center;
-  color: #efefef;
 }
 .OPSection2 .navContainer .nav .left .Menu {
   position: relative;
