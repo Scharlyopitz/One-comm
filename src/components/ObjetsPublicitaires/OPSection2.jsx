@@ -239,34 +239,19 @@ function Carrousel() {
 }
 
 function Categories() {
-  const categories = [
-    "express",
-    "informatique",
-    "textile",
-    "cuisine",
-    "todbag",
-    "écologie",
-    "mugs",
-    "carnet",
-    "electronique",
-    "outils",
-    "valises",
-    "panneaux",
-    "porte clé",
-    "sport",
-    "soins",
-    "parapluie",
-  ];
-
   return (
     <div className="categoriesSection">
       <h1>Nos catégories d'objets publicitaires</h1>
       <div className="categoriesContainer">
-        {categories.map((categorie, i) => {
+        {categories.map((cate, i) => {
           return (
-            <div key={i} className="categorie">
-              {categorie}
-            </div>
+            <NavLink
+              key={i}
+              to={`/objetsPublicitaires/${cate.href}`}
+              className="categorie"
+            >
+              {cate.title}
+            </NavLink>
           );
         })}
       </div>
