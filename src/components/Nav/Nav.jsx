@@ -7,21 +7,16 @@ import { useEffect, useState } from "react";
 export default function Nav() {
   const { pathname } = useLocation();
 
-  const [ok, setOk] = useState(false);
-  console.log(ok);
-
-  const path = categories.find(
-    (cate) => `/objetsPublicitaires/${cate.href}` === pathname
-  );
+  const [categorieOn, setCategorieOn] = useState(false);
 
   useEffect(() => {
     categories.find((cate) => `/objetsPublicitaires/${cate.href}` === pathname)
-      ? setOk(true)
-      : setOk(false);
+      ? setCategorieOn(true)
+      : setCategorieOn(false);
   }, [pathname]);
 
   return (
-    <nav>
+    <nav style={{ boxShadow: categorieOn && "none" }}>
       <Logo />
       <Links />
     </nav>
