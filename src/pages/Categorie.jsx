@@ -1,8 +1,11 @@
 import { useParams } from "react-router-dom";
+import categories from "../assets/categories.json";
 
 export default function Categorie() {
   const { categorie } = useParams();
-  console.log(categorie);
+
+  const item = categories.find((cate) => cate.href === categorie);
+  console.log(item);
 
   return (
     <main>

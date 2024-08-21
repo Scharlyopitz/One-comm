@@ -9,7 +9,6 @@ import { useEffect, useRef, useState } from "react";
 import categories from "../../assets/categories.json";
 
 export default function OPSection2() {
-  console.log(categories);
   return (
     <section className="OPSection2">
       <NavOP />
@@ -35,7 +34,7 @@ function NavOP() {
         <div className="modalMenu">
           {categories.map((cate, i) => {
             return (
-              <NavLink key={i} to={`/objetsPublicitaires${cate.href}`}>
+              <NavLink key={i} to={`/objetsPublicitaires/${cate.href}`}>
                 {cate.title}
               </NavLink>
             );
