@@ -22,37 +22,37 @@ export default function OPSection2() {
 function NavOP() {
   function Left() {
     const Links = [
-      { name: "Express 24 / 48h", href: "/" },
-      { name: "Goodies écologiques", href: "/" },
-      { name: "Made in France", href: "/" },
-      { name: "Tous nos goodies", href: "/" },
+      { name: "Express 24 / 48h", href: "/Express" },
+      { name: "Goodies écologiques", href: "/Goodies-ecologiques" },
+      { name: "Made in France", href: "/Made-In-France" },
+      { name: "Tous nos goodies", href: "/Goodies" },
     ];
 
     function ModalMenu() {
       const Links = [
-        { name: "Express 24 / 48h", href: "/" },
-        { name: "Hight-Tech", href: "/" },
-        { name: "Drinkwear", href: "/" },
-        { name: "écriture", href: "/" },
-        { name: "Tote Bag", href: "/" },
-        { name: "Goodies écologiques", href: "/" },
-        { name: "Textiles et accessoires", href: "/" },
-        { name: "Gastronomie / Maison", href: "/" },
-        { name: "Accessoires smartphone", href: "/" },
-        { name: "Outils / Bricolage", href: "/" },
-        { name: "Sacs et bagagerie", href: "/" },
-        { name: "Signalétique et packaging", href: "/" },
-        { name: "Articles de poche", href: "/" },
-        { name: "Sport et loisirs", href: "/" },
-        { name: "Hygiène beauté et santé", href: "/" },
-        { name: "Parapluies", href: "/" },
+        { name: "Express 24 / 48h", href: "/Express" },
+        { name: "Hight-Tech", href: "/Hight-Tech" },
+        { name: "Drinkwear", href: "/Drinkwear" },
+        { name: "écriture", href: "/écriture" },
+        { name: "Tote Bag", href: "/Tote-Bag" },
+        { name: "Goodies écologiques", href: "/Goodies-ecologiques" },
+        { name: "Textiles et accessoires", href: "/Textiles&accessoires" },
+        { name: "Gastronomie / Maison", href: "/Gastronomie-Maison" },
+        { name: "Accessoires smartphone", href: "/Accessoires-smartphone" },
+        { name: "Outils / Bricolage", href: "/Outils-Bricolage" },
+        { name: "Sacs et bagagerie", href: "/Sacs&bagagerie" },
+        { name: "Signalétique et packaging", href: "/Signalétique&packaging" },
+        { name: "Articles de poche", href: "/Articles-de-poche" },
+        { name: "Sport et loisirs", href: "/Sport&loisirs" },
+        { name: "Hygiène beauté et santé", href: "/Hygiène-beauté-et-santé" },
+        { name: "Parapluies", href: "/Parapluies" },
       ];
 
       return (
         <div className="modalMenu">
           {Links.map((link, i) => {
             return (
-              <NavLink key={i} to={link.href}>
+              <NavLink key={i} to={`/objetsPublicitaires${link.href}`}>
                 {link.name}
               </NavLink>
             );
@@ -88,7 +88,7 @@ function NavOP() {
         </div>
         {Links.map((link, i) => {
           return (
-            <NavLink key={i} to={link.href}>
+            <NavLink key={i} to={`/objetsPublicitaires${link.href}`}>
               {link.name}
             </NavLink>
           );
