@@ -69,20 +69,22 @@ function Products() {
   }
 
   return (
-    <section className="Products">
-      {products.map((item, i) => {
-        return (
-          <Product
-            key={i}
-            image={item.image}
-            categorie={item.categorie}
-            reference={item.ref}
-            name={item.product.name}
-            weight={item.product.weight}
-            price={item.product.price}
-          />
-        );
-      })}
+    <section className="ProductSection">
+      <div className="ProductContainer">
+        {products.map((item, i) => {
+          return (
+            <Product
+              key={i}
+              image={item.image}
+              categorie={item.categorie}
+              reference={item.ref}
+              name={item.product.name}
+              weight={item.product.weight}
+              price={item.product.price}
+            />
+          );
+        })}
+      </div>
     </section>
   );
 }
