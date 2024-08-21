@@ -38,6 +38,14 @@ li {
   overflow: hidden;
 }
 
+.TopPart {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .txtConditionGenerales {
   gap: 10vh;
 }
