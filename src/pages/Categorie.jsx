@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
+import { useEffect } from "react";
 import categories from "../assets/categories.json";
 import TitlePage from "../components/TitlePage/TitlePage";
-import { useEffect } from "react";
 import NavOP from "../components/ObjetsPublicitaires/NavOP";
 import Error from "./Error";
 
