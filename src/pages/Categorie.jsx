@@ -23,9 +23,12 @@ export default function Categorie() {
 function TopPart({ title, description, image }) {
   return (
     <section className="TopPart" style={{ backgroundImage: `URL(${image})` }}>
-      <h1>{title}</h1>
+      <div className="filter" />
+      <div className="TopPartTxt">
+        <h1>{title}</h1>
 
-      <p>{description}</p>
+        <p>{description}</p>
+      </div>
     </section>
   );
 }

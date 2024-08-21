@@ -1,7 +1,32 @@
 .TopPart {
+  position: relative;
   min-height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-position: center;
+  background-size: cover;
+
+  .filter {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $BlackFilter;
+  }
+
+  h1 {
+    text-transform: capitalize;
+  }
+
+  &Txt {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    text-align: center;
+    z-index: 1;
+    width: 100%;
+    padding: 0 20vw;
+  }
 }
