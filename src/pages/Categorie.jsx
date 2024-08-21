@@ -1,4 +1,9 @@
+import { useParams } from "react-router-dom";
+
 export default function Categorie() {
+  const { categorie } = useParams();
+  console.log(categorie);
+
   return (
     <main>
       <TopPart />
