@@ -827,6 +827,8 @@ li {
   background-color: #0f0f0f;
   margin: auto;
   border-radius: 20px;
+  background-position: center;
+  background-size: cover;
 }
 .OPSection2 .tendance {
   display: flex;
