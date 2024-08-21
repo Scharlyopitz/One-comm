@@ -1,8 +1,11 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import categories from "../../assets/categories.json";
 
 export default function Nav() {
+  const { pathname } = useLocation();
+  console.log(pathname);
   return (
     <nav>
       <Logo />

@@ -20,7 +20,7 @@
   {
     "title": "écriture",
     "description": "Découvrez notre gamme d’objets publicitaire express. Une urgence ? Cette catégorie est faites pour vous. Recevez votre commande 24h / 48h après validation du BAT.",
-    "href": "écriture",
+    "href": "ecriture",
     "image": "Papeterie&écriture.jpg"
   },
   {
@@ -86,7 +86,7 @@
   {
     "title": "Hygiène beauté et santé",
     "description": "Découvrez notre gamme d’objets publicitaire express. Une urgence ? Cette catégorie est faites pour vous. Recevez votre commande 24h / 48h après validation du BAT.",
-    "href": "Hygiène-beauté-et-santé",
+    "href": "Hygiene-beaute-et-sante",
     "image": "/HygièneBeauté&santé.jpg"
   },
   {
