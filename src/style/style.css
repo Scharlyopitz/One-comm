@@ -587,197 +587,6 @@ li {
 .OPSection2 a {
   color: #0f0f0f;
 }
-.OPSection2 .navContainer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-.OPSection2 .navContainer .background {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-.OPSection2 .navContainer .nav {
-  padding: 3vh 0;
-  position: sticky;
-  z-index: 3;
-  top: 7vh;
-  left: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  font-size: 16px;
-  font-weight: 300;
-  font-family: "Open Sans";
-  border-bottom: 1px solid #0f0f0f;
-  background: rgba(239, 239, 239, 0.1019607843);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
-}
-.OPSection2 .navContainer .nav .left {
-  display: flex;
-  gap: 1vw;
-}
-.OPSection2 .navContainer .nav .left a {
-  display: flex;
-  align-items: center;
-}
-.OPSection2 .navContainer .nav .left .Menu {
-  position: relative;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 1vw;
-  color: #11235a;
-  background-color: #efefef;
-  padding: 0.5vh 1.5vw;
-  border-radius: 20px;
-  text-transform: uppercase;
-}
-.OPSection2 .navContainer .nav .left .Menu .burgerContainer {
-  position: relative;
-  width: 15px;
-  height: 9px;
-  display: flex;
-  align-items: center;
-}
-.OPSection2 .navContainer .nav .left .Menu .burgerContainer .burger {
-  width: 100%;
-  height: 0.5px;
-  background-color: #11235a;
-}
-.OPSection2 .navContainer .nav .left .Menu .burgerContainer .burger::after, .OPSection2 .navContainer .nav .left .Menu .burgerContainer .burger::before {
-  content: "";
-  width: 100%;
-  height: 0.5px;
-  background: #11235a;
-  position: absolute;
-  left: 0;
-}
-.OPSection2 .navContainer .nav .left .Menu .burgerContainer .burger::after {
-  top: 0;
-}
-.OPSection2 .navContainer .nav .left .Menu .burgerContainer .burger::before {
-  bottom: 0;
-}
-.OPSection2 .navContainer .nav .left .Menu .modalMenu {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #efefef;
-  padding: 4vh 2vw 2vh;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 1vh;
-}
-.OPSection2 .navContainer .nav .left .Menu .modalMenu a {
-  white-space: nowrap;
-  text-transform: initial;
-}
-.OPSection2 .navContainer .nav .left .Menu .modalMenu a:hover {
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-}
-.OPSection2 .navContainer .nav .right {
-  display: flex;
-  align-items: center;
-  gap: 1vw;
-}
-.OPSection2 .navContainer .nav .right input,
-.OPSection2 .navContainer .nav .right button {
-  padding: 0.5vh 1.5vw;
-}
-.OPSection2 .navContainer .nav .right input {
-  border-radius: 20px;
-  background: #e8e8e8;
-  border: none;
-  outline: none;
-}
-.OPSection2 .navContainer .nav .right button {
-  cursor: pointer;
-  color: #11235a;
-  border-radius: 20px;
-  background: #efefef;
-}
-.OPSection2 .navContainer .nav .right .btn {
-  position: relative;
-  z-index: 2;
-  border: none;
-}
-.OPSection2 .navContainer .nav .right .devis {
-  position: relative;
-}
-.OPSection2 .navContainer .nav .right .devis .lien {
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 8vh;
-  border-radius: 15px 15px 0 0;
-  z-index: -1;
-  background-color: #efefef;
-}
-.OPSection2 .navContainer .nav .right .devis .modalDevis {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: absolute;
-  top: 4vh;
-  right: 0;
-  gap: 10px;
-  border-radius: 20px;
-  background: #efefef;
-  white-space: nowrap;
-  width: 550px;
-  padding: 2vh 1.5vw;
-}
-.OPSection2 .navContainer .nav .right .devis .modalDevis .header {
-  display: grid;
-  font-size: 13px;
-  width: 100%;
-  padding: 1vh 0;
-  grid-template-columns: repeat(3, 1fr);
-  border-bottom: 1px solid #0f0f0f;
-}
-.OPSection2 .navContainer .nav .right .devis .modalDevis p {
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.OPSection2 .navContainer .nav .right .devis .modalDevis p:nth-child(2) {
-  text-align: end;
-}
-.OPSection2 .navContainer .nav .right .devis .modalDevis .itemsContainer {
-  display: flex;
-  flex-direction: column;
-  gap: 1vh;
-  width: 100%;
-}
-.OPSection2 .navContainer .nav .right .devis .modalDevis .itemsContainer .item {
-  display: grid;
-  font-size: 15px;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: center;
-}
-.OPSection2 .navContainer .nav .right .devis .modalDevis .itemsContainer .item .deleteBtn {
-  background: transparent;
-  border: none;
-  margin-left: auto;
-}
-.OPSection2 .navContainer .nav .right .devis .modalDevis .devisBtn {
-  margin: 4vh 0 2vh;
-  border-radius: 20px;
-  padding: 1vh 3vw;
-  border: 1px solid #11235a;
-}
-.OPSection2 .navContainer .nav .right .devis button {
-  padding: 0.5vh 1.5vw;
-  width: -moz-fit-content;
-  width: fit-content;
-}
 .OPSection2 .CarrouselContainer {
   position: relative;
   display: grid;
@@ -967,6 +776,198 @@ li {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   overflow: hidden;
+}
+
+.navContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.navContainer .background {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.navContainer .nav {
+  padding: 3vh 0;
+  position: sticky;
+  z-index: 3;
+  top: 7vh;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: "Open Sans";
+  border-bottom: 1px solid #0f0f0f;
+  background: rgba(239, 239, 239, 0.1019607843);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+.navContainer .nav .left {
+  display: flex;
+  gap: 1vw;
+}
+.navContainer .nav .left a {
+  display: flex;
+  align-items: center;
+}
+.navContainer .nav .left .Menu {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  color: #11235a;
+  background-color: #efefef;
+  padding: 0.5vh 1.5vw;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+.navContainer .nav .left .Menu .burgerContainer {
+  position: relative;
+  width: 15px;
+  height: 9px;
+  display: flex;
+  align-items: center;
+}
+.navContainer .nav .left .Menu .burgerContainer .burger {
+  width: 100%;
+  height: 0.5px;
+  background-color: #11235a;
+}
+.navContainer .nav .left .Menu .burgerContainer .burger::after, .navContainer .nav .left .Menu .burgerContainer .burger::before {
+  content: "";
+  width: 100%;
+  height: 0.5px;
+  background: #11235a;
+  position: absolute;
+  left: 0;
+}
+.navContainer .nav .left .Menu .burgerContainer .burger::after {
+  top: 0;
+}
+.navContainer .nav .left .Menu .burgerContainer .burger::before {
+  bottom: 0;
+}
+.navContainer .nav .left .Menu .modalMenu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #efefef;
+  padding: 4vh 2vw 2vh;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+.navContainer .nav .left .Menu .modalMenu a {
+  white-space: nowrap;
+  text-transform: initial;
+}
+.navContainer .nav .left .Menu .modalMenu a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+.navContainer .nav .right {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+.navContainer .nav .right input,
+.navContainer .nav .right button {
+  padding: 0.5vh 1.5vw;
+}
+.navContainer .nav .right input {
+  border-radius: 20px;
+  background: #e8e8e8;
+  border: none;
+  outline: none;
+}
+.navContainer .nav .right button {
+  cursor: pointer;
+  color: #11235a;
+  border-radius: 20px;
+  background: #efefef;
+}
+.navContainer .nav .right .btn {
+  position: relative;
+  z-index: 2;
+  border: none;
+}
+.navContainer .nav .right .devis {
+  position: relative;
+}
+.navContainer .nav .right .devis .lien {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 8vh;
+  border-radius: 15px 15px 0 0;
+  z-index: -1;
+  background-color: #efefef;
+}
+.navContainer .nav .right .devis .modalDevis {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 4vh;
+  right: 0;
+  gap: 10px;
+  border-radius: 20px;
+  background: #efefef;
+  white-space: nowrap;
+  width: 550px;
+  padding: 2vh 1.5vw;
+}
+.navContainer .nav .right .devis .modalDevis .header {
+  display: grid;
+  font-size: 13px;
+  width: 100%;
+  padding: 1vh 0;
+  grid-template-columns: repeat(3, 1fr);
+  border-bottom: 1px solid #0f0f0f;
+}
+.navContainer .nav .right .devis .modalDevis p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.navContainer .nav .right .devis .modalDevis p:nth-child(2) {
+  text-align: end;
+}
+.navContainer .nav .right .devis .modalDevis .itemsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  width: 100%;
+}
+.navContainer .nav .right .devis .modalDevis .itemsContainer .item {
+  display: grid;
+  font-size: 15px;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+.navContainer .nav .right .devis .modalDevis .itemsContainer .item .deleteBtn {
+  background: transparent;
+  border: none;
+  margin-left: auto;
+}
+.navContainer .nav .right .devis .modalDevis .devisBtn {
+  margin: 4vh 0 2vh;
+  border-radius: 20px;
+  padding: 1vh 3vw;
+  border: 1px solid #11235a;
+}
+.navContainer .nav .right .devis button {
+  padding: 0.5vh 1.5vw;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .txtPolitique {

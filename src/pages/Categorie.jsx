@@ -1,15 +1,24 @@
 import { useParams } from "react-router-dom";
 import categories from "../assets/categories.json";
 import TitlePage from "../components/TitlePage/TitlePage";
+import { useEffect } from "react";
+import NavOP from "../components/ObjetsPublicitaires/NavOP";
 
 export default function Categorie() {
   const { categorie } = useParams();
 
   const item = categories.find((cate) => cate.href === categorie);
 
+  useEffect(() => {
+    const body = document.querySelector("body");
+
+    body.classList.remove("b");
+  }, []);
+
   return (
     <main>
       <TitlePage title={item.title} />
+      <NavOP />
       <TopPart
         title={item.title}
         description={item.description}
