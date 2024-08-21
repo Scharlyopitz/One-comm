@@ -1,30 +1,27 @@
 import { useParams } from "react-router-dom";
 import categories from "../assets/categories.json";
+import TitlePage from "../components/TitlePage/TitlePage";
 
 export default function Categorie() {
   const { categorie } = useParams();
 
   const item = categories.find((cate) => cate.href === categorie);
-  console.log(item);
 
   return (
     <main>
-      <TopPart />
+      <TitlePage title={item.title} />
+      <TopPart title={item.title} description={item.description} />
       <Products />
     </main>
   );
 }
 
-function TopPart() {
+function TopPart({ title, description }) {
   return (
     <section>
-      <h1>Express 24h / 48h</h1>
+      <h1>{title}</h1>
 
-      <p>
-        Découvrez notre gamme d’objets publicitaire express. <br /> Une urgence
-        ? Cette catégorie est faites pour vous. Recevez votre commande 24h / 48h
-        après validation du BAT.
-      </p>
+      <p>{description}</p>
     </section>
   );
 }

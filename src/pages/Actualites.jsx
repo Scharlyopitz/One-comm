@@ -1,9 +1,11 @@
 import Liste from "../components/Liste/Liste";
 import MiniSectionTxt from "../components/MiniSectionTxt/MiniSectionTxt";
+import TitlePage from "../components/TitlePage/TitlePage";
 
 export default function Actualites() {
   return (
     <main>
+      <TitlePage title="Actualités" />
       <MiniSectionTxt title="Nos dernières actualités." />
       <div className="listesContainer">
         <Liste

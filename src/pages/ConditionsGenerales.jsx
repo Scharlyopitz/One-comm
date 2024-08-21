@@ -1,10 +1,12 @@
 import { NavLink } from "react-router-dom";
 import MiniSectionTxt from "../components/MiniSectionTxt/MiniSectionTxt";
 import TexteContainer from "../components/TexteContainer/TexteContainer";
+import TitlePage from "../components/TitlePage/TitlePage";
 
 export default function ConditionsGenerales() {
   return (
     <main>
+      <TitlePage title="Conditions Générales" />
       <MiniSectionTxt title="Nos conditions générales de vente." />
       <TexteContainer>
         <Texte />

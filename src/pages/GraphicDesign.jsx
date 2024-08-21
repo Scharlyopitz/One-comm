@@ -1,9 +1,11 @@
 import GDSection2 from "../components/GraphicDesign/GDSection2";
 import Section1Duplicate from "../components/Section1Duplicate/Section1Duplicate";
+import TitlePage from "../components/TitlePage/TitlePage";
 
 export default function GraphicDesign() {
   return (
     <main>
+      <TitlePage title="Graphic Design" />
       <Section1Duplicate
         titre1="Explorez de nouveaux supports"
         titre2="de communication."

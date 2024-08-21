@@ -1,9 +1,11 @@
 import OPSection2 from "../components/ObjetsPublicitaires/OPSection2";
 import Section1Duplicate from "../components/Section1Duplicate/Section1Duplicate";
+import TitlePage from "../components/TitlePage/TitlePage";
 
 export default function ObjetsPublicitaires() {
   return (
     <main>
+      <TitlePage title="Objets Publicitaires" />
       <Section1Duplicate
         titre1="Découvrez la communication"
         titre2="par l’objet."

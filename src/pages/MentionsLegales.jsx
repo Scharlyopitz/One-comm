@@ -1,9 +1,11 @@
 import MiniSectionTxt from "../components/MiniSectionTxt/MiniSectionTxt";
 import TexteContainer from "../components/TexteContainer/TexteContainer";
+import TitlePage from "../components/TitlePage/TitlePage";
 
 export default function MentionsLegales() {
   return (
     <main>
+      <TitlePage title="Mentions Légales" />
       <MiniSectionTxt title="Nos mentions légales." />
       <TexteContainer>
         <Texte />

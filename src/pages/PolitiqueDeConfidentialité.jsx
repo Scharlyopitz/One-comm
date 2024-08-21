@@ -1,9 +1,11 @@
 import MiniSectionTxt from "../components/MiniSectionTxt/MiniSectionTxt";
 import TexteContainer from "../components/TexteContainer/TexteContainer";
+import TitlePage from "../components/TitlePage/TitlePage";
 
 export default function PolitiqueDeConfidentialité() {
   return (
     <main>
+      <TitlePage title="Politique De Confidentialité" />
       <MiniSectionTxt title="Notre politique de confidentialité." />
       <TexteContainer>
         <Texte />

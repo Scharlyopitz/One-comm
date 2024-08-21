@@ -1,9 +1,11 @@
 import Liste from "../components/Liste/Liste";
 import MiniSectionTxt from "../components/MiniSectionTxt/MiniSectionTxt";
+import TitlePage from "../components/TitlePage/TitlePage";
 
 export default function Blog() {
   return (
     <main>
+      <TitlePage title="Blog" />
       <MiniSectionTxt title="Explorez notre blog." />
       <div className="listesContainer">
         <Liste
