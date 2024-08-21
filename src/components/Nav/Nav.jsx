@@ -2,10 +2,24 @@ import { NavLink, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import categories from "../../assets/categories.json";
+import { useEffect, useState } from "react";
 
 export default function Nav() {
   const { pathname } = useLocation();
-  console.log(pathname);
+
+  const [ok, setOk] = useState(false);
+  console.log(ok);
+
+  const path = categories.find(
+    (cate) => `/objetsPublicitaires/${cate.href}` === pathname
+  );
+
+  useEffect(() => {
+    categories.find((cate) => `/objetsPublicitaires/${cate.href}` === pathname)
+      ? setOk(true)
+      : setOk(false);
+  }, [pathname]);
+
   return (
     <nav>
       <Logo />
