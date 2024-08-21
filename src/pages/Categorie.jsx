@@ -1,6 +1,5 @@
 import { useParams } from "react-router-dom";
 import categories from "../assets/categories.json";
-import products from "../assets/products.json";
 import TitlePage from "../components/TitlePage/TitlePage";
 import { useEffect } from "react";
 import NavOP from "../components/ObjetsPublicitaires/NavOP";
@@ -30,7 +29,7 @@ export default function Categorie() {
         description={item.description}
         image={item.image}
       />
-      <Products />
+      <Products item={item} />
     </main>
   );
 }
@@ -47,7 +46,7 @@ function TopPart({ title, description, image }) {
   );
 }
 
-function Products() {
+function Products({ item }) {
   function Product({ image, categorie, reference, name, weight, price }) {
     return (
       <div className="product">
@@ -71,7 +70,7 @@ function Products() {
   return (
     <section className="ProductSection">
       <div className="ProductContainer">
-        {products.map((item, i) => {
+        {item.products.map((item, i) => {
           return (
             <Product
               key={i}
