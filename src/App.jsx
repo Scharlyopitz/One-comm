@@ -12,6 +12,7 @@ import TitlePage from "./components/TitlePage/TitlePage";
 import MentionsLegales from "./pages/MentionsLegales";
 import PolitiqueDeConfidentialité from "./pages/PolitiqueDeConfidentialité";
 import ConditionsGenerales from "./pages/ConditionsGenerales";
+import Categorie from "./pages/Categorie";
 
 function App() {
   const Contacts = {
@@ -44,6 +45,7 @@ function App() {
           path="/politiqueDeConfidentialite"
           element={<PolitiqueDeConfidentialité />}
         />
+        <Route path="/objetsPublicitaires/:categorie" element={<Categorie />} />
       </Routes>
       <Footer Contacts={Contacts} />
     </>
