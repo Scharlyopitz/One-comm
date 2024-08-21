@@ -21,9 +21,9 @@ export default function Categorie() {
   }
 
   return (
-    <main>
-      <TitlePage title={item.title} />
+    <main style={{ position: "relative" }}>
       <NavOP />
+      <TitlePage title={item.title} />
       <TopPart
         title={item.title}
         description={item.description}
