@@ -3,6 +3,7 @@ import categories from "../assets/categories.json";
 import TitlePage from "../components/TitlePage/TitlePage";
 import { useEffect } from "react";
 import NavOP from "../components/ObjetsPublicitaires/NavOP";
+import Error from "./Error";
 
 export default function Categorie() {
   const { categorie } = useParams();
@@ -14,6 +15,10 @@ export default function Categorie() {
 
     body.classList.remove("b");
   }, []);
+
+  if (!item) {
+    return <Error />;
+  }
 
   return (
     <main>

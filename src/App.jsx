@@ -13,6 +13,7 @@ import MentionsLegales from "./pages/MentionsLegales";
 import PolitiqueDeConfidentialité from "./pages/PolitiqueDeConfidentialité";
 import ConditionsGenerales from "./pages/ConditionsGenerales";
 import Categorie from "./pages/Categorie";
+import Error from "./pages/Error";
 
 function App() {
   const Contacts = {
@@ -33,6 +34,7 @@ function App() {
       <Nav />
       <TitlePage />
       <Routes>
+        <Route path="*" element={<Error />} />
         <Route path="/" element={<Home />} />
         <Route path="/graphicDesign" element={<GraphicDesign />} />
         <Route path="/objetsPublicitaires" element={<ObjetsPublicitaires />} />
