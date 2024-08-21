@@ -249,6 +249,7 @@ function Categories() {
               key={i}
               to={`/objetsPublicitaires/${cate.href}`}
               className="categorie"
+              style={{ backgroundImage: `URL(${cate.image})` }}
             >
               {cate.title}
             </NavLink>
