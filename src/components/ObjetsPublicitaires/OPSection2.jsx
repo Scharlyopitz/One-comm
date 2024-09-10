@@ -32,7 +32,7 @@ function Carrousel() {
 
   const [position, setPosition] = useState("-4");
 
-  function Image({ setCurrentImage, i, setPosition }) {
+  function Dot({ setCurrentImage, i, setPosition }) {
     function handleClick(e) {
       setCurrentImage(parseInt(e.target.dataset.id));
       setPosition(ref.current.offsetLeft - 4);
@@ -67,7 +67,7 @@ function Carrousel() {
         <div className="border" style={{ left: `${position}px` }} />
         {images.map((_, i) => {
           return (
-            <Image
+            <Dot
               key={i}
               setCurrentImage={setCurrentImage}
               i={i}
