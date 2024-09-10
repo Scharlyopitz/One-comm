@@ -50,13 +50,13 @@ function Carrousel() {
     );
   }
 
-  useEffect(() => {
-    currentImage >= images.length && setCurrentImage(0);
+  // useEffect(() => {
+  //   currentImage >= images.length && setCurrentImage(0);
 
-    setInterval(() => {
-      setCurrentImage(currentImage + 1);
-    }, 3000);
-  });
+  //   setInterval(() => {
+  //     setCurrentImage(currentImage + 1);
+  //   }, 3000);
+  // });
 
   return (
     <div className="CarrouselContainer">

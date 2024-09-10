@@ -654,6 +654,7 @@ li {
 }
 .OPSection2 .CarrouselContainer .dotContainer {
   position: absolute;
+  gap: 2vw;
   z-index: 2;
   bottom: 5vh;
   left: 50%;
@@ -661,7 +662,6 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 6vw;
 }
 .OPSection2 .CarrouselContainer .dotContainer .dot {
   width: 15px;
