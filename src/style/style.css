@@ -1020,10 +1020,22 @@ li {
 
 .productDetails {
   background-color: #ffffff;
+  color: #0f0f0f;
 }
-.productDetails img {
-  width: 200px;
-  height: 200px;
+.productDetails .imagesContainer {
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+}
+.productDetails .imagesContainer .productImage1 {
+  grid-area: 1/1/3/2;
+}
+.productDetails .imagesContainer img {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;

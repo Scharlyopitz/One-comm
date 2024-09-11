@@ -1,10 +1,24 @@
 .productDetails {
   background-color: $RealWhite;
+  color: $Black;
 
-  img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    object-position: center;
+  .imagesContainer {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+
+    .productImage1 {
+      grid-area: 1 / 1 / 3 / 2;
+    }
+
+    img {
+      border-radius: 20px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
   }
 }
