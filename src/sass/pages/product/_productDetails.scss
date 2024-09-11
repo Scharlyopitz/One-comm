@@ -1,6 +1,8 @@
 .productDetails {
+  display: flex;
   background-color: $RealWhite;
   color: $Black;
+  padding: 15vh 10vh;
 
   .imagesContainer {
     width: 50%;

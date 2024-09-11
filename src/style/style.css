@@ -1019,8 +1019,10 @@ li {
 }
 
 .productDetails {
+  display: flex;
   background-color: #ffffff;
   color: #0f0f0f;
+  padding: 15vh 10vh;
 }
 .productDetails .imagesContainer {
   width: 50%;
