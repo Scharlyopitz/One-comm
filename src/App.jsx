@@ -14,6 +14,7 @@ import PolitiqueDeConfidentialité from "./pages/PolitiqueDeConfidentialité";
 import ConditionsGenerales from "./pages/ConditionsGenerales";
 import Categorie from "./pages/Categorie";
 import Error from "./pages/Error";
+import Product from "./pages/Product";
 
 function App() {
   const Contacts = {
@@ -48,6 +49,10 @@ function App() {
           element={<PolitiqueDeConfidentialité />}
         />
         <Route path="/objetsPublicitaires/:categorie" element={<Categorie />} />
+        <Route
+          path="/objetsPublicitaires/:categorie/:product"
+          element={<Product />}
+        />
       </Routes>
       <Footer Contacts={Contacts} />
     </>
