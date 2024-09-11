@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 import { useEffect } from "react";
 import categories from "../assets/categories.json";
 import TitlePage from "../components/TitlePage/TitlePage";
@@ -49,7 +49,10 @@ function TopPart({ title, description, image }) {
 function Products({ item }) {
   function Product({ image, categorie, reference, name, weight, price }) {
     return (
-      <div className="product">
+      <NavLink
+        to={`/objetsPublicitaires/${name.split(" ").join("")}`}
+        className="product"
+      >
         <img src={image} alt={name} />
         <div>{categorie}</div>
         <span>{reference}</span>
@@ -63,7 +66,7 @@ function Products({ item }) {
             <p>{price}</p>
           </div>
         </div>
-      </div>
+      </NavLink>
     );
   }
 
