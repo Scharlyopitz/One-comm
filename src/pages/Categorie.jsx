@@ -29,7 +29,7 @@ export default function Categorie() {
         description={item.description}
         image={item.image}
       />
-      <Products item={item} />
+      <Products item={item.products} />
     </main>
   );
 }
@@ -73,16 +73,16 @@ function Products({ item }) {
   return (
     <section className="ProductSection">
       <div className="ProductContainer">
-        {item.products.map((item, i) => {
+        {item.map((item, i) => {
           return (
             <Product
               key={i}
               image={item.image}
               categorie={item.categorie}
               reference={item.ref}
-              name={item.product.name}
-              weight={item.product.weight}
-              price={item.product.price}
+              name={item.name}
+              weight={item.weight}
+              price={item.price}
             />
           );
         })}
