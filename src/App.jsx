@@ -50,7 +50,7 @@ function App() {
         />
         <Route path="/objetsPublicitaires/:categorie" element={<Categorie />} />
         <Route
-          path="/objetsPublicitaires/:categorie/:product"
+          path="/objetsPublicitaires/:categorie/:products"
           element={<Product />}
         />
       </Routes>
