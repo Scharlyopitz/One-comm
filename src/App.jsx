@@ -49,7 +49,10 @@ function App() {
           element={<PolitiqueDeConfidentialité />}
         />
         <Route path="/objetsPublicitaires/:categorie" element={<Categorie />} />
-        <Route path="/objetsPublicitaires/:products" element={<Product />} />
+        <Route
+          path="/objetsPublicitaires/:categorie/:products"
+          element={<Product />}
+        />
       </Routes>
       <Footer Contacts={Contacts} />
     </>
