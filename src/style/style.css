@@ -911,6 +911,7 @@ li {
 .navContainer .nav .left .Menu .modalMenu a {
   white-space: nowrap;
   text-transform: initial;
+  color: #0f0f0f;
 }
 .navContainer .nav .left .Menu .modalMenu a:hover {
   text-decoration: underline;
