@@ -33,7 +33,14 @@ function ProductDetails({ rightProduct }) {
     <div className="productDetails">
       <div className="imagesContainer">
         {productImages.map((img, i) => {
-          return <img key={i} src={img} alt="image" />;
+          return (
+            <img
+              className={`productImage${i + 1}`}
+              key={i}
+              src={img}
+              alt="image"
+            />
+          );
         })}
       </div>
       <div className="detailsContainer">
