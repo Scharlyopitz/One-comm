@@ -1018,6 +1018,18 @@ li {
   gap: 3vh;
 }
 
+.productDetails {
+  background-color: #ffffff;
+}
+.productDetails img {
+  width: 200px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
 .btnContainer {
   position: absolute;
   bottom: 5%;
