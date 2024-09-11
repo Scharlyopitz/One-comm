@@ -71,7 +71,7 @@ function ProductDetails({ rightProduct }) {
 
 function MoreInformations() {
   return (
-    <div>
+    <div className="moreInformations">
       <div className="left">
         <h2>Plus d'informations</h2>
         <p>
