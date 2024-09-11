@@ -1,0 +1,24 @@
+.moreInformations {
+  background: $RealWhite;
+  color: $Black;
+  display: flex;
+  padding: 10vh 10vh;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  .left,
+  .right {
+    width: 45%;
+  }
+
+  .left {
+    text-align: justify;
+  }
+
+  .right {
+    display: flex;
+    justify-content: center;
+    background-color: yellow;
+  }
+}

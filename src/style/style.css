@@ -1018,6 +1018,28 @@ li {
   gap: 3vh;
 }
 
+.moreInformations {
+  background: #ffffff;
+  color: #0f0f0f;
+  display: flex;
+  padding: 10vh 10vh;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.moreInformations .left,
+.moreInformations .right {
+  width: 45%;
+}
+.moreInformations .left {
+  text-align: justify;
+}
+.moreInformations .right {
+  display: flex;
+  justify-content: center;
+  background-color: yellow;
+}
+
 .productDetails {
   display: flex;
   justify-content: center;
@@ -1025,7 +1047,7 @@ li {
   color: #0f0f0f;
   padding: 20vh 10vh 10vh;
   gap: 5vw;
-  border-bottom: 2px solid #0f0f0f;
+  border-bottom: 1px solid #0f0f0f;
 }
 .productDetails .imagesContainer {
   height: 100%;
