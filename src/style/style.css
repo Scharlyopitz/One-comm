@@ -1020,11 +1020,15 @@ li {
 
 .productDetails {
   display: flex;
+  justify-content: center;
   background-color: #ffffff;
   color: #0f0f0f;
-  padding: 15vh 10vh;
+  padding: 20vh 10vh 10vh;
+  gap: 5vw;
+  border-bottom: 2px solid #0f0f0f;
 }
 .productDetails .imagesContainer {
+  height: 100%;
   width: 50%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1042,6 +1046,12 @@ li {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+.productDetails .detailsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
 }
 
 .btnContainer {

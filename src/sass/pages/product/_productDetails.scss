@@ -1,10 +1,15 @@
 .productDetails {
   display: flex;
+  justify-content: center;
   background-color: $RealWhite;
   color: $Black;
-  padding: 15vh 10vh;
+  padding: 20vh 10vh 10vh;
+  gap: 5vw;
+  border-bottom: 2px solid $Black;
 
+  //   LEFT
   .imagesContainer {
+    height: 100%;
     width: 50%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -22,5 +27,13 @@
       object-fit: cover;
       object-position: center;
     }
+  }
+
+  //   RIGTH
+  .detailsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
   }
 }
