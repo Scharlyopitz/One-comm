@@ -25,17 +25,19 @@ export default function Nav() {
 
 function Logo() {
   return (
-    <div
-      style={{
-        color: "#ffffff",
-        position: "absolute",
-        left: 15,
-        top: "50%",
-        transform: "translateY(-50%)",
-      }}
-    >
-      LOGO
-    </div>
+    <NavLink to={"/"}>
+      <div
+        style={{
+          color: "#ffffff",
+          position: "absolute",
+          left: 15,
+          top: "50%",
+          transform: "translateY(-50%)",
+        }}
+      >
+        LOGO
+      </div>
+    </NavLink>
   );
 }
 
