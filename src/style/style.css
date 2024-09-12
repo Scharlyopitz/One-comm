@@ -913,7 +913,6 @@ li {
 .navContainer .nav .left .Menu .modalMenu a {
   white-space: nowrap;
   text-transform: initial;
-  color: #0f0f0f;
 }
 .navContainer .nav .left .Menu .modalMenu a:hover {
   text-decoration: underline;
@@ -997,6 +996,7 @@ li {
   font-size: 15px;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
+  color: #0f0f0f;
 }
 .navContainer .nav .right .devis .modalDevis .itemsContainer .item .deleteBtn {
   background: transparent;

@@ -102,7 +102,6 @@
           a {
             white-space: nowrap;
             text-transform: initial;
-            color: $Black;
 
             &:hover {
               text-decoration: underline;
@@ -200,6 +199,7 @@
               font-size: 15px;
               grid-template-columns: repeat(3, 1fr);
               align-items: center;
+              color: $Black;
 
               .deleteBtn {
                 background: transparent;
