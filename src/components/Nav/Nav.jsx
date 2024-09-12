@@ -10,7 +10,7 @@ export default function Nav() {
   const [categorieOn, setCategorieOn] = useState(false);
 
   useEffect(() => {
-    categories.find((cate) => `/objetsPublicitaires/${cate.href}` === pathname)
+    categories.find((cate) => `/objetsPublicitaires/${cate.href}` == pathname)
       ? setCategorieOn(true)
       : setCategorieOn(false);
   }, [pathname]);
