@@ -97,7 +97,7 @@ function Categories() {
           return (
             <NavLink
               key={i}
-              to={`/objetsPublicitaires/${cate.href}`}
+              to={`${cate.href}`}
               className="categorie"
               style={{ backgroundImage: `URL(${cate.image})` }}
             >

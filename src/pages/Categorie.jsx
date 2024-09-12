@@ -49,10 +49,7 @@ function TopPart({ title, description, image }) {
 function Products({ item }) {
   function Product({ image, categorie, reference, name, weight, price }) {
     return (
-      <NavLink
-        to={`/objetsPublicitaires/${name.split(" ").join("")}`}
-        className="product"
-      >
+      <NavLink to={`${name.split(" ").join("")}`} className="product">
         <img src={image} alt={name} />
         <div>{categorie}</div>
         <span>{reference}</span>

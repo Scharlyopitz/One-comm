@@ -39,6 +39,11 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/graphicDesign" element={<GraphicDesign />} />
         <Route path="/objetsPublicitaires" element={<ObjetsPublicitaires />} />
+        <Route path="/objetsPublicitaires/:categorie" element={<Categorie />} />
+        <Route
+          path="/objetsPublicitaires/:categorie/:products"
+          element={<Product />}
+        />
         <Route path="/contact" element={<Contact Contacts={Contacts} />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/actualites" element={<Actualites />} />
@@ -47,11 +52,6 @@ function App() {
         <Route
           path="/politiqueDeConfidentialite"
           element={<PolitiqueDeConfidentialité />}
-        />
-        <Route path="/objetsPublicitaires/:categorie" element={<Categorie />} />
-        <Route
-          path="/objetsPublicitaires/:categorie/:products"
-          element={<Product />}
         />
       </Routes>
       <Footer Contacts={Contacts} />
