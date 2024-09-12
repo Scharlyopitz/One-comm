@@ -154,14 +154,6 @@
           padding: 15px;
           border-radius: calc(20px);
 
-          &:first-child {
-            background-color: red;
-          }
-
-          &:last-child {
-            background-color: yellow;
-          }
-
           .infos {
             display: flex;
             flex-direction: column;

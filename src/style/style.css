@@ -753,12 +753,6 @@ li {
   padding: 15px;
   border-radius: 20px;
 }
-.OPSection2 .tendance .carroussel .bestSellerContainer .bestSeller:first-child {
-  background-color: red;
-}
-.OPSection2 .tendance .carroussel .bestSellerContainer .bestSeller:last-child {
-  background-color: yellow;
-}
 .OPSection2 .tendance .carroussel .bestSellerContainer .bestSeller .infos {
   display: flex;
   flex-direction: column;
