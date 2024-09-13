@@ -1,5 +1,14 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
+import LogoGraphisme1 from "/black-icon.webp";
+import LogoGraphisme2 from "/dark-blue-icon.webp";
+import LogoGraphisme3 from "/light-blue-icon.webp";
+import LogoGraphisme4 from "/white-icon.webp";
+import LogoOneComm from "/one-comm-logo.webp";
+import ImageObjPromo1 from "/bottle-one-comm.webp";
+import ImageObjPromo2 from "/carnet-one-comm.webp";
+import ImageObjPromo3 from "/carte-de-visite-one-comm.webp";
+import ImageObjPromo4 from "/mug-one-comm.webp";
 
 export default function Section3() {
   return (
@@ -7,6 +16,13 @@ export default function Section3() {
       <Texte />
       <div className="cardsSection">
         <SectionCard
+          images={[
+            LogoGraphisme1,
+            LogoGraphisme2,
+            LogoGraphisme3,
+            LogoGraphisme4,
+          ]}
+          sideImage={LogoOneComm}
           category="Graphisme"
           title="Votre service de conception graphique."
           options={[
@@ -16,6 +32,8 @@ export default function Section3() {
           ]}
         />
         <SectionCard
+          images={[ImageObjPromo1, ImageObjPromo2, ImageObjPromo3]}
+          sideImage={ImageObjPromo4}
           category="Objets promotionnels"
           title="Vos objets publicitaires personnalisés."
           options={[
@@ -45,10 +63,16 @@ function Texte() {
   );
 }
 
-function SectionCard({ category, title, options }) {
+function SectionCard({
+  category,
+  title,
+  options,
+  images,
+  sideImage = { sideImage },
+}) {
   return (
     <div className="sectionCardContainer">
-      <Card />
+      <Card images={images} sideImage={sideImage} />
       <div className="informationsContainer">
         <p>{category}</p>
         <h2>{title}</h2>
@@ -68,16 +92,22 @@ function SectionCard({ category, title, options }) {
   );
 }
 
-function Card() {
+function Card({ images, sideImage }) {
   return (
     <div className="card">
       <div className="left">
-        {[...Array(6)].map((_, i) => {
-          return <div key={i}>IMAGE</div>;
+        {images.map((image, i) => {
+          return (
+            <div key={i}>
+              <img src={image} alt={`image ${i + 1}`} />
+            </div>
+          );
         })}
       </div>
       <div className="right">
-        <div>IMAGE</div>
+        <div>
+          <img src={sideImage} alt="side image" />
+        </div>
       </div>
     </div>
   );

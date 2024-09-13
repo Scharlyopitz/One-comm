@@ -474,19 +474,38 @@ li {
   width: 50%;
 }
 .cardsSection .sectionCardContainer .card .left div {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 200px;
 }
+.cardsSection .sectionCardContainer .card .left div img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
 .cardsSection .sectionCardContainer .card .right {
   width: 50%;
 }
 .cardsSection .sectionCardContainer .card .right div {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
+}
+.cardsSection .sectionCardContainer .card .right div img {
+  width: 100%;
+  height: 55%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 15px;
 }
 .cardsSection .sectionCardContainer .informationsContainer {
   width: 50%;
