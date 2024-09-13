@@ -12,6 +12,18 @@ nav {
   height: 7vh;
   box-shadow: 0px 0px 20px 0px $BlackOpct;
 
+  .Logo {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    img {
+      height: 10vh;
+      filter: invert(1);
+    }
+  }
+
   ul {
     display: flex;
     justify-content: space-around;

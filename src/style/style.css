@@ -231,7 +231,8 @@ li {
   justify-content: space-evenly;
 }
 .rdvSection .partsContainer .leftPart img {
-  height: 200px;
+  margin: 0 auto;
+  width: 200px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
@@ -369,12 +370,26 @@ li {
   padding: 40px 30px 30px;
   box-shadow: 0px 0px 30px -7px rgba(0, 0, 0, 0.4509803922);
 }
+.section2 .cardContainer .card:nth-child(2) .imgContainer img {
+  height: 70%;
+  width: 100%;
+}
 .section2 .cardContainer .card .name {
   font-size: 25px;
   font-weight: 300;
 }
 .section2 .cardContainer .card .img {
   margin: 7vh 0;
+}
+.section2 .cardContainer .card .imgContainer {
+  display: flex;
+  align-items: center;
+  height: 50%;
+  width: 100%;
+}
+.section2 .cardContainer .card .imgContainer img {
+  height: 100%;
+  width: 100%;
 }
 .section2 .cardContainer .card .paragraphe {
   color: #0f0f0f;
@@ -1284,6 +1299,16 @@ nav {
           backdrop-filter: blur(5px);
   height: 7vh;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.4509803922);
+}
+nav .Logo {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+nav .Logo img {
+  height: 10vh;
+  filter: invert(1);
 }
 nav ul {
   display: flex;

@@ -1,4 +1,7 @@
 import { useRef, useState, useEffect } from "react";
+import Conseil from "/Conseil picto.svg";
+import Interlocuteur from "/Interlocuteur picto.svg";
+import Reactivite from "/Réactivité picto.svg";
 
 export default function Section2() {
   return (
@@ -11,14 +14,17 @@ export default function Section2() {
 
       <div className="cardContainer">
         <Card
+          svg={Reactivite}
           name="Réactivité"
           paragraphe="Notre équipe s’engage à répondre à votre demande dans les plus bref délais. Nous réalisons vos devis selon vos demande sous 24h."
         />
         <Card
+          svg={Conseil}
           name="Conseil"
           paragraphe="Notre expertise dans le domaine du graphisme et l’objet publicitaire nous permet de vous conseiller et de vous accompagner dans la réalisation de vos projets."
         />
         <Card
+          svg={Interlocuteur}
           name="Interlocuteur"
           paragraphe="Un interlocuteur unique et réactif s’occupe de l’ensemble de vos projets de communication."
         />
@@ -64,12 +70,13 @@ function Svg() {
   );
 }
 
-function Card({ name, image, paragraphe }) {
+function Card({ name, svg, paragraphe }) {
   return (
     <div className="card">
       <p className="name">{name}</p>
-      <p className="img">img</p>
-      {/* <img src={image} alt={`image ${name}`} /> */}
+      <div className="imgContainer">
+        <img src={svg} alt={`image ${name}`} />
+      </div>
       <p className="paragraphe">{paragraphe}</p>
     </div>
   );

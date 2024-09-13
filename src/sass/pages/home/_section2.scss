@@ -41,6 +41,15 @@
       padding: 40px 30px 30px;
       box-shadow: 0px 0px 30px -7px $BlackOpct;
 
+      &:nth-child(2) {
+        .imgContainer {
+          img {
+            height: 70%;
+            width: 100%;
+          }
+        }
+      }
+
       .name {
         font-size: 25px;
         font-weight: 300;
@@ -48,6 +57,18 @@
 
       .img {
         margin: 7vh 0;
+      }
+
+      .imgContainer {
+        display: flex;
+        align-items: center;
+        height: 50%;
+        width: 100%;
+
+        img {
+          height: 100%;
+          width: 100%;
+        }
       }
 
       .paragraphe {

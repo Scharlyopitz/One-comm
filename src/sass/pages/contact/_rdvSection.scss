@@ -26,7 +26,8 @@
       justify-content: space-evenly;
 
       img {
-        height: 200px;
+        margin: 0 auto;
+        width: 200px;
         object-fit: cover;
         object-position: center;
       }
@@ -34,6 +35,7 @@
 
     .rigthPart {
       width: 50%;
+
       iframe {
         width: 100%;
         height: 500px;

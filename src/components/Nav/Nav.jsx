@@ -3,6 +3,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import categories from "../../assets/categories.json";
 import { useEffect, useState } from "react";
+import Logo1 from "/1st.svg";
+import Logo2 from "/2nd.svg";
 
 export default function Nav() {
   const { pathname } = useLocation();
@@ -25,18 +27,8 @@ export default function Nav() {
 
 function Logo() {
   return (
-    <NavLink to={"/"}>
-      <div
-        style={{
-          color: "#ffffff",
-          position: "absolute",
-          left: 15,
-          top: "50%",
-          transform: "translateY(-50%)",
-        }}
-      >
-        LOGO
-      </div>
+    <NavLink className="Logo" to={"/"}>
+      <img src={Logo1} alt="" />
     </NavLink>
   );
 }

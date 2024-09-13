@@ -8,6 +8,9 @@ import {
 import { useEffect, useRef, useState } from "react";
 import categories from "../../assets/categories.json";
 import NavOP from "./NavOP";
+import ImageCarrousel1 from "/La-communication-par-l_objet.webp";
+import ImageCarrousel2 from "/Express.webp";
+import ImageCarrousel3 from "/Goodies-écologiques.webp";
 
 export default function OPSection2() {
   return (
@@ -22,11 +25,7 @@ export default function OPSection2() {
 }
 
 function Carrousel() {
-  const images = [
-    "https://images.pexels.com/photos/842711/pexels-photo-842711.jpeg?auto=compress&cs=tinysrgb&w=600",
-    "https://images.pexels.com/photos/1525041/pexels-photo-1525041.jpeg?auto=compress&cs=tinysrgb&w=600",
-    "https://images.pexels.com/photos/1643409/pexels-photo-1643409.jpeg?auto=compress&cs=tinysrgb&w=600",
-  ];
+  const images = [ImageCarrousel1, ImageCarrousel2, ImageCarrousel3];
 
   const [currentImage, setCurrentImage] = useState(0);
 

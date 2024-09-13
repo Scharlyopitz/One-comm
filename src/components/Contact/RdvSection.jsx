@@ -1,3 +1,5 @@
+import Where from "/Where.webp";
+
 export default function RdvSection({ Contacts }) {
   return (
     <section className="rdvSection">
@@ -20,10 +22,7 @@ function LeftPart({ Contacts }) {
       </p>
       <p>{Contacts.mail}</p>
       <p>{Contacts.tel}</p>
-      <img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-QMNGdmr5AqT2LP4ZYRrzx-66t2wHI-BXUbCqhtZtJKxcR3nvOu-6G5yg5gOjsIAcmw8&usqp=CAU"
-        alt="image map tag"
-      />
+      <img src={Where} alt="image map tag" />
     </div>
   );
 }
