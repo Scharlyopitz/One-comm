@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import LogoPixel from "/Logo-pixel.webp";
 import LogoClean from "/Logo-clean.webp";
+import ImageSupportPrint from "/Graphic-design-support-digital.webp";
 
 export default function GDSection2() {
   return (
@@ -23,7 +24,9 @@ export default function GDSection2() {
         h1="Création de supports Print & Digital."
         p="Qu'il s'agisse de brochures, de flyers, de cartes de visite, de kakémono, de mur d’image, de bannières publicitaires, de posts sur les réseaux sociaux ou de sites web, nous concevons des supports de communication qui parlent à votre audience. Nos designs sont non seulement esthétiquement plaisants, mais aussi fonctionnels, garantissant une communication claire et efficace de votre message. Nous nous assurons que chaque création soit adaptée à vos objectifs et à votre audience, tout en respectant les standards les plus élevés du design graphique."
       />
-      <div className="img">IMAGE</div>
+      <div className="img">
+        <img src={ImageSupportPrint} alt="image support digital" />
+      </div>
     </section>
   );
 }
