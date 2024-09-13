@@ -12,7 +12,11 @@
   }
   .logosContainer {
     display: flex;
-    width: 70%;
     justify-content: space-between;
+    margin: 0 5vw;
+
+    img {
+      width: 100%;
+    }
   }
 }

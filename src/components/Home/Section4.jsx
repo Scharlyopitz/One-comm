@@ -70,7 +70,11 @@ function Line({ images }) {
             <div
               key={i}
               className="img"
-              style={{ backgroundImage: `URL(${image})` }}
+              style={{
+                backgroundImage: `URL(${image})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
             />
           );
         })}

@@ -1,3 +1,9 @@
+import Logo1 from "/black-icon.webp";
+import Logo2 from "/dark-blue-icon.webp";
+import Logo3 from "/light-blue-icon.webp";
+import Logo4 from "/dark-blue-icon.webp";
+import Logo5 from "/black-icon.webp";
+
 export default function Section5() {
   return (
     <section className="section5">
@@ -8,13 +14,15 @@ export default function Section5() {
 }
 
 function Logos() {
+  const logos = [Logo1, Logo2, Logo3, Logo4, Logo5];
+
   return (
     <>
       <div className="logosContainer">
-        {[...Array(5)].map((_, i) => {
+        {logos.map((logo, i) => {
           return (
             <div key={i} className="logo">
-              logo
+              <img src={logo} alt={`logo${i + 1}`} />
             </div>
           );
         })}

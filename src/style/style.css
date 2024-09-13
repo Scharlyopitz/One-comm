@@ -653,8 +653,11 @@ li {
 }
 .section5 .logosContainer {
   display: flex;
-  width: 70%;
   justify-content: space-between;
+  margin: 0 5vw;
+}
+.section5 .logosContainer img {
+  width: 100%;
 }
 
 .texteSecion {
