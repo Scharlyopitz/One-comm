@@ -1,5 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import LogoPixel from "/Logo-pixel.webp";
+import LogoClean from "/Logo-clean.webp";
 
 export default function GDSection2() {
   return (
@@ -38,15 +40,19 @@ function Texte({ h1, p }) {
 function Logos() {
   return (
     <div className="logosContainer">
-      <Logo />
+      <Logo img={LogoPixel} />
       <FontAwesomeIcon icon={faChevronRight} style={{ color: "#11235A" }} />
-      <Logo />
+      <Logo img={LogoClean} />
     </div>
   );
 }
 
-function Logo() {
-  return <div className="Card">Logo</div>;
+function Logo({ img }) {
+  return (
+    <div className="Card">
+      <img src={img} alt="logo" />
+    </div>
+  );
 }
 
 function Slider() {

@@ -29,6 +29,12 @@
     width: 60%;
     justify-content: space-between;
     align-items: center;
+
+    .Card {
+      img {
+        width: 200px;
+      }
+    }
   }
 
   // SLIDER CONTAINER

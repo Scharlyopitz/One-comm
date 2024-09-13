@@ -275,6 +275,9 @@ li {
   justify-content: space-between;
   align-items: center;
 }
+.GDSection2 .logosContainer .Card img {
+  width: 200px;
+}
 .GDSection2 .sliderContainer {
   display: flex;
   align-items: center;
